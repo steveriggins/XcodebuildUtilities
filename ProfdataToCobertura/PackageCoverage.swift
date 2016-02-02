@@ -31,7 +31,7 @@ class PackageCoverage: Comparable {
     let classes:[ClassCoverage]
     var packages:[PackageCoverage] = []
     var path:String {
-        return pathComponents.joinWithSeparator(ProfdataToCobertura.PathSeparator)
+        return pathComponents.joinWithSeparator(XcodebuildUtilities.PathSeparator)
     }
 
     var activeLineCount:Int {
@@ -66,7 +66,7 @@ class PackageCoverage: Comparable {
         var classesXref:[String:[ClassCoverage]] = [:]
         var filePackageNames:[String] = []
         for file in classes {
-            let filePackagePath = file.pathComponents.joinWithSeparator(ProfdataToCobertura.PathSeparator)
+            let filePackagePath = file.pathComponents.joinWithSeparator(XcodebuildUtilities.PathSeparator)
             if var packageClasses = classesXref[filePackagePath] {
                 packageClasses.append(file)
                 classesXref[filePackagePath] = packageClasses

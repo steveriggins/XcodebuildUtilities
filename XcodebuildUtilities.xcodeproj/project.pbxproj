@@ -11,7 +11,7 @@
 		F81E340E1C60455800D6C5ED /* ProfdataToCoberturaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E340D1C60455800D6C5ED /* ProfdataToCoberturaTests.swift */; };
 		F81E34181C60457A00D6C5ED /* ClassCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34131C60457A00D6C5ED /* ClassCoverage.swift */; };
 		F81E34191C60457A00D6C5ED /* PackageCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34141C60457A00D6C5ED /* PackageCoverage.swift */; };
-		F81E341A1C60457A00D6C5ED /* ProfdataToCobertura.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34151C60457A00D6C5ED /* ProfdataToCobertura.swift */; };
+		F81E341A1C60457A00D6C5ED /* ProfdataToCoberturaRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34151C60457A00D6C5ED /* ProfdataToCoberturaRunner.swift */; };
 		F81E341B1C60457A00D6C5ED /* SummaryCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34161C60457A00D6C5ED /* SummaryCoverage.swift */; };
 		F81E34251C60458900D6C5ED /* FileCoverageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34231C60458900D6C5ED /* FileCoverageTests.swift */; };
 		F81E34261C60458900D6C5ED /* PackageCoverageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34241C60458900D6C5ED /* PackageCoverageTests.swift */; };
@@ -19,13 +19,30 @@
 		F81E34281C6045F300D6C5ED /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34021C60454300D6C5ED /* main.swift */; };
 		F81E34291C6045F300D6C5ED /* PackageCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34141C60457A00D6C5ED /* PackageCoverage.swift */; };
 		F81E342A1C6045F300D6C5ED /* SummaryCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34161C60457A00D6C5ED /* SummaryCoverage.swift */; };
-		F81E342C1C6045F300D6C5ED /* ProfdataToCobertura.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34151C60457A00D6C5ED /* ProfdataToCobertura.swift */; };
+		F81E342C1C6045F300D6C5ED /* ProfdataToCoberturaRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34151C60457A00D6C5ED /* ProfdataToCoberturaRunner.swift */; };
 		F89030F71C60464B003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
 		F89030F81C604651003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
+		F8F08F841C604875003349A2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F831C604875003349A2 /* main.swift */; };
+		F8F08F8F1C604884003349A2 /* XCTestsToJUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F8E1C604884003349A2 /* XCTestsToJUnitTests.swift */; };
+		F8F08F951C60490B003349A2 /* XCTestsToJUnitRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F941C60490B003349A2 /* XCTestsToJUnitRunner.swift */; };
+		F8F08F961C604910003349A2 /* XCTestsToJUnitRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F941C60490B003349A2 /* XCTestsToJUnitRunner.swift */; };
+		F8F08F981C604946003349A2 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F971C604946003349A2 /* SharedTypes.swift */; };
+		F8F08F991C604946003349A2 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F971C604946003349A2 /* SharedTypes.swift */; };
+		F8F08F9A1C604946003349A2 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F971C604946003349A2 /* SharedTypes.swift */; };
+		F8F08F9B1C604946003349A2 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F971C604946003349A2 /* SharedTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F81E33FE1C60454300D6C5ED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F8F08F7F1C604875003349A2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -44,11 +61,18 @@
 		F81E340F1C60455800D6C5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F81E34131C60457A00D6C5ED /* ClassCoverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassCoverage.swift; sourceTree = "<group>"; };
 		F81E34141C60457A00D6C5ED /* PackageCoverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageCoverage.swift; sourceTree = "<group>"; };
-		F81E34151C60457A00D6C5ED /* ProfdataToCobertura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfdataToCobertura.swift; sourceTree = "<group>"; };
+		F81E34151C60457A00D6C5ED /* ProfdataToCoberturaRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfdataToCoberturaRunner.swift; sourceTree = "<group>"; };
 		F81E34161C60457A00D6C5ED /* SummaryCoverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryCoverage.swift; sourceTree = "<group>"; };
 		F81E34231C60458900D6C5ED /* FileCoverageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileCoverageTests.swift; sourceTree = "<group>"; };
 		F81E34241C60458900D6C5ED /* PackageCoverageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageCoverageTests.swift; sourceTree = "<group>"; };
-		F89030F61C60464B003CE5EE /* XMLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMLExtensions.swift; path = XcodebuildUtilties/XMLExtensions.swift; sourceTree = SOURCE_ROOT; };
+		F89030F61C60464B003CE5EE /* XMLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMLExtensions.swift; path = XcodebuildUtilities/XMLExtensions.swift; sourceTree = SOURCE_ROOT; };
+		F8F08F811C604875003349A2 /* XCTestsToJUnit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XCTestsToJUnit; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8F08F831C604875003349A2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F8F08F8C1C604884003349A2 /* XCTestsToJUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCTestsToJUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8F08F8E1C604884003349A2 /* XCTestsToJUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestsToJUnitTests.swift; sourceTree = "<group>"; };
+		F8F08F901C604884003349A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8F08F941C60490B003349A2 /* XCTestsToJUnitRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestsToJUnitRunner.swift; sourceTree = "<group>"; };
+		F8F08F971C604946003349A2 /* SharedTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,15 +90,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8F08F7E1C604875003349A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8F08F891C604884003349A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F81E33E91C60450700D6C5ED = {
 			isa = PBXGroup;
 			children = (
-				F81E342D1C6045FD00D6C5ED /* XcodebuildUtiltiesShared */,
+				F81E342D1C6045FD00D6C5ED /* XcodebuildUtilitiesShared */,
 				F81E34011C60454300D6C5ED /* ProfdataToCobertura */,
 				F81E340C1C60455800D6C5ED /* ProfdataToCoberturaTests */,
+				F8F08F821C604875003349A2 /* XCTestsToJUnit */,
+				F8F08F8D1C604884003349A2 /* XCTestsToJUnitTests */,
 				F81E33F31C60450700D6C5ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +124,8 @@
 			children = (
 				F81E34001C60454300D6C5ED /* ProfdataToCobertura */,
 				F81E340B1C60455800D6C5ED /* ProfdataToCoberturaTests.xctest */,
+				F8F08F811C604875003349A2 /* XCTestsToJUnit */,
+				F8F08F8C1C604884003349A2 /* XCTestsToJUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,7 +135,7 @@
 			children = (
 				F81E34131C60457A00D6C5ED /* ClassCoverage.swift */,
 				F81E34141C60457A00D6C5ED /* PackageCoverage.swift */,
-				F81E34151C60457A00D6C5ED /* ProfdataToCobertura.swift */,
+				F81E34151C60457A00D6C5ED /* ProfdataToCoberturaRunner.swift */,
 				F81E34161C60457A00D6C5ED /* SummaryCoverage.swift */,
 				F81E34021C60454300D6C5ED /* main.swift */,
 			);
@@ -111,12 +153,32 @@
 			path = ProfdataToCoberturaTests;
 			sourceTree = "<group>";
 		};
-		F81E342D1C6045FD00D6C5ED /* XcodebuildUtiltiesShared */ = {
+		F81E342D1C6045FD00D6C5ED /* XcodebuildUtilitiesShared */ = {
 			isa = PBXGroup;
 			children = (
 				F89030F61C60464B003CE5EE /* XMLExtensions.swift */,
+				F8F08F971C604946003349A2 /* SharedTypes.swift */,
 			);
-			path = XcodebuildUtiltiesShared;
+			name = XcodebuildUtilitiesShared;
+			path = XcodebuildUtilitiesShared;
+			sourceTree = "<group>";
+		};
+		F8F08F821C604875003349A2 /* XCTestsToJUnit */ = {
+			isa = PBXGroup;
+			children = (
+				F8F08F831C604875003349A2 /* main.swift */,
+				F8F08F941C60490B003349A2 /* XCTestsToJUnitRunner.swift */,
+			);
+			path = XCTestsToJUnit;
+			sourceTree = "<group>";
+		};
+		F8F08F8D1C604884003349A2 /* XCTestsToJUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8F08F8E1C604884003349A2 /* XCTestsToJUnitTests.swift */,
+				F8F08F901C604884003349A2 /* Info.plist */,
+			);
+			path = XCTestsToJUnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +218,40 @@
 			productReference = F81E340B1C60455800D6C5ED /* ProfdataToCoberturaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F8F08F801C604875003349A2 /* XCTestsToJUnit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8F08F871C604875003349A2 /* Build configuration list for PBXNativeTarget "XCTestsToJUnit" */;
+			buildPhases = (
+				F8F08F7D1C604875003349A2 /* Sources */,
+				F8F08F7E1C604875003349A2 /* Frameworks */,
+				F8F08F7F1C604875003349A2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCTestsToJUnit;
+			productName = XCTestsToJUnit;
+			productReference = F8F08F811C604875003349A2 /* XCTestsToJUnit */;
+			productType = "com.apple.product-type.tool";
+		};
+		F8F08F8B1C604884003349A2 /* XCTestsToJUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8F08F911C604884003349A2 /* Build configuration list for PBXNativeTarget "XCTestsToJUnitTests" */;
+			buildPhases = (
+				F8F08F881C604884003349A2 /* Sources */,
+				F8F08F891C604884003349A2 /* Frameworks */,
+				F8F08F8A1C604884003349A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCTestsToJUnitTests;
+			productName = XCTestsToJUnitTests;
+			productReference = F8F08F8C1C604884003349A2 /* XCTestsToJUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,9 +268,15 @@
 					F81E340A1C60455700D6C5ED = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					F8F08F801C604875003349A2 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					F8F08F8B1C604884003349A2 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
-			buildConfigurationList = F81E33ED1C60450700D6C5ED /* Build configuration list for PBXProject "XcodebuildUtilties" */;
+			buildConfigurationList = F81E33ED1C60450700D6C5ED /* Build configuration list for PBXProject "XcodebuildUtilities" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,12 +290,21 @@
 			targets = (
 				F81E33FF1C60454300D6C5ED /* ProfdataToCobertura */,
 				F81E340A1C60455700D6C5ED /* ProfdataToCoberturaTests */,
+				F8F08F801C604875003349A2 /* XCTestsToJUnit */,
+				F8F08F8B1C604884003349A2 /* XCTestsToJUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F81E34091C60455700D6C5ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8F08F8A1C604884003349A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,8 +321,9 @@
 				F81E34191C60457A00D6C5ED /* PackageCoverage.swift in Sources */,
 				F89030F71C60464B003CE5EE /* XMLExtensions.swift in Sources */,
 				F81E34181C60457A00D6C5ED /* ClassCoverage.swift in Sources */,
+				F8F08F981C604946003349A2 /* SharedTypes.swift in Sources */,
 				F81E34031C60454300D6C5ED /* main.swift in Sources */,
-				F81E341A1C60457A00D6C5ED /* ProfdataToCobertura.swift in Sources */,
+				F81E341A1C60457A00D6C5ED /* ProfdataToCoberturaRunner.swift in Sources */,
 				F81E341B1C60457A00D6C5ED /* SummaryCoverage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,7 +340,28 @@
 				F81E34251C60458900D6C5ED /* FileCoverageTests.swift in Sources */,
 				F81E34261C60458900D6C5ED /* PackageCoverageTests.swift in Sources */,
 				F81E340E1C60455800D6C5ED /* ProfdataToCoberturaTests.swift in Sources */,
-				F81E342C1C6045F300D6C5ED /* ProfdataToCobertura.swift in Sources */,
+				F8F08F991C604946003349A2 /* SharedTypes.swift in Sources */,
+				F81E342C1C6045F300D6C5ED /* ProfdataToCoberturaRunner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8F08F7D1C604875003349A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F08F9A1C604946003349A2 /* SharedTypes.swift in Sources */,
+				F8F08F951C60490B003349A2 /* XCTestsToJUnitRunner.swift in Sources */,
+				F8F08F841C604875003349A2 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8F08F881C604884003349A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F08F9B1C604946003349A2 /* SharedTypes.swift in Sources */,
+				F8F08F961C604910003349A2 /* XCTestsToJUnitRunner.swift in Sources */,
+				F8F08F8F1C604884003349A2 /* XCTestsToJUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,10 +484,46 @@
 			};
 			name = Release;
 		};
+		F8F08F851C604875003349A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F8F08F861C604875003349A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F8F08F921C604884003349A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XCTestsToJUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivygulch.XCTestsToJUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F8F08F931C604884003349A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XCTestsToJUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivygulch.XCTestsToJUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F81E33ED1C60450700D6C5ED /* Build configuration list for PBXProject "XcodebuildUtilties" */ = {
+		F81E33ED1C60450700D6C5ED /* Build configuration list for PBXProject "XcodebuildUtilities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F81E33F71C60450700D6C5ED /* Debug */,
@@ -380,6 +549,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F8F08F871C604875003349A2 /* Build configuration list for PBXNativeTarget "XCTestsToJUnit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8F08F851C604875003349A2 /* Debug */,
+				F8F08F861C604875003349A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8F08F911C604884003349A2 /* Build configuration list for PBXNativeTarget "XCTestsToJUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8F08F921C604884003349A2 /* Debug */,
+				F8F08F931C604884003349A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

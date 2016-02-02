@@ -19,7 +19,7 @@ extension String {
         for group in groupedOutput {
             var groupLines = group.componentsSeparatedByString("\n") as [NSString]
             let first = groupLines[0]
-            var path = (first.substringToIndex(1) == ProfdataToCobertura.PathSeparator) ? first as String : ProfdataToCobertura.PathSeparator + (first as String)
+            var path = (first.substringToIndex(1) == XcodebuildUtilities.PathSeparator) ? first as String : XcodebuildUtilities.PathSeparator + (first as String)
             if llvmCovArguments.verbose {
                 print("Checking \(path)")
             }

@@ -1,8 +1,8 @@
 //
-//  ProfdataToCobertura.swift
-//  ProfdataToCobertura
+//  XCTestsToJUnitRunner.swift
+//  XcodebuildUtilities
 //
-//  Created by Douglas Sjoquist on 1/5/16.
+//  Created by Douglas Sjoquist on 2/1/16.
 //  Copyright © 2016 Ivy Gulch. All rights reserved.
 //
 
@@ -10,55 +10,10 @@ import Foundation
 
 enum RunMode {
     case Invalid
-    case LLVMCov
     case InputFile
 }
 
-struct LLVMCovArguments {
-    let binaryPath:String?
-    let profdataPath:String?
-    let inputFilePath:String?
-    let sourcePath:String?
-    let outputPath:String?
-    let verbose:Bool
-
-    var runMode:RunMode {
-        get {
-            let haveLLVMCovParameters = (binaryPath != nil) && (profdataPath != nil)
-            let haveInputFileParameters = (inputFilePath != nil)
-            if haveLLVMCovParameters == haveInputFileParameters {
-                return .Invalid
-            } else if haveLLVMCovParameters {
-                return .LLVMCov
-            } else {
-                return .InputFile
-            }
-        }
-    }
-
-    var description: String {
-        return "LLVMCovArguments"
-            + "\n\trunMode=\(runMode)"
-            + "\n\tbinaryPath=\(binaryPath ?? "")"
-            + "\n\tprofdataPath=\(profdataPath ?? "")"
-            + "\n\tsourcePath=\(sourcePath ?? "")"
-            + "\n\toutputPath=\(outputPath ?? "")"
-            + "\n\tverbose=\(verbose)"
-    }
-}
-
-enum Result<T> {
-    case Success(T)
-    case Error(ErrorType)
-}
-
-struct ProfdataToCobertura {
-    static let PathSeparator = "/"
-    static let DefaultOutputPath = "coverage.xml"
-    static let ErrorDomain = "ProfdataToCobertura"
-}
-
-class Runner {
+class XCTestsToJUnitRunner {
 
     typealias NextArgFunction = (value:String) -> Void
 
@@ -153,7 +108,7 @@ class Runner {
         if errorData.length > 0 {
             let errorString = NSString(data: errorData, encoding: NSUTF8StringEncoding)!
             let errors = errorString.componentsSeparatedByString("\n") as [String]
-            let errorType = NSError(domain:ProfdataToCobertura.ErrorDomain, code:-1, userInfo: ["errors":errors])
+            let errorType = NSError(domain:XcodebuildUtilities.ErrorDomain, code:-1, userInfo: ["errors":errors])
             return Result.Error(errorType)
         }
 

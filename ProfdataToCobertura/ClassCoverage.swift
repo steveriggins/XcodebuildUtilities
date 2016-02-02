@@ -37,7 +37,7 @@ class ClassCoverage: Comparable {
         self.verbose = verbose
         self.path = path
         _lines = lines
-        var pathComponents = path.componentsSeparatedByString(ProfdataToCobertura.PathSeparator)
+        var pathComponents = path.componentsSeparatedByString(XcodebuildUtilities.PathSeparator)
         if pathComponents.first == "" {
             pathComponents.removeFirst()
         }

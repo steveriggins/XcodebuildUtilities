@@ -19,7 +19,7 @@
                BlueprintIdentifier = "F81E340A1C60455700D6C5ED"
                BuildableName = "ProfdataToCoberturaTests.xctest"
                BlueprintName = "ProfdataToCoberturaTests"
-               ReferencedContainer = "container:XcodebuildUtilties.xcodeproj">
+               ReferencedContainer = "container:XcodebuildUtilities.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

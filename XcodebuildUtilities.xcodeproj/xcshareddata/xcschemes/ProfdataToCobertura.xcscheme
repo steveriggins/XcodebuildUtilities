@@ -17,7 +17,7 @@
                BlueprintIdentifier = "F81E33FF1C60454300D6C5ED"
                BuildableName = "ProfdataToCobertura"
                BlueprintName = "ProfdataToCobertura"
-               ReferencedContainer = "container:XcodebuildUtilties.xcodeproj">
+               ReferencedContainer = "container:XcodebuildUtilities.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "F81E340A1C60455700D6C5ED"
                BuildableName = "ProfdataToCoberturaTests.xctest"
                BlueprintName = "ProfdataToCoberturaTests"
-               ReferencedContainer = "container:XcodebuildUtilties.xcodeproj">
+               ReferencedContainer = "container:XcodebuildUtilities.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "F81E33FF1C60454300D6C5ED"
             BuildableName = "ProfdataToCobertura"
             BlueprintName = "ProfdataToCobertura"
-            ReferencedContainer = "container:XcodebuildUtilties.xcodeproj">
+            ReferencedContainer = "container:XcodebuildUtilities.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,7 +68,7 @@
             BlueprintIdentifier = "F81E33FF1C60454300D6C5ED"
             BuildableName = "ProfdataToCobertura"
             BlueprintName = "ProfdataToCobertura"
-            ReferencedContainer = "container:XcodebuildUtilties.xcodeproj">
+            ReferencedContainer = "container:XcodebuildUtilities.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -87,7 +87,7 @@
             BlueprintIdentifier = "F81E33FF1C60454300D6C5ED"
             BuildableName = "ProfdataToCobertura"
             BlueprintName = "ProfdataToCobertura"
-            ReferencedContainer = "container:XcodebuildUtilties.xcodeproj">
+            ReferencedContainer = "container:XcodebuildUtilities.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
