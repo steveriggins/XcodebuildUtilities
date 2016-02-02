@@ -7,11 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F81E33F61C60450700D6C5ED /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E33F51C60450700D6C5ED /* main.swift */; };
+		F81E34031C60454300D6C5ED /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34021C60454300D6C5ED /* main.swift */; };
+		F81E340E1C60455800D6C5ED /* ProfdataToCoberturaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E340D1C60455800D6C5ED /* ProfdataToCoberturaTests.swift */; };
+		F81E34181C60457A00D6C5ED /* ClassCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34131C60457A00D6C5ED /* ClassCoverage.swift */; };
+		F81E34191C60457A00D6C5ED /* PackageCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34141C60457A00D6C5ED /* PackageCoverage.swift */; };
+		F81E341A1C60457A00D6C5ED /* ProfdataToCobertura.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34151C60457A00D6C5ED /* ProfdataToCobertura.swift */; };
+		F81E341B1C60457A00D6C5ED /* SummaryCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34161C60457A00D6C5ED /* SummaryCoverage.swift */; };
+		F81E34251C60458900D6C5ED /* FileCoverageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34231C60458900D6C5ED /* FileCoverageTests.swift */; };
+		F81E34261C60458900D6C5ED /* PackageCoverageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34241C60458900D6C5ED /* PackageCoverageTests.swift */; };
+		F81E34271C6045F300D6C5ED /* ClassCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34131C60457A00D6C5ED /* ClassCoverage.swift */; };
+		F81E34281C6045F300D6C5ED /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34021C60454300D6C5ED /* main.swift */; };
+		F81E34291C6045F300D6C5ED /* PackageCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34141C60457A00D6C5ED /* PackageCoverage.swift */; };
+		F81E342A1C6045F300D6C5ED /* SummaryCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34161C60457A00D6C5ED /* SummaryCoverage.swift */; };
+		F81E342C1C6045F300D6C5ED /* ProfdataToCobertura.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34151C60457A00D6C5ED /* ProfdataToCobertura.swift */; };
+		F89030F71C60464B003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
+		F89030F81C604651003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F81E33F01C60450700D6C5ED /* CopyFiles */ = {
+		F81E33FE1C60454300D6C5ED /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +37,29 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F81E33F21C60450700D6C5ED /* XcodebuildUtilties */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XcodebuildUtilties; sourceTree = BUILT_PRODUCTS_DIR; };
-		F81E33F51C60450700D6C5ED /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F81E34001C60454300D6C5ED /* ProfdataToCobertura */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProfdataToCobertura; sourceTree = BUILT_PRODUCTS_DIR; };
+		F81E34021C60454300D6C5ED /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F81E340B1C60455800D6C5ED /* ProfdataToCoberturaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfdataToCoberturaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F81E340D1C60455800D6C5ED /* ProfdataToCoberturaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfdataToCoberturaTests.swift; sourceTree = "<group>"; };
+		F81E340F1C60455800D6C5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F81E34131C60457A00D6C5ED /* ClassCoverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassCoverage.swift; sourceTree = "<group>"; };
+		F81E34141C60457A00D6C5ED /* PackageCoverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageCoverage.swift; sourceTree = "<group>"; };
+		F81E34151C60457A00D6C5ED /* ProfdataToCobertura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfdataToCobertura.swift; sourceTree = "<group>"; };
+		F81E34161C60457A00D6C5ED /* SummaryCoverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryCoverage.swift; sourceTree = "<group>"; };
+		F81E34231C60458900D6C5ED /* FileCoverageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileCoverageTests.swift; sourceTree = "<group>"; };
+		F81E34241C60458900D6C5ED /* PackageCoverageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageCoverageTests.swift; sourceTree = "<group>"; };
+		F89030F61C60464B003CE5EE /* XMLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMLExtensions.swift; path = XcodebuildUtilties/XMLExtensions.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F81E33EF1C60450700D6C5ED /* Frameworks */ = {
+		F81E33FD1C60454300D6C5ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F81E34081C60455700D6C5ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +72,9 @@
 		F81E33E91C60450700D6C5ED = {
 			isa = PBXGroup;
 			children = (
-				F81E33F41C60450700D6C5ED /* XcodebuildUtilties */,
+				F81E342D1C6045FD00D6C5ED /* XcodebuildUtiltiesShared */,
+				F81E34011C60454300D6C5ED /* ProfdataToCobertura */,
+				F81E340C1C60455800D6C5ED /* ProfdataToCoberturaTests */,
 				F81E33F31C60450700D6C5ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,38 +82,79 @@
 		F81E33F31C60450700D6C5ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F81E33F21C60450700D6C5ED /* XcodebuildUtilties */,
+				F81E34001C60454300D6C5ED /* ProfdataToCobertura */,
+				F81E340B1C60455800D6C5ED /* ProfdataToCoberturaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F81E33F41C60450700D6C5ED /* XcodebuildUtilties */ = {
+		F81E34011C60454300D6C5ED /* ProfdataToCobertura */ = {
 			isa = PBXGroup;
 			children = (
-				F81E33F51C60450700D6C5ED /* main.swift */,
+				F81E34131C60457A00D6C5ED /* ClassCoverage.swift */,
+				F81E34141C60457A00D6C5ED /* PackageCoverage.swift */,
+				F81E34151C60457A00D6C5ED /* ProfdataToCobertura.swift */,
+				F81E34161C60457A00D6C5ED /* SummaryCoverage.swift */,
+				F81E34021C60454300D6C5ED /* main.swift */,
 			);
-			path = XcodebuildUtilties;
+			path = ProfdataToCobertura;
+			sourceTree = "<group>";
+		};
+		F81E340C1C60455800D6C5ED /* ProfdataToCoberturaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F81E34231C60458900D6C5ED /* FileCoverageTests.swift */,
+				F81E34241C60458900D6C5ED /* PackageCoverageTests.swift */,
+				F81E340D1C60455800D6C5ED /* ProfdataToCoberturaTests.swift */,
+				F81E340F1C60455800D6C5ED /* Info.plist */,
+			);
+			path = ProfdataToCoberturaTests;
+			sourceTree = "<group>";
+		};
+		F81E342D1C6045FD00D6C5ED /* XcodebuildUtiltiesShared */ = {
+			isa = PBXGroup;
+			children = (
+				F89030F61C60464B003CE5EE /* XMLExtensions.swift */,
+			);
+			path = XcodebuildUtiltiesShared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F81E33F11C60450700D6C5ED /* XcodebuildUtilties */ = {
+		F81E33FF1C60454300D6C5ED /* ProfdataToCobertura */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F81E33F91C60450700D6C5ED /* Build configuration list for PBXNativeTarget "XcodebuildUtilties" */;
+			buildConfigurationList = F81E34041C60454300D6C5ED /* Build configuration list for PBXNativeTarget "ProfdataToCobertura" */;
 			buildPhases = (
-				F81E33EE1C60450700D6C5ED /* Sources */,
-				F81E33EF1C60450700D6C5ED /* Frameworks */,
-				F81E33F01C60450700D6C5ED /* CopyFiles */,
+				F81E33FC1C60454300D6C5ED /* Sources */,
+				F81E33FD1C60454300D6C5ED /* Frameworks */,
+				F81E33FE1C60454300D6C5ED /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = XcodebuildUtilties;
-			productName = XcodebuildUtilties;
-			productReference = F81E33F21C60450700D6C5ED /* XcodebuildUtilties */;
+			name = ProfdataToCobertura;
+			productName = ProfdataToCobertura;
+			productReference = F81E34001C60454300D6C5ED /* ProfdataToCobertura */;
 			productType = "com.apple.product-type.tool";
+		};
+		F81E340A1C60455700D6C5ED /* ProfdataToCoberturaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F81E34101C60455800D6C5ED /* Build configuration list for PBXNativeTarget "ProfdataToCoberturaTests" */;
+			buildPhases = (
+				F81E34071C60455700D6C5ED /* Sources */,
+				F81E34081C60455700D6C5ED /* Frameworks */,
+				F81E34091C60455700D6C5ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProfdataToCoberturaTests;
+			productName = ProfdataToCoberturaTests;
+			productReference = F81E340B1C60455800D6C5ED /* ProfdataToCoberturaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,7 +166,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Ivy Gulch";
 				TargetAttributes = {
-					F81E33F11C60450700D6C5ED = {
+					F81E33FF1C60454300D6C5ED = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					F81E340A1C60455700D6C5ED = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -109,17 +186,49 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F81E33F11C60450700D6C5ED /* XcodebuildUtilties */,
+				F81E33FF1C60454300D6C5ED /* ProfdataToCobertura */,
+				F81E340A1C60455700D6C5ED /* ProfdataToCoberturaTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		F81E34091C60455700D6C5ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		F81E33EE1C60450700D6C5ED /* Sources */ = {
+		F81E33FC1C60454300D6C5ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F81E33F61C60450700D6C5ED /* main.swift in Sources */,
+				F81E34191C60457A00D6C5ED /* PackageCoverage.swift in Sources */,
+				F89030F71C60464B003CE5EE /* XMLExtensions.swift in Sources */,
+				F81E34181C60457A00D6C5ED /* ClassCoverage.swift in Sources */,
+				F81E34031C60454300D6C5ED /* main.swift in Sources */,
+				F81E341A1C60457A00D6C5ED /* ProfdataToCobertura.swift in Sources */,
+				F81E341B1C60457A00D6C5ED /* SummaryCoverage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F81E34071C60455700D6C5ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81E34291C6045F300D6C5ED /* PackageCoverage.swift in Sources */,
+				F89030F81C604651003CE5EE /* XMLExtensions.swift in Sources */,
+				F81E34271C6045F300D6C5ED /* ClassCoverage.swift in Sources */,
+				F81E342A1C6045F300D6C5ED /* SummaryCoverage.swift in Sources */,
+				F81E34281C6045F300D6C5ED /* main.swift in Sources */,
+				F81E34251C60458900D6C5ED /* FileCoverageTests.swift in Sources */,
+				F81E34261C60458900D6C5ED /* PackageCoverageTests.swift in Sources */,
+				F81E340E1C60455800D6C5ED /* ProfdataToCoberturaTests.swift in Sources */,
+				F81E342C1C6045F300D6C5ED /* ProfdataToCobertura.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,16 +315,38 @@
 			};
 			name = Release;
 		};
-		F81E33FA1C60450700D6C5ED /* Debug */ = {
+		F81E34051C60454300D6C5ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		F81E33FB1C60450700D6C5ED /* Release */ = {
+		F81E34061C60454300D6C5ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F81E34111C60455800D6C5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ProfdataToCoberturaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivygulch.ProfdataToCoberturaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F81E34121C60455800D6C5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ProfdataToCoberturaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivygulch.ProfdataToCoberturaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -232,13 +363,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F81E33F91C60450700D6C5ED /* Build configuration list for PBXNativeTarget "XcodebuildUtilties" */ = {
+		F81E34041C60454300D6C5ED /* Build configuration list for PBXNativeTarget "ProfdataToCobertura" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F81E33FA1C60450700D6C5ED /* Debug */,
-				F81E33FB1C60450700D6C5ED /* Release */,
+				F81E34051C60454300D6C5ED /* Debug */,
+				F81E34061C60454300D6C5ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F81E34101C60455800D6C5ED /* Build configuration list for PBXNativeTarget "ProfdataToCoberturaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F81E34111C60455800D6C5ED /* Debug */,
+				F81E34121C60455800D6C5ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
