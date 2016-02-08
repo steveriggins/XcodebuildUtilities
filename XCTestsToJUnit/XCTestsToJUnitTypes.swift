@@ -77,9 +77,9 @@ enum LineType {
             }
             return nil
         case ("Test Case ", _, "started."):
-//            if let (suiteName, caseName) = parseTestCaseName(namePiece) {
-//                return LineType.CaseStarted(suiteName,caseName)
-//            }
+            if let (suiteName, caseName) = parseTestCaseName(namePiece) {
+                return LineType.CaseStarted(suiteName,caseName)
+            }
             return nil
         case ("Test Case ", _, "failed"):
             if let (suiteName, caseName) = parseTestCaseName(namePiece), duration = parseDuration(resultPiece2) {
