@@ -24,13 +24,19 @@ extension String {
                 print("Checking \(path)")
             }
 
-            if let sourcePath = llvmCovArguments.sourcePath {
-                if path.hasPrefix(sourcePath) {
+            if let sourcePath = llvmCovArguments.sourcePath,
+                sourcePathURL = NSURL(fileURLWithPath: sourcePath).URLByStandardizingPath?.URLByResolvingSymlinksInPath,
+                pathURL = NSURL(fileURLWithPath: path).URLByStandardizingPath?.URLByResolvingSymlinksInPath {
+
+                    let pathURLString = pathURL.absoluteString
+                    let sourcePathURLString = sourcePathURL.absoluteString
+
+                if pathURLString.hasPrefix(sourcePathURLString) {
                     if llvmCovArguments.verbose {
-                        print("Processing \(path)")
+                        print("Processing \(pathURLString)")
                     }
-                    var startIndex = path.startIndex
-                    startIndex = startIndex.advancedBy(sourcePath.startIndex.distanceTo(sourcePath.endIndex)+1)
+                    var startIndex = pathURLString.startIndex
+                    startIndex = startIndex.advancedBy(sourcePathURLString.startIndex.distanceTo(sourcePathURLString.endIndex)+1)
                     path = path.substringWithRange(Range(start:startIndex, end:path.endIndex.predecessor()))
 
                     groupLines.removeAtIndex(0) // remove path
