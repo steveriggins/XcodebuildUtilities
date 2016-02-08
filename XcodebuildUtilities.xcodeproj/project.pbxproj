@@ -46,8 +46,8 @@
 		F834CE461C624C2F00630736 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F834CE411C6247C200630736 /* String+Extensions.swift */; };
 		F89030F71C60464B003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
 		F89030F81C604651003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
+		F8D5BAD51C6851790083F658 /* XCTestCaseResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5BAD31C684EB70083F658 /* XCTestCaseResultTests.swift */; };
 		F8F08F841C604875003349A2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F831C604875003349A2 /* main.swift */; };
-		F8F08F8F1C604884003349A2 /* XCTestsToJUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F8E1C604884003349A2 /* XCTestsToJUnitTests.swift */; };
 		F8F08F951C60490B003349A2 /* XCTestsToJUnitRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F941C60490B003349A2 /* XCTestsToJUnitRunner.swift */; };
 		F8F08F961C604910003349A2 /* XCTestsToJUnitRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F941C60490B003349A2 /* XCTestsToJUnitRunner.swift */; };
 		F8F08F981C604946003349A2 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F971C604946003349A2 /* SharedTypes.swift */; };
@@ -101,10 +101,10 @@
 		F834CE411C6247C200630736 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F834CE441C624BE100630736 /* String+ExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ExtensionTests.swift"; sourceTree = "<group>"; };
 		F89030F61C60464B003CE5EE /* XMLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMLExtensions.swift; path = XcodebuildUtilities/XMLExtensions.swift; sourceTree = SOURCE_ROOT; };
+		F8D5BAD31C684EB70083F658 /* XCTestCaseResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseResultTests.swift; sourceTree = "<group>"; };
 		F8F08F811C604875003349A2 /* XCTestsToJUnit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XCTestsToJUnit; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F08F831C604875003349A2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F8F08F8C1C604884003349A2 /* XCTestsToJUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCTestsToJUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8F08F8E1C604884003349A2 /* XCTestsToJUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestsToJUnitTests.swift; sourceTree = "<group>"; };
 		F8F08F901C604884003349A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8F08F941C60490B003349A2 /* XCTestsToJUnitRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestsToJUnitRunner.swift; sourceTree = "<group>"; };
 		F8F08F971C604946003349A2 /* SharedTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTypes.swift; sourceTree = "<group>"; };
@@ -235,8 +235,8 @@
 		F8F08F8D1C604884003349A2 /* XCTestsToJUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				F8F08F8E1C604884003349A2 /* XCTestsToJUnitTests.swift */,
 				F834CE3F1C61723200630736 /* XCTestsToJUnitTypesTests.swift */,
+				F8D5BAD31C684EB70083F658 /* XCTestCaseResultTests.swift */,
 				F8F08F901C604884003349A2 /* Info.plist */,
 			);
 			path = XCTestsToJUnitTests;
@@ -477,8 +477,8 @@
 				F834CE331C6144AE00630736 /* FileReader.swift in Sources */,
 				F8F08F961C604910003349A2 /* XCTestsToJUnitRunner.swift in Sources */,
 				F834CE311C6144AE00630736 /* XMLExtensions.swift in Sources */,
+				F8D5BAD51C6851790083F658 /* XCTestCaseResultTests.swift in Sources */,
 				F834CE391C61566600630736 /* XCTestSummaryResult.swift in Sources */,
-				F8F08F8F1C604884003349A2 /* XCTestsToJUnitTests.swift in Sources */,
 				F834CE3B1C61566600630736 /* XCTestCaseResult.swift in Sources */,
 				F834CE3E1C61720B00630736 /* XCTestsToJUnitTypes.swift in Sources */,
 			);

@@ -10,7 +10,10 @@ import Foundation
 
 class XCTestCaseResult {
     let testSuite:XCTestSuiteResult
-    let className:String
+    var suiteName:String {
+        return self.testSuite.suiteName
+    }
+    let methodName:String
 
     var log:[String] {
         return _log
@@ -23,9 +26,9 @@ class XCTestCaseResult {
     private var _log:[String] = []
     private var _errors:[String] = []
     
-    init(testSuite:XCTestSuiteResult, className:String) {
+    init(testSuite:XCTestSuiteResult, methodName:String) {
         self.testSuite = testSuite
-        self.className = className
+        self.methodName = methodName
     }
 
     func processLog(line:String) {
