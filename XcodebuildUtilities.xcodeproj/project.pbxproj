@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F816238A1C6050D600FD7521 /* XCTestSummaryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81623891C6050D600FD7521 /* XCTestSummaryResult.swift */; };
+		F816238C1C60511400FD7521 /* XCTestSuiteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F816238B1C60511400FD7521 /* XCTestSuiteResult.swift */; };
+		F816238E1C60511A00FD7521 /* XCTestCaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F816238D1C60511A00FD7521 /* XCTestCaseResult.swift */; };
+		F81623931C61176100FD7521 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81623921C61176100FD7521 /* FileReader.swift */; };
+		F81623941C61176100FD7521 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81623921C61176100FD7521 /* FileReader.swift */; };
+		F81623951C61176100FD7521 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81623921C61176100FD7521 /* FileReader.swift */; };
 		F81E34031C60454300D6C5ED /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34021C60454300D6C5ED /* main.swift */; };
 		F81E340E1C60455800D6C5ED /* ProfdataToCoberturaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E340D1C60455800D6C5ED /* ProfdataToCoberturaTests.swift */; };
 		F81E34181C60457A00D6C5ED /* ClassCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34131C60457A00D6C5ED /* ClassCoverage.swift */; };
@@ -20,6 +26,24 @@
 		F81E34291C6045F300D6C5ED /* PackageCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34141C60457A00D6C5ED /* PackageCoverage.swift */; };
 		F81E342A1C6045F300D6C5ED /* SummaryCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34161C60457A00D6C5ED /* SummaryCoverage.swift */; };
 		F81E342C1C6045F300D6C5ED /* ProfdataToCoberturaRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81E34151C60457A00D6C5ED /* ProfdataToCoberturaRunner.swift */; };
+		F834CE2D1C6144A800630736 /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
+		F834CE2E1C6144A800630736 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F971C604946003349A2 /* SharedTypes.swift */; };
+		F834CE2F1C6144A800630736 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81623921C61176100FD7521 /* FileReader.swift */; };
+		F834CE311C6144AE00630736 /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
+		F834CE321C6144AE00630736 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F971C604946003349A2 /* SharedTypes.swift */; };
+		F834CE331C6144AE00630736 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81623921C61176100FD7521 /* FileReader.swift */; };
+		F834CE341C6144AE00630736 /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
+		F834CE361C6144C200630736 /* FileReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F834CE351C6144C200630736 /* FileReaderTests.swift */; };
+		F834CE391C61566600630736 /* XCTestSummaryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81623891C6050D600FD7521 /* XCTestSummaryResult.swift */; };
+		F834CE3A1C61566600630736 /* XCTestSuiteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F816238B1C60511400FD7521 /* XCTestSuiteResult.swift */; };
+		F834CE3B1C61566600630736 /* XCTestCaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F816238D1C60511A00FD7521 /* XCTestCaseResult.swift */; };
+		F834CE3D1C61720B00630736 /* XCTestsToJUnitTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F834CE3C1C61720B00630736 /* XCTestsToJUnitTypes.swift */; };
+		F834CE3E1C61720B00630736 /* XCTestsToJUnitTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F834CE3C1C61720B00630736 /* XCTestsToJUnitTypes.swift */; };
+		F834CE401C61723200630736 /* XCTestsToJUnitTypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F834CE3F1C61723200630736 /* XCTestsToJUnitTypesTests.swift */; };
+		F834CE421C6247C200630736 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F834CE411C6247C200630736 /* String+Extensions.swift */; };
+		F834CE431C6247C200630736 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F834CE411C6247C200630736 /* String+Extensions.swift */; };
+		F834CE451C624BE100630736 /* String+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F834CE441C624BE100630736 /* String+ExtensionTests.swift */; };
+		F834CE461C624C2F00630736 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F834CE411C6247C200630736 /* String+Extensions.swift */; };
 		F89030F71C60464B003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
 		F89030F81C604651003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
 		F8F08F841C604875003349A2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F831C604875003349A2 /* main.swift */; };
@@ -29,7 +53,6 @@
 		F8F08F981C604946003349A2 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F971C604946003349A2 /* SharedTypes.swift */; };
 		F8F08F991C604946003349A2 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F971C604946003349A2 /* SharedTypes.swift */; };
 		F8F08F9A1C604946003349A2 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F971C604946003349A2 /* SharedTypes.swift */; };
-		F8F08F9B1C604946003349A2 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F971C604946003349A2 /* SharedTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +77,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F81623891C6050D600FD7521 /* XCTestSummaryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestSummaryResult.swift; sourceTree = "<group>"; };
+		F816238B1C60511400FD7521 /* XCTestSuiteResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestSuiteResult.swift; sourceTree = "<group>"; };
+		F816238D1C60511A00FD7521 /* XCTestCaseResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseResult.swift; sourceTree = "<group>"; };
+		F81623911C61082C00FD7521 /* sample_xcodebuild_output.log */ = {isa = PBXFileReference; lastKnownFileType = text; name = sample_xcodebuild_output.log; path = XCTestsToJUnitTests/sample_xcodebuild_output.log; sourceTree = SOURCE_ROOT; };
+		F81623921C61176100FD7521 /* FileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
 		F81E34001C60454300D6C5ED /* ProfdataToCobertura */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProfdataToCobertura; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81E34021C60454300D6C5ED /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F81E340B1C60455800D6C5ED /* ProfdataToCoberturaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfdataToCoberturaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +93,13 @@
 		F81E34161C60457A00D6C5ED /* SummaryCoverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryCoverage.swift; sourceTree = "<group>"; };
 		F81E34231C60458900D6C5ED /* FileCoverageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileCoverageTests.swift; sourceTree = "<group>"; };
 		F81E34241C60458900D6C5ED /* PackageCoverageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageCoverageTests.swift; sourceTree = "<group>"; };
+		F834CE251C61449C00630736 /* XcodebuildUtilitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodebuildUtilitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F834CE291C61449C00630736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F834CE351C6144C200630736 /* FileReaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileReaderTests.swift; sourceTree = "<group>"; };
+		F834CE3C1C61720B00630736 /* XCTestsToJUnitTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestsToJUnitTypes.swift; sourceTree = "<group>"; };
+		F834CE3F1C61723200630736 /* XCTestsToJUnitTypesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestsToJUnitTypesTests.swift; sourceTree = "<group>"; };
+		F834CE411C6247C200630736 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F834CE441C624BE100630736 /* String+ExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ExtensionTests.swift"; sourceTree = "<group>"; };
 		F89030F61C60464B003CE5EE /* XMLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMLExtensions.swift; path = XcodebuildUtilities/XMLExtensions.swift; sourceTree = SOURCE_ROOT; };
 		F8F08F811C604875003349A2 /* XCTestsToJUnit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XCTestsToJUnit; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F08F831C604875003349A2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -84,6 +119,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F81E34081C60455700D6C5ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F834CE221C61449C00630736 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -111,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				F81E342D1C6045FD00D6C5ED /* XcodebuildUtilitiesShared */,
+				F834CE261C61449C00630736 /* XcodebuildUtilitiesTests */,
 				F81E34011C60454300D6C5ED /* ProfdataToCobertura */,
 				F81E340C1C60455800D6C5ED /* ProfdataToCoberturaTests */,
 				F8F08F821C604875003349A2 /* XCTestsToJUnit */,
@@ -126,6 +169,7 @@
 				F81E340B1C60455800D6C5ED /* ProfdataToCoberturaTests.xctest */,
 				F8F08F811C604875003349A2 /* XCTestsToJUnit */,
 				F8F08F8C1C604884003349A2 /* XCTestsToJUnitTests.xctest */,
+				F834CE251C61449C00630736 /* XcodebuildUtilitiesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,16 +202,32 @@
 			children = (
 				F89030F61C60464B003CE5EE /* XMLExtensions.swift */,
 				F8F08F971C604946003349A2 /* SharedTypes.swift */,
+				F81623921C61176100FD7521 /* FileReader.swift */,
+				F834CE411C6247C200630736 /* String+Extensions.swift */,
 			);
-			name = XcodebuildUtilitiesShared;
 			path = XcodebuildUtilitiesShared;
+			sourceTree = "<group>";
+		};
+		F834CE261C61449C00630736 /* XcodebuildUtilitiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F834CE351C6144C200630736 /* FileReaderTests.swift */,
+				F834CE441C624BE100630736 /* String+ExtensionTests.swift */,
+				F834CE291C61449C00630736 /* Info.plist */,
+			);
+			path = XcodebuildUtilitiesTests;
 			sourceTree = "<group>";
 		};
 		F8F08F821C604875003349A2 /* XCTestsToJUnit */ = {
 			isa = PBXGroup;
 			children = (
+				F81623911C61082C00FD7521 /* sample_xcodebuild_output.log */,
 				F8F08F831C604875003349A2 /* main.swift */,
+				F834CE3C1C61720B00630736 /* XCTestsToJUnitTypes.swift */,
 				F8F08F941C60490B003349A2 /* XCTestsToJUnitRunner.swift */,
+				F81623891C6050D600FD7521 /* XCTestSummaryResult.swift */,
+				F816238B1C60511400FD7521 /* XCTestSuiteResult.swift */,
+				F816238D1C60511A00FD7521 /* XCTestCaseResult.swift */,
 			);
 			path = XCTestsToJUnit;
 			sourceTree = "<group>";
@@ -176,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				F8F08F8E1C604884003349A2 /* XCTestsToJUnitTests.swift */,
+				F834CE3F1C61723200630736 /* XCTestsToJUnitTypesTests.swift */,
 				F8F08F901C604884003349A2 /* Info.plist */,
 			);
 			path = XCTestsToJUnitTests;
@@ -216,6 +277,23 @@
 			name = ProfdataToCoberturaTests;
 			productName = ProfdataToCoberturaTests;
 			productReference = F81E340B1C60455800D6C5ED /* ProfdataToCoberturaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F834CE241C61449C00630736 /* XcodebuildUtilitiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F834CE2C1C61449C00630736 /* Build configuration list for PBXNativeTarget "XcodebuildUtilitiesTests" */;
+			buildPhases = (
+				F834CE211C61449C00630736 /* Sources */,
+				F834CE221C61449C00630736 /* Frameworks */,
+				F834CE231C61449C00630736 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XcodebuildUtilitiesTests;
+			productName = XcodebuildUtilitiesTests;
+			productReference = F834CE251C61449C00630736 /* XcodebuildUtilitiesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		F8F08F801C604875003349A2 /* XCTestsToJUnit */ = {
@@ -268,6 +346,9 @@
 					F81E340A1C60455700D6C5ED = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					F834CE241C61449C00630736 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					F8F08F801C604875003349A2 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -292,12 +373,20 @@
 				F81E340A1C60455700D6C5ED /* ProfdataToCoberturaTests */,
 				F8F08F801C604875003349A2 /* XCTestsToJUnit */,
 				F8F08F8B1C604884003349A2 /* XCTestsToJUnitTests */,
+				F834CE241C61449C00630736 /* XcodebuildUtilitiesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F81E34091C60455700D6C5ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F834CE231C61449C00630736 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,6 +413,7 @@
 				F8F08F981C604946003349A2 /* SharedTypes.swift in Sources */,
 				F81E34031C60454300D6C5ED /* main.swift in Sources */,
 				F81E341A1C60457A00D6C5ED /* ProfdataToCoberturaRunner.swift in Sources */,
+				F81623931C61176100FD7521 /* FileReader.swift in Sources */,
 				F81E341B1C60457A00D6C5ED /* SummaryCoverage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,11 +427,25 @@
 				F81E34271C6045F300D6C5ED /* ClassCoverage.swift in Sources */,
 				F81E342A1C6045F300D6C5ED /* SummaryCoverage.swift in Sources */,
 				F81E34281C6045F300D6C5ED /* main.swift in Sources */,
+				F81623941C61176100FD7521 /* FileReader.swift in Sources */,
 				F81E34251C60458900D6C5ED /* FileCoverageTests.swift in Sources */,
 				F81E34261C60458900D6C5ED /* PackageCoverageTests.swift in Sources */,
 				F81E340E1C60455800D6C5ED /* ProfdataToCoberturaTests.swift in Sources */,
 				F8F08F991C604946003349A2 /* SharedTypes.swift in Sources */,
 				F81E342C1C6045F300D6C5ED /* ProfdataToCoberturaRunner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F834CE211C61449C00630736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F834CE2E1C6144A800630736 /* SharedTypes.swift in Sources */,
+				F834CE361C6144C200630736 /* FileReaderTests.swift in Sources */,
+				F834CE451C624BE100630736 /* String+ExtensionTests.swift in Sources */,
+				F834CE2F1C6144A800630736 /* FileReader.swift in Sources */,
+				F834CE461C624C2F00630736 /* String+Extensions.swift in Sources */,
+				F834CE2D1C6144A800630736 /* XMLExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +455,14 @@
 			files = (
 				F8F08F9A1C604946003349A2 /* SharedTypes.swift in Sources */,
 				F8F08F951C60490B003349A2 /* XCTestsToJUnitRunner.swift in Sources */,
+				F81623951C61176100FD7521 /* FileReader.swift in Sources */,
+				F816238C1C60511400FD7521 /* XCTestSuiteResult.swift in Sources */,
+				F816238E1C60511A00FD7521 /* XCTestCaseResult.swift in Sources */,
 				F8F08F841C604875003349A2 /* main.swift in Sources */,
+				F834CE421C6247C200630736 /* String+Extensions.swift in Sources */,
+				F816238A1C6050D600FD7521 /* XCTestSummaryResult.swift in Sources */,
+				F834CE341C6144AE00630736 /* XMLExtensions.swift in Sources */,
+				F834CE3D1C61720B00630736 /* XCTestsToJUnitTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,9 +470,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8F08F9B1C604946003349A2 /* SharedTypes.swift in Sources */,
+				F834CE431C6247C200630736 /* String+Extensions.swift in Sources */,
+				F834CE3A1C61566600630736 /* XCTestSuiteResult.swift in Sources */,
+				F834CE321C6144AE00630736 /* SharedTypes.swift in Sources */,
+				F834CE401C61723200630736 /* XCTestsToJUnitTypesTests.swift in Sources */,
+				F834CE331C6144AE00630736 /* FileReader.swift in Sources */,
 				F8F08F961C604910003349A2 /* XCTestsToJUnitRunner.swift in Sources */,
+				F834CE311C6144AE00630736 /* XMLExtensions.swift in Sources */,
+				F834CE391C61566600630736 /* XCTestSummaryResult.swift in Sources */,
 				F8F08F8F1C604884003349A2 /* XCTestsToJUnitTests.swift in Sources */,
+				F834CE3B1C61566600630736 /* XCTestCaseResult.swift in Sources */,
+				F834CE3E1C61720B00630736 /* XCTestsToJUnitTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +603,28 @@
 			};
 			name = Release;
 		};
+		F834CE2A1C61449C00630736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XcodebuildUtilitiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivygulch.XcodebuildUtilitiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F834CE2B1C61449C00630736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XcodebuildUtilitiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivygulch.XcodebuildUtilitiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F8F08F851C604875003349A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -550,6 +691,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		F834CE2C1C61449C00630736 /* Build configuration list for PBXNativeTarget "XcodebuildUtilitiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F834CE2A1C61449C00630736 /* Debug */,
+				F834CE2B1C61449C00630736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F8F08F871C604875003349A2 /* Build configuration list for PBXNativeTarget "XCTestsToJUnit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -557,6 +707,7 @@
 				F8F08F861C604875003349A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8F08F911C604884003349A2 /* Build configuration list for PBXNativeTarget "XCTestsToJUnitTests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +716,7 @@
 				F8F08F931C604884003349A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

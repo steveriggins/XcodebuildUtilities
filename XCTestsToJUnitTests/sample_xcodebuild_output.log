@@ -1,0 +1,1261 @@
+Test Suite 'All tests' started at 2016-02-01 10:25:04.387
+Test Suite 'ASDA-Tests.xctest' started at 2016-02-01 10:25:04.388
+Test Suite 'ASDAAddressBookModelTest' started at 2016-02-01 10:25:04.388
+Test Case '-[ASDAAddressBookModelTest testAddressBookModel]' started.
+Test Case '-[ASDAAddressBookModelTest testAddressBookModel]' passed (0.005 seconds).
+Test Case '-[ASDAAddressBookModelTest testQueryModel]' started.
+Test Case '-[ASDAAddressBookModelTest testQueryModel]' passed (0.001 seconds).
+Test Suite 'ASDAAddressBookModelTest' passed at 2016-02-01 10:25:04.396.
+Test Suite 'ASDAClockTest' started at 2016-02-01 10:25:04.396
+Test Case '-[ASDAClockTest testCurrentDateAfterSettingTestDate]' started.
+Test Case '-[ASDAClockTest testCurrentDateAfterSettingTestDate]' passed (0.501 seconds).
+Test Case '-[ASDAClockTest testCurrentDateWithoutSettingTestDate]' started.
+Test Case '-[ASDAClockTest testCurrentDateWithoutSettingTestDate]' passed (0.504 seconds).
+Test Case '-[ASDAClockTest testInitialTestDate]' started.
+Test Case '-[ASDAClockTest testInitialTestDate]' passed (0.000 seconds).
+Test Case '-[ASDAClockTest testSettingTestDate]' started.
+Test Case '-[ASDAClockTest testSettingTestDate]' passed (0.000 seconds).
+Test Case '-[ASDAClockTest testTestDateAfterIncrementing]' started.
+Test Case '-[ASDAClockTest testTestDateAfterIncrementing]' passed (0.000 seconds).
+Test Suite 'ASDAClockTest' passed at 2016-02-01 10:25:05.405.
+Test Suite 'ASDACreditCardModelTests' started at 2016-02-01 10:25:05.405
+Test Case '-[ASDACreditCardModelTests testThatCreditCardIsValid]' started.
+Test Case '-[ASDACreditCardModelTests testThatCreditCardIsValid]' passed (0.002 seconds).
+Test Case '-[ASDACreditCardModelTests testThatCreditCardModelWasInitedWithDictionary]' started.
+Test Case '-[ASDACreditCardModelTests testThatCreditCardModelWasInitedWithDictionary]' passed (0.001 seconds).
+Test Suite 'ASDACreditCardModelTests' passed at 2016-02-01 10:25:05.409.
+Test Suite 'ASDADynamicConfigurationTests' started at 2016-02-01 10:25:05.409
+Test Case '-[ASDADynamicConfigurationTests testDefaultValueApplyURL]' started.
+Test Case '-[ASDADynamicConfigurationTests testDefaultValueApplyURL]' passed (0.001 seconds).
+Test Case '-[ASDADynamicConfigurationTests testDefaultValueAPR]' started.
+Test Case '-[ASDADynamicConfigurationTests testDefaultValueAPR]' passed (0.000 seconds).
+Test Case '-[ASDADynamicConfigurationTests testDefaultValueCashbackBalanceURL]' started.
+Test Case '-[ASDADynamicConfigurationTests testDefaultValueCashbackBalanceURL]' passed (0.000 seconds).
+Test Case '-[ASDADynamicConfigurationTests testDefaultValueIconographyEnabled]' started.
+Test Case '-[ASDADynamicConfigurationTests testDefaultValueIconographyEnabled]' passed (0.000 seconds).
+Test Case '-[ASDADynamicConfigurationTests testDefaultValueNotificationCentreEnabled]' started.
+Test Case '-[ASDADynamicConfigurationTests testDefaultValueNotificationCentreEnabled]' passed (0.000 seconds).
+Test Case '-[ASDADynamicConfigurationTests testInitialValue]' started.
+Test Case '-[ASDADynamicConfigurationTests testInitialValue]' passed (0.001 seconds).
+Test Case '-[ASDADynamicConfigurationTests testLoadedValue]' started.
+Test Case '-[ASDADynamicConfigurationTests testLoadedValue]' passed (0.001 seconds).
+Test Case '-[ASDADynamicConfigurationTests testReloadAsynchronously]' started.
+Test Case '-[ASDADynamicConfigurationTests testReloadAsynchronously]' passed (0.001 seconds).
+Test Case '-[ASDADynamicConfigurationTests testSharedInstanceAutoLoading]' started.
+Test Case '-[ASDADynamicConfigurationTests testSharedInstanceAutoLoading]' passed (0.001 seconds).
+Test Suite 'ASDADynamicConfigurationTests' passed at 2016-02-01 10:25:05.419.
+Test Suite 'ASDAFavouritesModelTests' started at 2016-02-01 10:25:05.419
+Test Case '-[ASDAFavouritesModelTests testThatFavouritesItemsCorrectCount]' started.
+Test Case '-[ASDAFavouritesModelTests testThatFavouritesItemsCorrectCount]' passed (0.116 seconds).
+Test Case '-[ASDAFavouritesModelTests testThatPagingControllerCanBeInitedAndUpdatedFromPage]' started.
+Test Case '-[ASDAFavouritesModelTests testThatPagingControllerCanBeInitedAndUpdatedFromPage]' passed (0.115 seconds).
+Test Case '-[ASDAFavouritesModelTests testThatProductsPagesCanBeInitedByDictionary]' started.
+Test Case '-[ASDAFavouritesModelTests testThatProductsPagesCanBeInitedByDictionary]' passed (0.114 seconds).
+Test Suite 'ASDAFavouritesModelTests' passed at 2016-02-01 10:25:05.766.
+Test Suite 'ASDAGeofenceManagerTest' started at 2016-02-01 10:25:05.766
+Test Case '-[ASDAGeofenceManagerTest testAllStoresAvailableForGeofence]' started.
+Test Case '-[ASDAGeofenceManagerTest testAllStoresAvailableForGeofence]' passed (0.012 seconds).
+Test Case '-[ASDAGeofenceManagerTest testCustomRadiusForStore]' started.
+Test Case '-[ASDAGeofenceManagerTest testCustomRadiusForStore]' passed (0.001 seconds).
+Test Case '-[ASDAGeofenceManagerTest testOrderIsAfterPickupWindow]' started.
+Test Case '-[ASDAGeofenceManagerTest testOrderIsAfterPickupWindow]' passed (0.001 seconds).
+Test Case '-[ASDAGeofenceManagerTest testOrderIsBeforePickupWindow]' started.
+Test Case '-[ASDAGeofenceManagerTest testOrderIsBeforePickupWindow]' passed (0.001 seconds).
+Test Case '-[ASDAGeofenceManagerTest testOrderIsDuringPickupWindow]' started.
+Test Case '-[ASDAGeofenceManagerTest testOrderIsDuringPickupWindow]' passed (0.001 seconds).
+Test Case '-[ASDAGeofenceManagerTest testOrderWindowHasNotPassed]' started.
+Test Case '-[ASDAGeofenceManagerTest testOrderWindowHasNotPassed]' passed (0.001 seconds).
+Test Case '-[ASDAGeofenceManagerTest testOrderWindowHasPassed]' started.
+Test Case '-[ASDAGeofenceManagerTest testOrderWindowHasPassed]' passed (0.001 seconds).
+Test Case '-[ASDAGeofenceManagerTest testRadiusForStoreReturnsDefault]' started.
+Test Case '-[ASDAGeofenceManagerTest testRadiusForStoreReturnsDefault]' passed (0.001 seconds).
+Test Case '-[ASDAGeofenceManagerTest testStoreIsAvailableForGeofence]' started.
+Test Case '-[ASDAGeofenceManagerTest testStoreIsAvailableForGeofence]' passed (0.001 seconds).
+Test Case '-[ASDAGeofenceManagerTest testStoreIsNotAvailableForGeofence]' started.
+Test Case '-[ASDAGeofenceManagerTest testStoreIsNotAvailableForGeofence]' passed (0.001 seconds).
+Test Suite 'ASDAGeofenceManagerTest' passed at 2016-02-01 10:25:05.788.
+Test Suite 'ASDAMerchandisingModelTests' started at 2016-02-01 10:25:05.789
+Test Case '-[ASDAMerchandisingModelTests testThatBannersListCanBeInitedWithDictionary]' started.
+Test Case '-[ASDAMerchandisingModelTests testThatBannersListCanBeInitedWithDictionary]' passed (0.005 seconds).
+Test Suite 'ASDAMerchandisingModelTests' passed at 2016-02-01 10:25:05.794.
+Test Suite 'ASDAModelNotNilAndProperTypeServiceTest' started at 2016-02-01 10:25:05.795
+Test Case '-[ASDAModelNotNilAndProperTypeServiceTest testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[ASDAModelNotNilAndProperTypeServiceTest testDataObjectIsNotNilAndProperType]' passed (0.000 seconds).
+Test Suite 'ASDAModelNotNilAndProperTypeServiceTest' passed at 2016-02-01 10:25:05.796.
+Test Suite 'ASDANSDateFormatterCategoryTests' started at 2016-02-01 10:25:05.796
+Test Case '-[ASDANSDateFormatterCategoryTests test24hourFormats]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests test24hourFormats]' passed (0.002 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testCacheClearing]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testCacheClearing]' passed (0.000 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testCalendarIsStatic]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testCalendarIsStatic]' passed (0.000 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testCalendarLocale]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testCalendarLocale]' passed (0.000 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testCalendarTimeZone]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testCalendarTimeZone]' passed (0.000 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testFormatterCaching]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testFormatterCaching]' passed (0.000 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testFormatterLocale]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testFormatterLocale]' passed (0.000 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testFormatterRoundTrip]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testFormatterRoundTrip]' passed (0.001 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testFormattersUseEuropeLondon]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testFormattersUseEuropeLondon]' passed (0.000 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testLocaleIsStatic]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testLocaleIsStatic]' passed (0.000 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testNoSpanSlotEndParsing]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testNoSpanSlotEndParsing]' passed (0.002 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testNoSpanSlotStartParsing]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testNoSpanSlotStartParsing]' passed (0.001 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testSlotDateFormat]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testSlotDateFormat]' passed (0.000 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testTimezoneIsStatic]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testTimezoneIsStatic]' passed (0.000 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testTrolleyDateFormat]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testTrolleyDateFormat]' passed (0.000 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testWithAfterSpanSlotEndParsing]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testWithAfterSpanSlotEndParsing]' passed (0.001 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testWithAfterSpanSlotStartParsing]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testWithAfterSpanSlotStartParsing]' passed (0.001 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testWithBeforeSpanSlotEndParsing]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testWithBeforeSpanSlotEndParsing]' passed (0.001 seconds).
+Test Case '-[ASDANSDateFormatterCategoryTests testWithBeforeSpanSlotStartParsing]' started.
+Test Case '-[ASDANSDateFormatterCategoryTests testWithBeforeSpanSlotStartParsing]' passed (0.001 seconds).
+Test Suite 'ASDANSDateFormatterCategoryTests' passed at 2016-02-01 10:25:05.815.
+Test Suite 'ASDANSOperationQueueCategoryTests' started at 2016-02-01 10:25:05.815
+Test Case '-[ASDANSOperationQueueCategoryTests testCancelableCancelFirst]' started.
+Test Case '-[ASDANSOperationQueueCategoryTests testCancelableCancelFirst]' passed (1.072 seconds).
+Test Case '-[ASDANSOperationQueueCategoryTests testCancelableCancelFirstThenAddNew]' started.
+Test Case '-[ASDANSOperationQueueCategoryTests testCancelableCancelFirstThenAddNew]' passed (3.205 seconds).
+Test Case '-[ASDANSOperationQueueCategoryTests testCancelableDispatchOnMain]' started.
+Test Case '-[ASDANSOperationQueueCategoryTests testCancelableDispatchOnMain]' passed (0.000 seconds).
+Test Case '-[ASDANSOperationQueueCategoryTests testCancelableNoCancels]' started.
+Test Case '-[ASDANSOperationQueueCategoryTests testCancelableNoCancels]' passed (3.211 seconds).
+Test Suite 'ASDANSOperationQueueCategoryTests' passed at 2016-02-01 10:25:13.306.
+Test Suite 'ASDAOrderModelTests' started at 2016-02-01 10:25:13.307
+Test Case '-[ASDAOrderModelTests testOderDetailsPage]' started.
+Test Case '-[ASDAOrderModelTests testOderDetailsPage]' passed (0.024 seconds).
+Test Case '-[ASDAOrderModelTests testOrderAmendResponse]' started.
+Test Case '-[ASDAOrderModelTests testOrderAmendResponse]' passed (0.019 seconds).
+Test Case '-[ASDAOrderModelTests testOrderCancelResponse]' started.
+Test Case '-[ASDAOrderModelTests testOrderCancelResponse]' passed (0.019 seconds).
+Test Case '-[ASDAOrderModelTests testOrderPage]' started.
+Test Case '-[ASDAOrderModelTests testOrderPage]' passed (0.020 seconds).
+Test Suite 'ASDAOrderModelTests' passed at 2016-02-01 10:25:13.390.
+Test Suite 'ASDAPostcodeQueryModelTest' started at 2016-02-01 10:25:13.390
+Test Case '-[ASDAPostcodeQueryModelTest testPostcodeModel]' started.
+Test Case '-[ASDAPostcodeQueryModelTest testPostcodeModel]' passed (0.001 seconds).
+Test Suite 'ASDAPostcodeQueryModelTest' passed at 2016-02-01 10:25:13.391.
+Test Suite 'ASDAProductIconTests' started at 2016-02-01 10:25:13.392
+Test Case '-[ASDAProductIconTests testThatMultisaveProductHasCorrectPromoFields]' started.
+Test Case '-[ASDAProductIconTests testThatMultisaveProductHasCorrectPromoFields]' passed (0.000 seconds).
+Test Suite 'ASDAProductIconTests' passed at 2016-02-01 10:25:13.393.
+Test Suite 'ASDAProductModelTests' started at 2016-02-01 10:25:13.393
+Test Case '-[ASDAProductModelTests testAvailableProductHasReviewCount]' started.
+Test Case '-[ASDAProductModelTests testAvailableProductHasReviewCount]' passed (0.015 seconds).
+Test Case '-[ASDAProductModelTests testAvailableProductHasStarRating]' started.
+Test Case '-[ASDAProductModelTests testAvailableProductHasStarRating]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatAvailableProductExists]' started.
+Test Case '-[ASDAProductModelTests testThatAvailableProductExists]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatAvailableProductHasCIN]' started.
+Test Case '-[ASDAProductModelTests testThatAvailableProductHasCIN]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatAvailableProductHasImageURL]' started.
+Test Case '-[ASDAProductModelTests testThatAvailableProductHasImageURL]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatAvailableProductHasMaxQty]' started.
+Test Case '-[ASDAProductModelTests testThatAvailableProductHasMaxQty]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatAvailableProductHasPrice]' started.
+Test Case '-[ASDAProductModelTests testThatAvailableProductHasPrice]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatAvailableProductHasPricePerUnitOfMeasure]' started.
+Test Case '-[ASDAProductModelTests testThatAvailableProductHasPricePerUnitOfMeasure]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatAvailableProductHasWeight]' started.
+Test Case '-[ASDAProductModelTests testThatAvailableProductHasWeight]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatAvailableProductIsAvailable]' started.
+Test Case '-[ASDAProductModelTests testThatAvailableProductIsAvailable]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatAvailableProductIsMethodCounted]' started.
+Test Case '-[ASDAProductModelTests testThatAvailableProductIsMethodCounted]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatBothProductExists]' started.
+Test Case '-[ASDAProductModelTests testThatBothProductExists]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatBothProductHasAverageWeight]' started.
+Test Case '-[ASDAProductModelTests testThatBothProductHasAverageWeight]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatBothProductIsMethodBoth]' started.
+Test Case '-[ASDAProductModelTests testThatBothProductIsMethodBoth]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatEachProductExists]' started.
+Test Case '-[ASDAProductModelTests testThatEachProductExists]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatMultisaveProductHasCorrectPromoFields]' started.
+Test Case '-[ASDAProductModelTests testThatMultisaveProductHasCorrectPromoFields]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatProductsHaveIDAndName]' started.
+Test Case '-[ASDAProductModelTests testThatProductsHaveIDAndName]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatRollbackProductHasCorrectPromoFields]' started.
+Test Case '-[ASDAProductModelTests testThatRollbackProductHasCorrectPromoFields]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatSpecialOfferProductHasWasPrice]' started.
+Test Case '-[ASDAProductModelTests testThatSpecialOfferProductHasWasPrice]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatUnavailableProductExists]' started.
+Test Case '-[ASDAProductModelTests testThatUnavailableProductExists]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testThatUnvailableProductIsUnvailable]' started.
+Test Case '-[ASDAProductModelTests testThatUnvailableProductIsUnvailable]' passed (0.014 seconds).
+Test Case '-[ASDAProductModelTests testUnavailableProductHasNoStarRating]' started.
+Test Case '-[ASDAProductModelTests testUnavailableProductHasNoStarRating]' passed (0.014 seconds).
+Test Suite 'ASDAProductModelTests' passed at 2016-02-01 10:25:13.707.
+Test Suite 'ASDAProductReviewFlagAsHelpful_negative' started at 2016-02-01 10:25:13.708
+Test Case '-[ASDAProductReviewFlagAsHelpful_negative testBinaryResponse]' started.
+Test Case '-[ASDAProductReviewFlagAsHelpful_negative testBinaryResponse]' passed (0.034 seconds).
+Test Suite 'ASDAProductReviewFlagAsHelpful_negative' passed at 2016-02-01 10:25:13.742.
+Test Suite 'ASDAProductReviewFlagAsHelpful_positive' started at 2016-02-01 10:25:13.742
+Test Case '-[ASDAProductReviewFlagAsHelpful_positive testBinaryResponse]' started.
+Test Case '-[ASDAProductReviewFlagAsHelpful_positive testBinaryResponse]' passed (0.001 seconds).
+Test Suite 'ASDAProductReviewFlagAsHelpful_positive' passed at 2016-02-01 10:25:13.743.
+Test Suite 'ASDAProductReviewFlagAsInappropriate_failure' started at 2016-02-01 10:25:13.744
+Test Case '-[ASDAProductReviewFlagAsInappropriate_failure testBinaryResponse]' started.
+Test Case '-[ASDAProductReviewFlagAsInappropriate_failure testBinaryResponse]' passed (0.005 seconds).
+Test Suite 'ASDAProductReviewFlagAsInappropriate_failure' passed at 2016-02-01 10:25:13.749.
+Test Suite 'ASDAProductReviewFlagAsInappropriate_success' started at 2016-02-01 10:25:13.750
+Test Case '-[ASDAProductReviewFlagAsInappropriate_success testBinaryResponse]' started.
+Test Case '-[ASDAProductReviewFlagAsInappropriate_success testBinaryResponse]' passed (0.001 seconds).
+Test Suite 'ASDAProductReviewFlagAsInappropriate_success' passed at 2016-02-01 10:25:13.751.
+Test Suite 'ASDAProductReviewPageTests' started at 2016-02-01 10:25:13.751
+Test Case '-[ASDAProductReviewPageTests testEndIndex]' started.
+Test Case '-[ASDAProductReviewPageTests testEndIndex]' passed (0.018 seconds).
+Test Case '-[ASDAProductReviewPageTests testNumberOfPages]' started.
+Test Case '-[ASDAProductReviewPageTests testNumberOfPages]' passed (0.017 seconds).
+Test Case '-[ASDAProductReviewPageTests testPageNumber]' started.
+Test Case '-[ASDAProductReviewPageTests testPageNumber]' passed (0.017 seconds).
+Test Case '-[ASDAProductReviewPageTests testPageSize]' started.
+Test Case '-[ASDAProductReviewPageTests testPageSize]' passed (0.017 seconds).
+Test Case '-[ASDAProductReviewPageTests testReviewsCount]' started.
+Test Case '-[ASDAProductReviewPageTests testReviewsCount]' passed (0.017 seconds).
+Test Case '-[ASDAProductReviewPageTests testStartIndex]' started.
+Test Case '-[ASDAProductReviewPageTests testStartIndex]' passed (0.017 seconds).
+Test Suite 'ASDAProductReviewPageTests' passed at 2016-02-01 10:25:13.857.
+Test Suite 'ASDAProductReviewTests' started at 2016-02-01 10:25:13.857
+Test Case '-[ASDAProductReviewTests testAuthorId]' started.
+Test Case '-[ASDAProductReviewTests testAuthorId]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testAuthorNickname]' started.
+Test Case '-[ASDAProductReviewTests testAuthorNickname]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testCreationDate]' started.
+Test Case '-[ASDAProductReviewTests testCreationDate]' passed (0.015 seconds).
+Test Case '-[ASDAProductReviewTests testFeatured]' started.
+Test Case '-[ASDAProductReviewTests testFeatured]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testFeedbackCount]' started.
+Test Case '-[ASDAProductReviewTests testFeedbackCount]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testHelpfulness]' started.
+Test Case '-[ASDAProductReviewTests testHelpfulness]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testModerationDate]' started.
+Test Case '-[ASDAProductReviewTests testModerationDate]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testModificationDate]' started.
+Test Case '-[ASDAProductReviewTests testModificationDate]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testNegativeFeedbackCount]' started.
+Test Case '-[ASDAProductReviewTests testNegativeFeedbackCount]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testPositiveFeedbackCount]' started.
+Test Case '-[ASDAProductReviewTests testPositiveFeedbackCount]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testProductId]' started.
+Test Case '-[ASDAProductReviewTests testProductId]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testRating]' started.
+Test Case '-[ASDAProductReviewTests testRating]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testRatingRange]' started.
+Test Case '-[ASDAProductReviewTests testRatingRange]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testReviewId]' started.
+Test Case '-[ASDAProductReviewTests testReviewId]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testReviewText]' started.
+Test Case '-[ASDAProductReviewTests testReviewText]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testSubmissionId]' started.
+Test Case '-[ASDAProductReviewTests testSubmissionId]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testSyndicated]' started.
+Test Case '-[ASDAProductReviewTests testSyndicated]' passed (0.014 seconds).
+Test Case '-[ASDAProductReviewTests testTitle]' started.
+Test Case '-[ASDAProductReviewTests testTitle]' passed (0.014 seconds).
+Test Suite 'ASDAProductReviewTests' passed at 2016-02-01 10:25:14.119.
+Test Suite 'ASDAProductReviewsServiceTests' started at 2016-02-01 10:25:14.119
+Test Case '-[ASDAProductReviewsServiceTests testReturnedClass]' started.
+Test Case '-[ASDAProductReviewsServiceTests testReturnedClass]' passed (0.018 seconds).
+Test Case '-[ASDAProductReviewsServiceTests testReviewCount]' started.
+Test Case '-[ASDAProductReviewsServiceTests testReviewCount]' passed (0.018 seconds).
+Test Suite 'ASDAProductReviewsServiceTests' passed at 2016-02-01 10:25:14.157.
+Test Suite 'ASDAPromotionModelTests' started at 2016-02-01 10:25:14.157
+Test Case '-[ASDAPromotionModelTests testAvailableObject]' started.
+Test Case '-[ASDAPromotionModelTests testAvailableObject]' passed (0.045 seconds).
+Test Case '-[ASDAPromotionModelTests testPagingInfo]' started.
+Test Case '-[ASDAPromotionModelTests testPagingInfo]' passed (0.043 seconds).
+Test Case '-[ASDAPromotionModelTests testPricePerWeightBoth]' started.
+Test Case '-[ASDAPromotionModelTests testPricePerWeightBoth]' passed (0.043 seconds).
+Test Case '-[ASDAPromotionModelTests testPricePerWeightEach]' started.
+Test Case '-[ASDAPromotionModelTests testPricePerWeightEach]' passed (0.043 seconds).
+Test Case '-[ASDAPromotionModelTests testPricePerWeightWeighted]' started.
+Test Case '-[ASDAPromotionModelTests testPricePerWeightWeighted]' passed (0.043 seconds).
+Test Case '-[ASDAPromotionModelTests testPromoDetails]' started.
+Test Case '-[ASDAPromotionModelTests testPromoDetails]' passed (0.043 seconds).
+Test Case '-[ASDAPromotionModelTests testPromotionFields]' started.
+Test Case '-[ASDAPromotionModelTests testPromotionFields]' passed (0.043 seconds).
+Test Case '-[ASDAPromotionModelTests testUnavailableObject]' started.
+Test Case '-[ASDAPromotionModelTests testUnavailableObject]' passed (0.043 seconds).
+Test Case '-[ASDAPromotionModelTests testValidObject]' started.
+Test Case '-[ASDAPromotionModelTests testValidObject]' passed (0.043 seconds).
+Test Case '-[ASDAPromotionModelTests testValidPromoItems]' started.
+Test Case '-[ASDAPromotionModelTests testValidPromoItems]' passed (0.043 seconds).
+Test Suite 'ASDAPromotionModelTests' passed at 2016-02-01 10:25:14.590.
+Test Suite 'ASDARatingsAndFeedbackManagerTest' started at 2016-02-01 10:25:14.591
+Test Case '-[ASDARatingsAndFeedbackManagerTest testGetModelAndVersionData]' started.
+Test Case '-[ASDARatingsAndFeedbackManagerTest testGetModelAndVersionData]' passed (0.000 seconds).
+Test Suite 'ASDARatingsAndFeedbackManagerTest' passed at 2016-02-01 10:25:14.592.
+Test Suite 'ASDARecurringSlotDetailsTests' started at 2016-02-01 10:25:14.592
+Test Case '-[ASDARecurringSlotDetailsTests testDeliveryTimeWithSlotStartTimeOnly]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testDeliveryTimeWithSlotStartTimeOnly]' passed (0.004 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testDeliveryTimeWithStartSlotEndTimeHourAndMinutes]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testDeliveryTimeWithStartSlotEndTimeHourAndMinutes]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testDeliveryTimeWithStartSlotEndTimeHoursOnly]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testDeliveryTimeWithStartSlotEndTimeHoursOnly]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testIsWithinNextDeliveryCycleWithDayBefore]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testIsWithinNextDeliveryCycleWithDayBefore]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testIsWithinNextDeliveryCycleWithEightDaysBefore]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testIsWithinNextDeliveryCycleWithEightDaysBefore]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testIsWithinNextDeliveryCycleWithNextDay]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testIsWithinNextDeliveryCycleWithNextDay]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testIsWithinNextDeliveryCycleWithSameDay]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testIsWithinNextDeliveryCycleWithSameDay]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testIsWithinNextDeliveryCycleWithSevenDaysBefore]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testIsWithinNextDeliveryCycleWithSevenDaysBefore]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testNextDeliveryDateDateToday]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testNextDeliveryDateDateToday]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testNextDeliveryDateOldDate]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testNextDeliveryDateOldDate]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testParseClickAndCollectSlot]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testParseClickAndCollectSlot]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testParseDate]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testParseDate]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testParseDateNoTimes]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testParseDateNoTimes]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testParseDateWithBeforeFormat]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testParseDateWithBeforeFormat]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testParseSlotStartTimeOnly]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testParseSlotStartTimeOnly]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testParseStartSlotEndTime]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testParseStartSlotEndTime]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableNil]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableNil]' passed (0.000 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP1D]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP1D]' passed (0.000 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP1W]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP1W]' passed (0.000 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP28D]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP28D]' passed (0.000 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP2D]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP2D]' passed (0.000 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP2W]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP2W]' passed (0.000 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP7D]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP7D]' passed (0.000 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP8D]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToHumanReadableP8D]' passed (0.000 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP1D]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP1D]' passed (0.000 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP1W]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP1W]' passed (0.001 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP28D]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP28D]' passed (0.000 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP2W]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP2W]' passed (0.000 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP3W]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP3W]' passed (0.000 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP7D]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP7D]' passed (0.000 seconds).
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP8D]' started.
+Test Case '-[ASDARecurringSlotDetailsTests testTranslateSlotFrequencyToNumberOfDaysP8D]' passed (0.000 seconds).
+Test Suite 'ASDARecurringSlotDetailsTests' passed at 2016-02-01 10:25:14.626.
+Test Suite 'ASDAShopCategoryListTest' started at 2016-02-01 10:25:14.627
+Test Case '-[ASDAShopCategoryListTest testMapFullData]' started.
+Test Case '-[ASDAShopCategoryListTest testMapFullData]' passed (0.030 seconds).
+Test Suite 'ASDAShopCategoryListTest' passed at 2016-02-01 10:25:14.657.
+Test Suite 'ASDASlotSelectionModelTests' started at 2016-02-01 10:25:14.657
+Test Case '-[ASDASlotSelectionModelTests testBookSlotResponse]' started.
+Test Case '-[ASDASlotSelectionModelTests testBookSlotResponse]' passed (0.006 seconds).
+Test Case '-[ASDASlotSelectionModelTests testCitiesResponse]' started.
+Test Case '-[ASDASlotSelectionModelTests testCitiesResponse]' passed (0.005 seconds).
+Test Case '-[ASDASlotSelectionModelTests testSelectStoresResponse]' started.
+Test Case '-[ASDASlotSelectionModelTests testSelectStoresResponse]' passed (0.005 seconds).
+Test Case '-[ASDASlotSelectionModelTests testStoresResponse]' started.
+Test Case '-[ASDASlotSelectionModelTests testStoresResponse]' passed (0.005 seconds).
+Test Case '-[ASDASlotSelectionModelTests testViewSlotBookedResponse]' started.
+Test Case '-[ASDASlotSelectionModelTests testViewSlotBookedResponse]' passed (0.006 seconds).
+Test Case '-[ASDASlotSelectionModelTests testViewSlotResponse]' started.
+Test Case '-[ASDASlotSelectionModelTests testViewSlotResponse]' passed (0.005 seconds).
+Test Suite 'ASDASlotSelectionModelTests' passed at 2016-02-01 10:25:14.691.
+Test Suite 'ASDASpecialOfferModelTests' started at 2016-02-01 10:25:14.692
+Test Case '-[ASDASpecialOfferModelTests testPagingInfo]' started.
+Test Case '-[ASDASpecialOfferModelTests testPagingInfo]' passed (0.005 seconds).
+Test Case '-[ASDASpecialOfferModelTests testPromotionFields]' started.
+Test Case '-[ASDASpecialOfferModelTests testPromotionFields]' passed (0.004 seconds).
+Test Case '-[ASDASpecialOfferModelTests testValidObject]' started.
+Test Case '-[ASDASpecialOfferModelTests testValidObject]' passed (0.005 seconds).
+Test Case '-[ASDASpecialOfferModelTests testValidSpecialOfferItems]' started.
+Test Case '-[ASDASpecialOfferModelTests testValidSpecialOfferItems]' passed (0.004 seconds).
+Test Suite 'ASDASpecialOfferModelTests' passed at 2016-02-01 10:25:14.711.
+Test Suite 'ASDATaxonomyManagerTests' started at 2016-02-01 10:25:14.712
+Test Case '-[ASDATaxonomyManagerTests testShouldLoadWhenCategoriesExistButAreStale]' started.
+Test Case '-[ASDATaxonomyManagerTests testShouldLoadWhenCategoriesExistButAreStale]' passed (0.020 seconds).
+Test Case '-[ASDATaxonomyManagerTests testShouldLoadWhenNoCategories]' started.
+Test Case '-[ASDATaxonomyManagerTests testShouldLoadWhenNoCategories]' passed (0.020 seconds).
+Test Case '-[ASDATaxonomyManagerTests testShouldNotLoadWhenCategoriesExist]' started.
+Test Case '-[ASDATaxonomyManagerTests testShouldNotLoadWhenCategoriesExist]' passed (0.000 seconds).
+Test Suite 'ASDATaxonomyManagerTests' passed at 2016-02-01 10:25:14.753.
+Test Suite 'ASDATrolleyManagerTest' started at 2016-02-01 10:25:14.754
+Test Case '-[ASDATrolleyManagerTest testCreateNewTrolley]' started.
+Test Case '-[ASDATrolleyManagerTest testCreateNewTrolley]' passed (0.003 seconds).
+Test Suite 'ASDATrolleyManagerTest' passed at 2016-02-01 10:25:14.757.
+Test Suite 'ASDAUserModelTest' started at 2016-02-01 10:25:14.757
+Test Case '-[ASDAUserModelTest testUserModel]' started.
+Test Case '-[ASDAUserModelTest testUserModel]' passed (0.001 seconds).
+Test Case '-[ASDAUserModelTest testUserModelAgain]' started.
+Test Case '-[ASDAUserModelTest testUserModelAgain]' passed (0.000 seconds).
+Test Case '-[ASDAUserModelTest testUserModelWithValidSlot]' started.
+Test Case '-[ASDAUserModelTest testUserModelWithValidSlot]' passed (0.000 seconds).
+Test Suite 'ASDAUserModelTest' passed at 2016-02-01 10:25:14.759.
+Test Suite 'ASDAVoucherModelTest' started at 2016-02-01 10:25:14.760
+Test Case '-[ASDAVoucherModelTest testThatCreditCardModelWasInitedWithDictionary]' started.
+Test Case '-[ASDAVoucherModelTest testThatCreditCardModelWasInitedWithDictionary]' passed (0.000 seconds).
+Test Case '-[ASDAVoucherModelTest testThatVoucherIsValid]' started.
+Test Case '-[ASDAVoucherModelTest testThatVoucherIsValid]' passed (0.000 seconds).
+Test Suite 'ASDAVoucherModelTest' passed at 2016-02-01 10:25:14.762.
+Test Suite 'ASDAWebViewControllerTest' started at 2016-02-01 10:25:14.762
+Test Case '-[ASDAWebViewControllerTest testDelegateExists]' started.
+Test Case '-[ASDAWebViewControllerTest testDelegateExists]' passed (0.024 seconds).
+Test Case '-[ASDAWebViewControllerTest testDidFailLoadBlock]' started.
+Test Case '-[ASDAWebViewControllerTest testDidFailLoadBlock]' passed (0.109 seconds).
+Test Case '-[ASDAWebViewControllerTest testDidFinishLoadBlock]' started.
+Test Case '-[ASDAWebViewControllerTest testDidFinishLoadBlock]' passed (0.109 seconds).
+Test Case '-[ASDAWebViewControllerTest testDidStartLoadBlock]' started.
+Test Case '-[ASDAWebViewControllerTest testDidStartLoadBlock]' passed (0.108 seconds).
+Test Case '-[ASDAWebViewControllerTest testWithInjectViewport]' started.
+Test Case '-[ASDAWebViewControllerTest testWithInjectViewport]' passed (0.106 seconds).
+Test Case '-[ASDAWebViewControllerTest testWithoutInjectViewport]' started.
+Test Case '-[ASDAWebViewControllerTest testWithoutInjectViewport]' passed (0.108 seconds).
+Test Suite 'ASDAWebViewControllerTest' passed at 2016-02-01 10:25:15.329.
+Test Suite 'ASDACGPointExtensionTests' started at 2016-02-01 10:25:15.329
+Test Case '-[ASDA_Tests.ASDACGPointExtensionTests testDecrease]' started.
+Test Case '-[ASDA_Tests.ASDACGPointExtensionTests testDecrease]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.ASDACGPointExtensionTests testIncrease]' started.
+Test Case '-[ASDA_Tests.ASDACGPointExtensionTests testIncrease]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDACGPointExtensionTests testMaxToMin]' started.
+Test Case '-[ASDA_Tests.ASDACGPointExtensionTests testMaxToMin]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDACGPointExtensionTests testMinToMax]' started.
+Test Case '-[ASDA_Tests.ASDACGPointExtensionTests testMinToMax]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDACGPointExtensionTests testSame]' started.
+Test Case '-[ASDA_Tests.ASDACGPointExtensionTests testSame]' passed (0.000 seconds).
+Test Suite 'ASDACGPointExtensionTests' passed at 2016-02-01 10:25:15.333.
+Test Suite 'ASDAHybridWebContentHelperTests' started at 2016-02-01 10:25:15.333
+Test Case '-[ASDA_Tests.ASDAHybridWebContentHelperTests testDocumentReadyWithComplete]' started.
+Test Case '-[ASDA_Tests.ASDAHybridWebContentHelperTests testDocumentReadyWithComplete]' passed (0.007 seconds).
+Test Case '-[ASDA_Tests.ASDAHybridWebContentHelperTests testDocumentReadyWithUninitialized]' started.
+Test Case '-[ASDA_Tests.ASDAHybridWebContentHelperTests testDocumentReadyWithUninitialized]' passed (0.004 seconds).
+Test Case '-[ASDA_Tests.ASDAHybridWebContentHelperTests testFormatContentForMobileWithJavascriptThatCallsPostfFM]' started.
+Test Case '-[ASDA_Tests.ASDAHybridWebContentHelperTests testFormatContentForMobileWithJavascriptThatCallsPostfFM]' passed (0.548 seconds).
+Test Case '-[ASDA_Tests.ASDAHybridWebContentHelperTests testFormatContentForMobileWithJavascriptThatDoesNotCallPostfFM]' started.
+Test Case '-[ASDA_Tests.ASDAHybridWebContentHelperTests testFormatContentForMobileWithJavascriptThatDoesNotCallPostfFM]' passed (2.204 seconds).
+Test Case '-[ASDA_Tests.ASDAHybridWebContentHelperTests testFormatContentForMobileWithJSException]' started.
+Test Case '-[ASDA_Tests.ASDAHybridWebContentHelperTests testFormatContentForMobileWithJSException]' passed (0.004 seconds).
+Test Case '-[ASDA_Tests.ASDAHybridWebContentHelperTests testFormatContentForMobileWithNoJSContext]' started.
+Test Case '-[ASDA_Tests.ASDAHybridWebContentHelperTests testFormatContentForMobileWithNoJSContext]' passed (1.087 seconds).
+Test Suite 'ASDAHybridWebContentHelperTests' passed at 2016-02-01 10:25:19.189.
+Test Suite 'ASDAIntExtensionTests' started at 2016-02-01 10:25:19.190
+Test Case '-[ASDA_Tests.ASDAIntExtensionTests testHexMultipleCharacters]' started.
+Test Case '-[ASDA_Tests.ASDAIntExtensionTests testHexMultipleCharacters]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDAIntExtensionTests testSampleInvalidHexCharaters]' started.
+Test Case '-[ASDA_Tests.ASDAIntExtensionTests testSampleInvalidHexCharaters]' passed (0.002 seconds).
+Test Case '-[ASDA_Tests.ASDAIntExtensionTests testValidLCHexCharaters]' started.
+Test Case '-[ASDA_Tests.ASDAIntExtensionTests testValidLCHexCharaters]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDAIntExtensionTests testValidUCHexCharaters]' started.
+Test Case '-[ASDA_Tests.ASDAIntExtensionTests testValidUCHexCharaters]' passed (0.000 seconds).
+Test Suite 'ASDAIntExtensionTests' passed at 2016-02-01 10:25:19.194.
+Test Suite 'ASDANSDateExtensionTests' started at 2016-02-01 10:25:19.194
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneDayCrossingMonthDifferentCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneDayCrossingMonthDifferentCalendar]' passed (0.002 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneDayCrossingMonthSameCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneDayCrossingMonthSameCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneDayCrossingYearDifferentCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneDayCrossingYearDifferentCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneDayCrossingYearSameCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneDayCrossingYearSameCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneDayDifferentCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneDayDifferentCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneDaySameCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneDaySameCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneYearCrossingLeapYearDifferentCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneYearCrossingLeapYearDifferentCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneYearCrossingLeapYearSameCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneYearCrossingLeapYearSameCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneYearNotCrossingLeapYearDifferentCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneYearNotCrossingLeapYearDifferentCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneYearNotCrossingLeapYearSameCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddOneYearNotCrossingLeapYearSameCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddZeroDaysDifferentCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddZeroDaysDifferentCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddZeroDaysSameCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testAddZeroDaysSameCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testSubtractOneDayDifferentCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testSubtractOneDayDifferentCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testSubtractOneDaySameCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testSubtractOneDaySameCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testSubtractOneYearCrossingLeapYearDifferentCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testSubtractOneYearCrossingLeapYearDifferentCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testSubtractOneYearCrossingLeapYearSameCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testSubtractOneYearCrossingLeapYearSameCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testSubtractOneYearNotCrossingLeapYearDifferentCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testSubtractOneYearNotCrossingLeapYearDifferentCalendar]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testSubtractOneYearNotCrossingLeapYearSameCalendar]' started.
+Test Case '-[ASDA_Tests.ASDANSDateExtensionTests testSubtractOneYearNotCrossingLeapYearSameCalendar]' passed (0.000 seconds).
+Test Suite 'ASDANSDateExtensionTests' passed at 2016-02-01 10:25:19.210.
+Test Suite 'ASDANSURLExtensionTests' started at 2016-02-01 10:25:19.210
+Test Case '-[ASDA_Tests.ASDANSURLExtensionTests testAssetURLWhereAssetDoesNotExist]' started.
+Test Case '-[ASDA_Tests.ASDANSURLExtensionTests testAssetURLWhereAssetDoesNotExist]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.ASDANSURLExtensionTests testAssetURLWhereAssetExists]' started.
+Test Case '-[ASDA_Tests.ASDANSURLExtensionTests testAssetURLWhereAssetExists]' passed (0.002 seconds).
+Test Case '-[ASDA_Tests.ASDANSURLExtensionTests testDefaultBundleURL]' started.
+Test Case '-[ASDA_Tests.ASDANSURLExtensionTests testDefaultBundleURL]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSURLExtensionTests testMainBundleURL]' started.
+Test Case '-[ASDA_Tests.ASDANSURLExtensionTests testMainBundleURL]' passed (0.124 seconds).
+Test Case '-[ASDA_Tests.ASDANSURLExtensionTests testNonBundleURL]' started.
+Test Case '-[ASDA_Tests.ASDANSURLExtensionTests testNonBundleURL]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDANSURLExtensionTests testTestBundleURL]' started.
+Test Case '-[ASDA_Tests.ASDANSURLExtensionTests testTestBundleURL]' passed (0.000 seconds).
+Test Suite 'ASDANSURLExtensionTests' passed at 2016-02-01 10:25:19.339.
+Test Suite 'ASDAPagingControllerTests' started at 2016-02-01 10:25:19.340
+Test Case '-[ASDA_Tests.ASDAPagingControllerTests testFirstTimeErrors]' started.
+Test Case '-[ASDA_Tests.ASDAPagingControllerTests testFirstTimeErrors]' passed (4.363 seconds).
+Test Case '-[ASDA_Tests.ASDAPagingControllerTests testLoadCountsChanged]' started.
+Test Case '-[ASDA_Tests.ASDAPagingControllerTests testLoadCountsChanged]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.ASDAPagingControllerTests testNoResults]' started.
+Test Case '-[ASDA_Tests.ASDAPagingControllerTests testNoResults]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDAPagingControllerTests testSimpleNoErrors]' started.
+Test Case '-[ASDA_Tests.ASDAPagingControllerTests testSimpleNoErrors]' passed (0.001 seconds).
+Test Suite 'ASDAPagingControllerTests' passed at 2016-02-01 10:25:23.706.
+Test Suite 'ASDAStringExtensionTests' started at 2016-02-01 10:25:23.706
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testComplexEncodeAsURL]' started.
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testComplexEncodeAsURL]' passed (0.002 seconds).
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testComplexToURL]' started.
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testComplexToURL]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testIfEmptyEmptyString]' started.
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testIfEmptyEmptyString]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testIfEmptyNilString]' started.
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testIfEmptyNilString]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testIfEmptyNonEmptyString]' started.
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testIfEmptyNonEmptyString]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testSimpleEncodeAsURL]' started.
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testSimpleEncodeAsURL]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testSimpleToURL]' started.
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testSimpleToURL]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testURLEncoded]' started.
+Test Case '-[ASDA_Tests.ASDAStringExtensionTests testURLEncoded]' passed (0.000 seconds).
+Test Suite 'ASDAStringExtensionTests' passed at 2016-02-01 10:25:23.713.
+Test Suite 'ASDAUIColorExtensionTests' started at 2016-02-01 10:25:23.713
+Test Case '-[ASDA_Tests.ASDAUIColorExtensionTests testBlackTransparent]' started.
+Test Case '-[ASDA_Tests.ASDAUIColorExtensionTests testBlackTransparent]' passed (0.002 seconds).
+Test Case '-[ASDA_Tests.ASDAUIColorExtensionTests testMixedValues3Characters]' started.
+Test Case '-[ASDA_Tests.ASDAUIColorExtensionTests testMixedValues3Characters]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDAUIColorExtensionTests testMixedValues4Characters]' started.
+Test Case '-[ASDA_Tests.ASDAUIColorExtensionTests testMixedValues4Characters]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDAUIColorExtensionTests testMixedValues6Characters]' started.
+Test Case '-[ASDA_Tests.ASDAUIColorExtensionTests testMixedValues6Characters]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDAUIColorExtensionTests testMixedValues8Characters]' started.
+Test Case '-[ASDA_Tests.ASDAUIColorExtensionTests testMixedValues8Characters]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ASDAUIColorExtensionTests testWhite]' started.
+Test Case '-[ASDA_Tests.ASDAUIColorExtensionTests testWhite]' passed (0.000 seconds).
+Test Suite 'ASDAUIColorExtensionTests' passed at 2016-02-01 10:25:23.719.
+Test Suite 'ArrayDataSourceTests' started at 2016-02-01 10:25:23.719
+Test Case '-[ASDA_Tests.ArrayDataSourceTests testExample]' started.
+Test Case '-[ASDA_Tests.ArrayDataSourceTests testExample]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.ArrayDataSourceTests testPerformanceExample]' started.
+Test Case '-[ASDA_Tests.ArrayDataSourceTests testPerformanceExample]' passed (0.383 seconds).
+Test Suite 'ArrayDataSourceTests' passed at 2016-02-01 10:25:24.103.
+Test Suite 'CoreTypeTests' started at 2016-02-01 10:25:24.103
+Test Case '-[ASDA_Tests.CoreTypeTests testTypeKeyEquality]' started.
+Test Case '-[ASDA_Tests.CoreTypeTests testTypeKeyEquality]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.CoreTypeTests testTypeKeyHashing]' started.
+Test Case '-[ASDA_Tests.CoreTypeTests testTypeKeyHashing]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.CoreTypeTests testTypeKeyInequality]' started.
+Test Case '-[ASDA_Tests.CoreTypeTests testTypeKeyInequality]' passed (0.000 seconds).
+Test Suite 'CoreTypeTests' passed at 2016-02-01 10:25:24.105.
+Test Suite 'FutureResultTests' started at 2016-02-01 10:25:24.106
+Test Case '-[ASDA_Tests.FutureResultTests testDispatchWhenRealized]' started.
+Test Case '-[ASDA_Tests.FutureResultTests testDispatchWhenRealized]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.FutureResultTests testInitialValue]' started.
+Test Case '-[ASDA_Tests.FutureResultTests testInitialValue]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.FutureResultTests testRealizeCanceled]' started.
+Test Case '-[ASDA_Tests.FutureResultTests testRealizeCanceled]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.FutureResultTests testRealizeFailure]' started.
+Test Case '-[ASDA_Tests.FutureResultTests testRealizeFailure]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.FutureResultTests testRealizeSuccess]' started.
+Test Case '-[ASDA_Tests.FutureResultTests testRealizeSuccess]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.FutureResultTests testWaiting]' started.
+Test Case '-[ASDA_Tests.FutureResultTests testWaiting]' passed (0.000 seconds).
+Test Suite 'FutureResultTests' passed at 2016-02-01 10:25:24.109.
+Test Suite 'HexValueColorSchemaTest' started at 2016-02-01 10:25:24.110
+Test Case '-[ASDA_Tests.HexValueColorSchemaTest testInvalidJSONValues]' started.
+Test Case '-[ASDA_Tests.HexValueColorSchemaTest testInvalidJSONValues]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.HexValueColorSchemaTest testInvalidStringValues]' started.
+Test Case '-[ASDA_Tests.HexValueColorSchemaTest testInvalidStringValues]' passed (0.000 seconds).
+Test Suite 'HexValueColorSchemaTest' passed at 2016-02-01 10:25:24.112.
+Test Suite 'HomeNotificationCentreComponentViewModelTests' started at 2016-02-01 10:25:24.112
+Test Case '-[ASDA_Tests.HomeNotificationCentreComponentViewModelTests testMany]' started.
+Test Case '-[ASDA_Tests.HomeNotificationCentreComponentViewModelTests testMany]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.HomeNotificationCentreComponentViewModelTests testOne]' started.
+Test Case '-[ASDA_Tests.HomeNotificationCentreComponentViewModelTests testOne]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.HomeNotificationCentreComponentViewModelTests testZero]' started.
+Test Case '-[ASDA_Tests.HomeNotificationCentreComponentViewModelTests testZero]' passed (0.000 seconds).
+Test Suite 'HomeNotificationCentreComponentViewModelTests' passed at 2016-02-01 10:25:24.115.
+Test Suite 'InboxCoderTests' started at 2016-02-01 10:25:24.115
+Test Case '-[ASDA_Tests.InboxCoderTests testLoadsDefaultMessages]' started.
+Test Case '-[ASDA_Tests.InboxCoderTests testLoadsDefaultMessages]' passed (0.006 seconds).
+Test Case '-[ASDA_Tests.InboxCoderTests testSavesLastLoadedMessagesDiff]' started.
+Test Case '-[ASDA_Tests.InboxCoderTests testSavesLastLoadedMessagesDiff]' passed (0.011 seconds).
+Test Case '-[ASDA_Tests.InboxCoderTests testSavesMessagesCorrectly]' started.
+Test Case '-[ASDA_Tests.InboxCoderTests testSavesMessagesCorrectly]' passed (0.004 seconds).
+Test Suite 'InboxCoderTests' passed at 2016-02-01 10:25:24.138.
+Test Suite 'InboxMessageTests' started at 2016-02-01 10:25:24.138
+Test Case '-[ASDA_Tests.InboxMessageTests testConvertsActionTextToMessageType]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testConvertsActionTextToMessageType]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testEqualityForLocalMessages]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testEqualityForLocalMessages]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testEqualityForMixedMessages]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testEqualityForMixedMessages]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testEqualityForRemoteMessages]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testEqualityForRemoteMessages]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testFlagsExpirationDateAfterNow]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testFlagsExpirationDateAfterNow]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testFlagsExpirationDateSameAsNow]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testFlagsExpirationDateSameAsNow]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testFlagsExpirationDateSameBeforeNow]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testFlagsExpirationDateSameBeforeNow]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testFlagsNoExpirationDate]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testFlagsNoExpirationDate]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testInequalityForLocalMessages]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testInequalityForLocalMessages]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testInequalityForMixedMessages]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testInequalityForMixedMessages]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testInequalityForRemoteMessages]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testInequalityForRemoteMessages]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testIsExpiredAfterDefaultExpiration]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testIsExpiredAfterDefaultExpiration]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testIsExpiredOnDefaultExpiration]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testIsExpiredOnDefaultExpiration]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testIsExpiredUnderDefaultExpiration]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testIsExpiredUnderDefaultExpiration]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testIsExpiredWithActualExpirationAndTestDateOutOfRange]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testIsExpiredWithActualExpirationAndTestDateOutOfRange]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testIsLocalMessageWhenEmptyRemoteIdentifier]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testIsLocalMessageWhenEmptyRemoteIdentifier]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testIsRemoteMessageWhenRemoteIdentifier]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testIsRemoteMessageWhenRemoteIdentifier]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testLoadFromSchema]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testLoadFromSchema]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testLoadFromUAInboxMessageSchema]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testLoadFromUAInboxMessageSchema]' passed (0.003 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testMessageContent]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testMessageContent]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testSetExpirationDaysTo30]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testSetExpirationDaysTo30]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testShouldNotRetrieveMessageBodyWhenIsDeepLinkMessage]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testShouldNotRetrieveMessageBodyWhenIsDeepLinkMessage]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testShouldNotRetrieveMessageBodyWhenRetrieved]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testShouldNotRetrieveMessageBodyWhenRetrieved]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testShouldNotRetrieveMessageBodyWhenSetToEmptyString]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testShouldNotRetrieveMessageBodyWhenSetToEmptyString]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testShouldRetrieveMessageBodyWhenIsViewMessage]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testShouldRetrieveMessageBodyWhenIsViewMessage]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testShouldRetrieveMessageBodyWhenNeverRetrieved]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testShouldRetrieveMessageBodyWhenNeverRetrieved]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testTextAreaBackgroundDefault]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testTextAreaBackgroundDefault]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testUniqueIdentifierCannotBeEmpty]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testUniqueIdentifierCannotBeEmpty]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testUniqueIdentifierIsNotRemoteIdentifierForLocalMessage]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testUniqueIdentifierIsNotRemoteIdentifierForLocalMessage]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.InboxMessageTests testUniqueIdentifierIsRemoteIdentifierForRemoteMessage]' started.
+Test Case '-[ASDA_Tests.InboxMessageTests testUniqueIdentifierIsRemoteIdentifierForRemoteMessage]' passed (0.000 seconds).
+Test Suite 'InboxMessageTests' passed at 2016-02-01 10:25:24.162.
+Test Suite 'InboxServiceTests' started at 2016-02-01 10:25:24.162
+Test Case '-[ASDA_Tests.InboxServiceTests testDecrementsUnreadCountOnReadMessage]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testDecrementsUnreadCountOnReadMessage]' passed (0.006 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testDeletesLocalMessage]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testDeletesLocalMessage]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testDeletesRemoteMessageOnSuccessfulServiceRequest]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testDeletesRemoteMessageOnSuccessfulServiceRequest]' passed (0.003 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testDispatchesMessageActionsToMessages]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testDispatchesMessageActionsToMessages]' passed (0.006 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testDoesNotDeleteRemoteMessageOnFailedServiceRequest]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testDoesNotDeleteRemoteMessageOnFailedServiceRequest]' passed (0.003 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testDoesNotMarkRemoteMessageReadOnFailedServiceRequest]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testDoesNotMarkRemoteMessageReadOnFailedServiceRequest]' passed (0.003 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testFiltersDeletedMessages]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testFiltersDeletedMessages]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testFiltersExpiredMessages]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testFiltersExpiredMessages]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testIncrementsUnreadCountOnNewMessage]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testIncrementsUnreadCountOnNewMessage]' passed (0.003 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testLoadsInboxOnResume]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testLoadsInboxOnResume]' passed (0.006 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testLoadsInboxOnStart]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testLoadsInboxOnStart]' passed (0.003 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testMarksLocalMessageRead]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testMarksLocalMessageRead]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testMarksRemoteMessageReadOnSuccessfulServiceRequest]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testMarksRemoteMessageReadOnSuccessfulServiceRequest]' passed (0.003 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testPrunesExpiredMessages]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testPrunesExpiredMessages]' passed (0.003 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testResumes]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testResumes]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testReturnsMessageForID]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testReturnsMessageForID]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testSavesInboxOnStop]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testSavesInboxOnStop]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testSavesInboxOnSuspend]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testSavesInboxOnSuspend]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testStarts]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testStarts]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testStops]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testStops]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.InboxServiceTests testSuspends]' started.
+Test Case '-[ASDA_Tests.InboxServiceTests testSuspends]' passed (0.001 seconds).
+Test Suite 'InboxServiceTests' passed at 2016-02-01 10:25:24.216.
+Test Suite 'OrderedSetDataSourceTests' started at 2016-02-01 10:25:24.217
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testContains]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testContains]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testCountOfObjects]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testCountOfObjects]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testCountOfSections]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testCountOfSections]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testIndexPathForObject]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testIndexPathForObject]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testIndexPathForObjectWithFilter]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testIndexPathForObjectWithFilter]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testIndexPathForObjectWithSort]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testIndexPathForObjectWithSort]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObject]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObject]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectAtIndexPath]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectAtIndexPath]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectAtIndexPathWithFilter]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectAtIndexPathWithFilter]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectAtIndexPathWithSort]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectAtIndexPathWithSort]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjects]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjects]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectsWithFilter]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectsWithFilter]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectsWithSort]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectsWithSort]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectWithFilter]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectWithFilter]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectWithSort]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testInsertObjectWithSort]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testObjectAtIndexPath]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testObjectAtIndexPath]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testObjectAtIndexPathWithFilter]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testObjectAtIndexPathWithFilter]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testObjectAtIndexPathWithSort]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testObjectAtIndexPathWithSort]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testRemoveObject]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testRemoveObject]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testRemoveObjectAtIndexPath]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testRemoveObjectAtIndexPath]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testRemoveObjectAtIndexPathWithFilter]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testRemoveObjectAtIndexPathWithFilter]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testRemoveObjectAtIndexPathWithSort]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testRemoveObjectAtIndexPathWithSort]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testRemoveObjectWithFilter]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testRemoveObjectWithFilter]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testRemoveObjectWithSort]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testRemoveObjectWithSort]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testReplaceObjectAtIndexPath]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testReplaceObjectAtIndexPath]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testReplaceObjectAtIndexPathWithFilter]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testReplaceObjectAtIndexPathWithFilter]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testReplaceObjectAtIndexPathWithSort]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testReplaceObjectAtIndexPathWithSort]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testSetContent]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testSetContent]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testSetContentWithFilter]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testSetContentWithFilter]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testSetContentWithSort]' started.
+Test Case '-[ASDA_Tests.OrderedSetDataSourceTests testSetContentWithSort]' passed (0.000 seconds).
+Test Suite 'OrderedSetDataSourceTests' passed at 2016-02-01 10:25:24.241.
+Test Suite 'RemoteMethodInvocationQueueTests' started at 2016-02-01 10:25:24.241
+Test Case '-[ASDA_Tests.RemoteMethodInvocationQueueTests testInitialValues]' started.
+Test Case '-[ASDA_Tests.RemoteMethodInvocationQueueTests testInitialValues]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.RemoteMethodInvocationQueueTests testInvocationFor_duplicateEntries]' started.
+Test Case '-[ASDA_Tests.RemoteMethodInvocationQueueTests testInvocationFor_duplicateEntries]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.RemoteMethodInvocationQueueTests testInvocationFor_noMatch]' started.
+Test Case '-[ASDA_Tests.RemoteMethodInvocationQueueTests testInvocationFor_noMatch]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.RemoteMethodInvocationQueueTests testInvocationFor_singleEntry]' started.
+Test Case '-[ASDA_Tests.RemoteMethodInvocationQueueTests testInvocationFor_singleEntry]' passed (0.000 seconds).
+Test Suite 'RemoteMethodInvocationQueueTests' passed at 2016-02-01 10:25:24.244.
+Test Suite 'RemoteMethodTests' started at 2016-02-01 10:25:24.245
+Test Case '-[ASDA_Tests.RemoteMethodTests testEquals]' started.
+Test Case '-[ASDA_Tests.RemoteMethodTests testEquals]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.RemoteMethodTests testInvoke]' started.
+Test Case '-[ASDA_Tests.RemoteMethodTests testInvoke]' passed (0.000 seconds).
+Test Suite 'RemoteMethodTests' passed at 2016-02-01 10:25:24.246.
+Test Suite 'RemoteObjectContextTests' started at 2016-02-01 10:25:24.247
+Test Case '-[ASDA_Tests.RemoteObjectContextTests testMultipleRemoteDispatch]' started.
+Test Case '-[ASDA_Tests.RemoteObjectContextTests testMultipleRemoteDispatch]' passed (1.065 seconds).
+Test Case '-[ASDA_Tests.RemoteObjectContextTests testSingleRemoteDispatch]' started.
+Test Case '-[ASDA_Tests.RemoteObjectContextTests testSingleRemoteDispatch]' passed (1.009 seconds).
+Test Suite 'RemoteObjectContextTests' passed at 2016-02-01 10:25:26.321.
+Test Suite 'SchemaTests' started at 2016-02-01 10:25:26.322
+Test Case '-[ASDA_Tests.SchemaTests testDecodeOptionalStructAllValuesNoErrors]' started.
+Test Case '-[ASDA_Tests.SchemaTests testDecodeOptionalStructAllValuesNoErrors]' passed (0.003 seconds).
+Test Case '-[ASDA_Tests.SchemaTests testDecodeOptionalStructNoValueNoErrors]' started.
+Test Case '-[ASDA_Tests.SchemaTests testDecodeOptionalStructNoValueNoErrors]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.SchemaTests testDecodeOptionalStructNullValueNoErrors]' started.
+Test Case '-[ASDA_Tests.SchemaTests testDecodeOptionalStructNullValueNoErrors]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleEnum1NoErrors]' started.
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleEnum1NoErrors]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleEnum2NoErrors]' started.
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleEnum2NoErrors]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleEnum3NoErrors]' started.
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleEnum3NoErrors]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleEnum4NoErrors]' started.
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleEnum4NoErrors]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleEnumTypeMismatch]' started.
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleEnumTypeMismatch]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleStructFailTypeMismatch]' started.
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleStructFailTypeMismatch]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleStructNoErrors]' started.
+Test Case '-[ASDA_Tests.SchemaTests testDecodeSimpleStructNoErrors]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.SchemaTests testSDMapTaxonomyDecode]' started.
+Test Case '-[ASDA_Tests.SchemaTests testSDMapTaxonomyDecode]' passed (0.375 seconds).
+Test Case '-[ASDA_Tests.SchemaTests testSwiftTaxonomyDecode]' started.
+Test Case '-[ASDA_Tests.SchemaTests testSwiftTaxonomyDecode]' passed (2.556 seconds).
+Test Suite 'SchemaTests' passed at 2016-02-01 10:25:29.263.
+Test Suite 'TestASDAWebServiceCookies' started at 2016-02-01 10:25:29.263
+Test Case '-[ASDA_Tests.TestASDAWebServiceCookies test_DCENV_nil]' started.
+Test Case '-[ASDA_Tests.TestASDAWebServiceCookies test_DCENV_nil]' passed (0.002 seconds).
+Test Case '-[ASDA_Tests.TestASDAWebServiceCookies test_DCENV_notNil]' started.
+Test Case '-[ASDA_Tests.TestASDAWebServiceCookies test_DCENV_notNil]' passed (0.003 seconds).
+Test Case '-[ASDA_Tests.TestASDAWebServiceCookies testBasicBuildRequest]' started.
+Test Case '-[ASDA_Tests.TestASDAWebServiceCookies testBasicBuildRequest]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.TestASDAWebServiceCookies testSetCookiesWithSetSessionIDisFalse]' started.
+Test Case '-[ASDA_Tests.TestASDAWebServiceCookies testSetCookiesWithSetSessionIDisFalse]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.TestASDAWebServiceCookies testSetCookiesWithSetSessionIDisTrue]' started.
+Test Case '-[ASDA_Tests.TestASDAWebServiceCookies testSetCookiesWithSetSessionIDisTrue]' passed (0.001 seconds).
+Test Suite 'TestASDAWebServiceCookies' passed at 2016-02-01 10:25:29.273.
+Test Suite 'TreeDataSourceTests' started at 2016-02-01 10:25:29.273
+Test Case '-[ASDA_Tests.TreeDataSourceTests testExample]' started.
+Test Case '-[ASDA_Tests.TreeDataSourceTests testExample]' passed (0.000 seconds).
+Test Case '-[ASDA_Tests.TreeDataSourceTests testPerformanceExample]' started.
+Test Case '-[ASDA_Tests.TreeDataSourceTests testPerformanceExample]' passed (0.256 seconds).
+Test Suite 'TreeDataSourceTests' passed at 2016-02-01 10:25:29.530.
+Test Suite 'TypedMethodInvocationTests' started at 2016-02-01 10:25:29.531
+Test Case '-[ASDA_Tests.TypedMethodInvocationTests testInvocationKVO]' started.
+Test Case '-[ASDA_Tests.TypedMethodInvocationTests testInvocationKVO]' passed (0.001 seconds).
+Test Case '-[ASDA_Tests.TypedMethodInvocationTests testInvocationProperties]' started.
+Test Case '-[ASDA_Tests.TypedMethodInvocationTests testInvocationProperties]' passed (0.000 seconds).
+Test Suite 'TypedMethodInvocationTests' passed at 2016-02-01 10:25:29.532.
+Test Suite 'DeliveryPassModelTests' started at 2016-02-01 10:25:29.533
+Test Case '-[DeliveryPassModelTests testOrderIsCreatedFromDictionary]' started.
+Test Case '-[DeliveryPassModelTests testOrderIsCreatedFromDictionary]' passed (0.003 seconds).
+Test Case '-[DeliveryPassModelTests testPromoIsCreatedFromDictionary]' started.
+Test Case '-[DeliveryPassModelTests testPromoIsCreatedFromDictionary]' passed (0.000 seconds).
+Test Suite 'DeliveryPassModelTests' passed at 2016-02-01 10:25:29.537.
+Test Suite 'SDBannerLayoutTests' started at 2016-02-01 10:25:29.537
+Test Case '-[SDBannerLayoutTests testFillWithSingleWidthItems]' started.
+Test Case '-[SDBannerLayoutTests testFillWithSingleWidthItems]' passed (0.000 seconds).
+Test Case '-[SDBannerLayoutTests testFramePlacement]' started.
+Test Case '-[SDBannerLayoutTests testFramePlacement]' passed (0.000 seconds).
+Test Case '-[SDBannerLayoutTests testInteritemSpacing]' started.
+Test Case '-[SDBannerLayoutTests testInteritemSpacing]' passed (0.000 seconds).
+Test Case '-[SDBannerLayoutTests testMemset]' started.
+Test Case '-[SDBannerLayoutTests testMemset]' passed (0.000 seconds).
+Test Case '-[SDBannerLayoutTests testNumberOfBlocks]' started.
+Test Case '-[SDBannerLayoutTests testNumberOfBlocks]' passed (0.000 seconds).
+Test Case '-[SDBannerLayoutTests testPlaceSingleColumnItems]' started.
+Test Case '-[SDBannerLayoutTests testPlaceSingleColumnItems]' passed (0.000 seconds).
+Test Suite 'SDBannerLayoutTests' passed at 2016-02-01 10:25:29.541.
+Test Suite 'TestASDABookSlotResponse' started at 2016-02-01 10:25:29.541
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_invalidAMPM]' started.
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_invalidAMPM]' passed (0.001 seconds).
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_invalidDay]' started.
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_invalidDay]' passed (0.001 seconds).
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_invalidTextA]' started.
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_invalidTextA]' passed (0.001 seconds).
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_invalidTextB]' started.
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_invalidTextB]' passed (0.001 seconds).
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_invalidTime]' started.
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_invalidTime]' passed (0.001 seconds).
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_nil]' started.
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_nil]' passed (0.001 seconds).
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_todayAM]' started.
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_todayAM]' passed (0.001 seconds).
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_todayPM]' started.
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_todayPM]' passed (0.001 seconds).
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_tomorrowAM]' started.
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_tomorrowAM]' passed (0.001 seconds).
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_tomorrowPM]' started.
+Test Case '-[TestASDABookSlotResponse testParseBookedUntilTime_tomorrowPM]' passed (0.001 seconds).
+Test Suite 'TestASDABookSlotResponse' passed at 2016-02-01 10:25:29.555.
+Test Suite 'TestASDAScanReceiptScannerBaseViewController' started at 2016-02-01 10:25:29.555
+Test Case '-[TestASDAScanReceiptScannerBaseViewController testCode39_Receipt]' started.
+Test Case '-[TestASDAScanReceiptScannerBaseViewController testCode39_Receipt]' passed (0.002 seconds).
+Test Case '-[TestASDAScanReceiptScannerBaseViewController testCode39_Receipt1]' started.
+Test Case '-[TestASDAScanReceiptScannerBaseViewController testCode39_Receipt1]' passed (0.001 seconds).
+Test Case '-[TestASDAScanReceiptScannerBaseViewController testCode39_Receipt2]' started.
+Test Case '-[TestASDAScanReceiptScannerBaseViewController testCode39_Receipt2]' passed (0.001 seconds).
+Test Suite 'TestASDAScanReceiptScannerBaseViewController' passed at 2016-02-01 10:25:29.559.
+Test Suite 'TestASDAWebServices_startupRequestQueue' started at 2016-02-01 10:25:29.559
+Test Case '-[TestASDAWebServices_startupRequestQueue testInitialState]' started.
+Test Case '-[TestASDAWebServices_startupRequestQueue testInitialState]' passed (0.000 seconds).
+Test Case '-[TestASDAWebServices_startupRequestQueue testMixedServicesAfterSettingUseStartupRequestQueue]' started.
+Test Case '-[TestASDAWebServices_startupRequestQueue testMixedServicesAfterSettingUseStartupRequestQueue]' passed (0.000 seconds).
+Test Case '-[TestASDAWebServices_startupRequestQueue testMixedServicesBeforeSettingUseStartupRequestQueue]' started.
+Test Case '-[TestASDAWebServices_startupRequestQueue testMixedServicesBeforeSettingUseStartupRequestQueue]' passed (0.000 seconds).
+Test Case '-[TestASDAWebServices_startupRequestQueue testMixedServicesResetUseStartupRequestQueue]' started.
+Test Case '-[TestASDAWebServices_startupRequestQueue testMixedServicesResetUseStartupRequestQueue]' passed (0.000 seconds).
+Test Case '-[TestASDAWebServices_startupRequestQueue testSetUseStartupRequestQueue]' started.
+Test Case '-[TestASDAWebServices_startupRequestQueue testSetUseStartupRequestQueue]' passed (0.000 seconds).
+Test Suite 'TestASDAWebServices_startupRequestQueue' passed at 2016-02-01 10:25:29.563.
+Test Suite 'TestAddressAddResponse' started at 2016-02-01 10:25:29.564
+Test Case '-[TestAddressAddResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestAddressAddResponse testDataObjectIsNotNilAndProperType]' passed (0.008 seconds).
+Test Suite 'TestAddressAddResponse' passed at 2016-02-01 10:25:29.572.
+Test Suite 'TestAddressEditResponse' started at 2016-02-01 10:25:29.573
+Test Case '-[TestAddressEditResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestAddressEditResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestAddressEditResponse' passed at 2016-02-01 10:25:29.575.
+Test Suite 'TestAddressPostcodeResponse' started at 2016-02-01 10:25:29.576
+Test Case '-[TestAddressPostcodeResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestAddressPostcodeResponse testDataObjectIsNotNilAndProperType]' passed (0.003 seconds).
+Test Suite 'TestAddressPostcodeResponse' passed at 2016-02-01 10:25:29.579.
+Test Suite 'TestAddressViewResponse' started at 2016-02-01 10:25:29.579
+Test Case '-[TestAddressViewResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestAddressViewResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestAddressViewResponse' passed at 2016-02-01 10:25:29.581.
+Test Suite 'TestCreditCardListResponse' started at 2016-02-01 10:25:29.581
+Test Case '-[TestCreditCardListResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestCreditCardListResponse testDataObjectIsNotNilAndProperType]' passed (0.003 seconds).
+Test Suite 'TestCreditCardListResponse' passed at 2016-02-01 10:25:29.585.
+Test Suite 'TestCreditCardMakeMainResponse' started at 2016-02-01 10:25:29.585
+Test Case '-[TestCreditCardMakeMainResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestCreditCardMakeMainResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestCreditCardMakeMainResponse' passed at 2016-02-01 10:25:29.588.
+Test Suite 'TestCreditCardRemoveResponse' started at 2016-02-01 10:25:29.588
+Test Case '-[TestCreditCardRemoveResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestCreditCardRemoveResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestCreditCardRemoveResponse' passed at 2016-02-01 10:25:29.590.
+Test Suite 'TestCreditCardViewResponse' started at 2016-02-01 10:25:29.591
+Test Case '-[TestCreditCardViewResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestCreditCardViewResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestCreditCardViewResponse' passed at 2016-02-01 10:25:29.593.
+Test Suite 'TestDeliveryPassListResponses' started at 2016-02-01 10:25:29.593
+Test Case '-[TestDeliveryPassListResponses testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestDeliveryPassListResponses testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestDeliveryPassListResponses' passed at 2016-02-01 10:25:29.596.
+Test Suite 'TestDeliveryPassPurchase' started at 2016-02-01 10:25:29.596
+Test Case '-[TestDeliveryPassPurchase testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestDeliveryPassPurchase testDataObjectIsNotNilAndProperType]' passed (0.001 seconds).
+Test Suite 'TestDeliveryPassPurchase' passed at 2016-02-01 10:25:29.598.
+Test Suite 'TestDeliveryPassSubmit3DSResponse' started at 2016-02-01 10:25:29.598
+Test Case '-[TestDeliveryPassSubmit3DSResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestDeliveryPassSubmit3DSResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestDeliveryPassSubmit3DSResponse' passed at 2016-02-01 10:25:29.601.
+Test Suite 'TestDeliveryPassSubmitResponse' started at 2016-02-01 10:25:29.601
+Test Case '-[TestDeliveryPassSubmitResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestDeliveryPassSubmitResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestDeliveryPassSubmitResponse' passed at 2016-02-01 10:25:29.604.
+Test Suite 'TestFavouritesItemsServiceResponseNotNil' started at 2016-02-01 10:25:29.604
+Test Case '-[TestFavouritesItemsServiceResponseNotNil testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestFavouritesItemsServiceResponseNotNil testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestFavouritesItemsServiceResponseNotNil' passed at 2016-02-01 10:25:29.607.
+Test Suite 'TestFavouritesServiceResponseNotNil' started at 2016-02-01 10:25:29.607
+Test Case '-[TestFavouritesServiceResponseNotNil testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestFavouritesServiceResponseNotNil testDataObjectIsNotNilAndProperType]' passed (0.014 seconds).
+Test Suite 'TestFavouritesServiceResponseNotNil' passed at 2016-02-01 10:25:29.621.
+Test Suite 'TestItemSearchResponse' started at 2016-02-01 10:25:29.622
+Test Case '-[TestItemSearchResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestItemSearchResponse testDataObjectIsNotNilAndProperType]' passed (0.015 seconds).
+Test Suite 'TestItemSearchResponse' passed at 2016-02-01 10:25:29.637.
+Test Suite 'TestItemViewListResponse' started at 2016-02-01 10:25:29.638
+Test Case '-[TestItemViewListResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestItemViewListResponse testDataObjectIsNotNilAndProperType]' passed (0.018 seconds).
+Test Suite 'TestItemViewListResponse' passed at 2016-02-01 10:25:29.656.
+Test Suite 'TestItemViewResponse' started at 2016-02-01 10:25:29.656
+Test Case '-[TestItemViewResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestItemViewResponse testDataObjectIsNotNilAndProperType]' passed (0.006 seconds).
+Test Suite 'TestItemViewResponse' passed at 2016-02-01 10:25:29.663.
+Test Suite 'TestItemsResponse' started at 2016-02-01 10:25:29.663
+Test Case '-[TestItemsResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestItemsResponse testDataObjectIsNotNilAndProperType]' passed (0.009 seconds).
+Test Suite 'TestItemsResponse' passed at 2016-02-01 10:25:29.673.
+Test Suite 'TestItemsServiceReturnsAProductForOneItemIDRequest' started at 2016-02-01 10:25:29.674
+Test Case '-[TestItemsServiceReturnsAProductForOneItemIDRequest testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestItemsServiceReturnsAProductForOneItemIDRequest testDataObjectIsNotNilAndProperType]' passed (0.006 seconds).
+Test Suite 'TestItemsServiceReturnsAProductForOneItemIDRequest' passed at 2016-02-01 10:25:29.680.
+Test Suite 'TestItemsServiceReturnsAProductWithDetailsFromOneItemIDRequest' started at 2016-02-01 10:25:29.680
+Test Case '-[TestItemsServiceReturnsAProductWithDetailsFromOneItemIDRequest testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestItemsServiceReturnsAProductWithDetailsFromOneItemIDRequest testDataObjectIsNotNilAndProperType]' passed (0.022 seconds).
+Test Suite 'TestItemsServiceReturnsAProductWithDetailsFromOneItemIDRequest' passed at 2016-02-01 10:25:29.703.
+Test Suite 'TestLoadCategoriesServiceResponse' started at 2016-02-01 10:25:29.704
+Test Case '-[TestLoadCategoriesServiceResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestLoadCategoriesServiceResponse testDataObjectIsNotNilAndProperType]' passed (0.006 seconds).
+Test Suite 'TestLoadCategoriesServiceResponse' passed at 2016-02-01 10:25:29.710.
+Test Suite 'TestOrderAmendResponse' started at 2016-02-01 10:25:29.710
+Test Case '-[TestOrderAmendResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestOrderAmendResponse testDataObjectIsNotNilAndProperType]' passed (0.004 seconds).
+Test Suite 'TestOrderAmendResponse' passed at 2016-02-01 10:25:29.715.
+Test Suite 'TestOrderCancelResponse' started at 2016-02-01 10:25:29.716
+Test Case '-[TestOrderCancelResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestOrderCancelResponse testDataObjectIsNotNilAndProperType]' passed (0.004 seconds).
+Test Suite 'TestOrderCancelResponse' passed at 2016-02-01 10:25:29.721.
+Test Suite 'TestOrderPreviewAmendResponse' started at 2016-02-01 10:25:29.721
+Test Case '-[TestOrderPreviewAmendResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestOrderPreviewAmendResponse testDataObjectIsNotNilAndProperType]' passed (0.016 seconds).
+Test Suite 'TestOrderPreviewAmendResponse' passed at 2016-02-01 10:25:29.737.
+Test Suite 'TestOrderViewByDateResponse' started at 2016-02-01 10:25:29.737
+Test Case '-[TestOrderViewByDateResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestOrderViewByDateResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestOrderViewByDateResponse' passed at 2016-02-01 10:25:29.740.
+Test Suite 'TestOrderViewDetailResponse' started at 2016-02-01 10:25:29.740
+Test Case '-[TestOrderViewDetailResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestOrderViewDetailResponse testDataObjectIsNotNilAndProperType]' passed (0.009 seconds).
+Test Suite 'TestOrderViewDetailResponse' passed at 2016-02-01 10:25:29.750.
+Test Suite 'TestOrderViewPageResponse' started at 2016-02-01 10:25:29.750
+Test Case '-[TestOrderViewPageResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestOrderViewPageResponse testDataObjectIsNotNilAndProperType]' passed (0.004 seconds).
+Test Suite 'TestOrderViewPageResponse' passed at 2016-02-01 10:25:29.755.
+Test Suite 'TestProductIconCatalogue' started at 2016-02-01 10:25:29.755
+Test Case '-[TestProductIconCatalogue testCatalogueExists]' started.
+Test Case '-[TestProductIconCatalogue testCatalogueExists]' passed (0.000 seconds).
+Test Suite 'TestProductIconCatalogue' passed at 2016-02-01 10:25:29.756.
+Test Suite 'TestPromotionServiceResponse' started at 2016-02-01 10:25:29.756
+Test Case '-[TestPromotionServiceResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestPromotionServiceResponse testDataObjectIsNotNilAndProperType]' passed (0.046 seconds).
+Test Suite 'TestPromotionServiceResponse' passed at 2016-02-01 10:25:29.803.
+Test Suite 'TestSlotBookPysipypCheckResponse' started at 2016-02-01 10:25:29.803
+Test Case '-[TestSlotBookPysipypCheckResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestSlotBookPysipypCheckResponse testDataObjectIsNotNilAndProperType]' passed (0.017 seconds).
+Test Suite 'TestSlotBookPysipypCheckResponse' passed at 2016-02-01 10:25:29.821.
+Test Suite 'TestSlotBookPysipypConfirmResponse' started at 2016-02-01 10:25:29.821
+Test Case '-[TestSlotBookPysipypConfirmResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestSlotBookPysipypConfirmResponse testDataObjectIsNotNilAndProperType]' passed (0.003 seconds).
+Test Suite 'TestSlotBookPysipypConfirmResponse' passed at 2016-02-01 10:25:29.825.
+Test Suite 'TestSlotBookResponse' started at 2016-02-01 10:25:29.826
+Test Case '-[TestSlotBookResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestSlotBookResponse testDataObjectIsNotNilAndProperType]' passed (0.003 seconds).
+Test Suite 'TestSlotBookResponse' passed at 2016-02-01 10:25:29.829.
+Test Suite 'TestSlotFindCNCCitiesResponse' started at 2016-02-01 10:25:29.830
+Test Case '-[TestSlotFindCNCCitiesResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestSlotFindCNCCitiesResponse testDataObjectIsNotNilAndProperType]' passed (0.001 seconds).
+Test Suite 'TestSlotFindCNCCitiesResponse' passed at 2016-02-01 10:25:29.832.
+Test Suite 'TestSlotFindCNCStoresResponse' started at 2016-02-01 10:25:29.832
+Test Case '-[TestSlotFindCNCStoresResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestSlotFindCNCStoresResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestSlotFindCNCStoresResponse' passed at 2016-02-01 10:25:29.834.
+Test Suite 'TestSlotSelectCNCStoreResponse' started at 2016-02-01 10:25:29.835
+Test Case '-[TestSlotSelectCNCStoreResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestSlotSelectCNCStoreResponse testDataObjectIsNotNilAndProperType]' passed (0.001 seconds).
+Test Suite 'TestSlotSelectCNCStoreResponse' passed at 2016-02-01 10:25:29.836.
+Test Suite 'TestSlotViewBookedResponse' started at 2016-02-01 10:25:29.837
+Test Case '-[TestSlotViewBookedResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestSlotViewBookedResponse testDataObjectIsNotNilAndProperType]' passed (0.004 seconds).
+Test Suite 'TestSlotViewBookedResponse' passed at 2016-02-01 10:25:29.842.
+Test Suite 'TestSlotViewResponse' started at 2016-02-01 10:25:29.842
+Test Case '-[TestSlotViewResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestSlotViewResponse testDataObjectIsNotNilAndProperType]' passed (0.004 seconds).
+Test Suite 'TestSlotViewResponse' passed at 2016-02-01 10:25:29.847.
+Test Suite 'TestSpecialOfferServiceResponses' started at 2016-02-01 10:25:29.847
+Test Case '-[TestSpecialOfferServiceResponses testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestSpecialOfferServiceResponses testDataObjectIsNotNilAndProperType]' passed (0.008 seconds).
+Test Suite 'TestSpecialOfferServiceResponses' passed at 2016-02-01 10:25:29.856.
+Test Suite 'TestSuggestionListService' started at 2016-02-01 10:25:29.856
+Test Case '-[TestSuggestionListService testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestSuggestionListService testDataObjectIsNotNilAndProperType]' passed (0.022 seconds).
+Test Suite 'TestSuggestionListService' passed at 2016-02-01 10:25:29.878.
+Test Suite 'TestTaxonomyManagerLoadAllCategoriesError_504' started at 2016-02-01 10:25:29.879
+Test Case '-[TestTaxonomyManagerLoadAllCategoriesError_504 testCorrectErrorReturned]' started.
+Test Case '-[TestTaxonomyManagerLoadAllCategoriesError_504 testCorrectErrorReturned]' passed (0.002 seconds).
+Test Suite 'TestTaxonomyManagerLoadAllCategoriesError_504' passed at 2016-02-01 10:25:29.881.
+Test Suite 'TestTrolleyAddUpdateRemove' started at 2016-02-01 10:25:29.881
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponsesHaveTrolley]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponsesHaveTrolley]' passed (0.011 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyBookedUntilTime]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyBookedUntilTime]' passed (0.012 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyCarrierBagEligible]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyCarrierBagEligible]' passed (0.011 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyCarrierBagSelected]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyCarrierBagSelected]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyDeliveryAddress]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyDeliveryAddress]' passed (0.011 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyDeliveryOption]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyDeliveryOption]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyDeliveryPassApplied]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyDeliveryPassApplied]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyDeliveryPrice]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyDeliveryPrice]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyDeliverySlotEnd]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyDeliverySlotEnd]' passed (0.011 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyDeliverySlotStart]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyDeliverySlotStart]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyItemsArray]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyItemsArray]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyItemsCost]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyItemsCost]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyItemsInTrolley]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyItemsInTrolley]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyMinOrderValue]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyMinOrderValue]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyNumberOfItems]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyNumberOfItems]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyOriginalOrderBookedUntilTime]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyOriginalOrderBookedUntilTime]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyOriginalOrderSubmittedDate]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyOriginalOrderSubmittedDate]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyPostCode]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyPostCode]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleySlotDates]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleySlotDates]' passed (0.010 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyTotalCost]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyTotalCost]' passed (0.011 seconds).
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyTrolleyID]' started.
+Test Case '-[TestTrolleyAddUpdateRemove testItemModificationResponseTrolleyTrolleyID]' passed (0.010 seconds).
+Test Suite 'TestTrolleyAddUpdateRemove' passed at 2016-02-01 10:25:30.110.
+Test Suite 'TestTrolleyCreateAndLoadResponses' started at 2016-02-01 10:25:30.110
+Test Case '-[TestTrolleyCreateAndLoadResponses testCreateTrolleyResponseHasTrolleyId]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testCreateTrolleyResponseHasTrolleyId]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testCreateTrolleyResponseIsValidObject]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testCreateTrolleyResponseIsValidObject]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testEmptyTrolleyHasDeliveryPrice]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testEmptyTrolleyHasDeliveryPrice]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testEmptyTrolleyResponseIsValidObject]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testEmptyTrolleyResponseIsValidObject]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testEmptyTrolleyWithBookedSlotResponseIsValidObject]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testEmptyTrolleyWithBookedSlotResponseIsValidObject]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyAmendedOrderIdExists]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyAmendedOrderIdExists]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyAmendedOrderIdIsString]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyAmendedOrderIdIsString]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyAmendingHasExpectedValue]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyAmendingHasExpectedValue]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyCarrierBagEligibleHasExpectedValue]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyCarrierBagEligibleHasExpectedValue]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyCarrierBagSelectedIsNO]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyCarrierBagSelectedIsNO]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyDeliveryPassAppliedIsNo]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyDeliveryPassAppliedIsNo]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasBookedUntilTime]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasBookedUntilTime]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasDeliveryAddress]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasDeliveryAddress]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasDeliveryEndTime]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasDeliveryEndTime]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasDeliveryStartTime]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasDeliveryStartTime]' passed (0.002 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedBookedUntilTime]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedBookedUntilTime]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedDeliveryAddress]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedDeliveryAddress]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedDeliveryOption]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedDeliveryOption]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateA** TEST SUCCEEDED **
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedDeliveryPrice]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedDeliverySlotEnd]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedDeliverySlotEnd]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedDeliverySlotStart]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedDeliverySlotStart]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedID]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedID]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedItemsCost]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedItemsCost]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedMinOrderValue]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedMinOrderValue]' passed (0.002 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedOrignalOrderBookedUntilTime]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedOrignalOrderBookedUntilTime]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedOrignalOrderSubmittedDate]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedOrignalOrderSubmittedDate]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedPostCode]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedPostCode]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedTotalCost]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasExpectedTotalCost]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasID]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasID]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasItemsArray]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasItemsArray]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasItemsCost]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasItemsCost]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasMinOrderValue]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasMinOrderValue]' passed (0.002 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasNoItems]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasNoItems]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasOriginalOrderBookedUntilTime]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasOriginalOrderBookedUntilTime]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasOriginalOrderSubmittedDate]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasOriginalOrderSubmittedDate]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasPostCode]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasPostCode]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasTotalCost]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasTotalCost]' passed (0.001 seconds).
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasZeroItemsInTrolley]' started.
+Test Case '-[TestTrolleyCreateAndLoadResponses testTrolleyHasZeroItemsInTrolley]' passed (0.001 seconds).
+Test Suite 'TestTrolleyCreateAndLoadResponses' passed at 2016-02-01 10:25:30.151.
+Test Suite 'TestUserServiceAddResponse' started at 2016-02-01 10:25:30.152
+Test Case '-[TestUserServiceAddResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestUserServiceAddResponse testDataObjectIsNotNilAndProperType]' passed (0.004 seconds).
+Test Suite 'TestUserServiceAddResponse' passed at 2016-02-01 10:25:30.157.
+Test Suite 'TestUserServiceLoginResponse' started at 2016-02-01 10:25:30.157
+Test Case '-[TestUserServiceLoginResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestUserServiceLoginResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestUserServiceLoginResponse' passed at 2016-02-01 10:25:30.160.
+Test Suite 'TestUserServiceLogoutResponse' started at 2016-02-01 10:25:30.160
+Test Case '-[TestUserServiceLogoutResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestUserServiceLogoutResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestUserServiceLogoutResponse' passed at 2016-02-01 10:25:30.162.
+Test Suite 'TestUserServiceViewResponse' started at 2016-02-01 10:25:30.162
+Test Case '-[TestUserServiceViewResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestUserServiceViewResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestUserServiceViewResponse' passed at 2016-02-01 10:25:30.164.
+Test Suite 'TestVoucherAddResponse' started at 2016-02-01 10:25:30.165
+Test Case '-[TestVoucherAddResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestVoucherAddResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestVoucherAddResponse' passed at 2016-02-01 10:25:30.167.
+Test Suite 'TestVoucherLoadResponse' started at 2016-02-01 10:25:30.168
+Test Case '-[TestVoucherLoadResponse testDataObjectIsNotNilAndProperType]' started.
+Test Case '-[TestVoucherLoadResponse testDataObjectIsNotNilAndProperType]' passed (0.002 seconds).
+Test Suite 'TestVoucherLoadResponse' passed at 2016-02-01 10:25:30.170.
+Test Suite 'TrolleyTests' started at 2016-02-01 10:25:30.170
+Test Case '-[TrolleyTests testTrolleyAmendedOrderIdContainsOnlyNumbers]' started.
+Test Case '-[TrolleyTests testTrolleyAmendedOrderIdContainsOnlyNumbers]' passed (0.011 seconds).
+Test Case '-[TrolleyTests testTrolleyAmendedOrderIdExists]' started.
+Test Case '-[TrolleyTests testTrolleyAmendedOrderIdExists]' passed (0.011 seconds).
+Test Case '-[TrolleyTests testTrolleyAmendedOrderIdIsString]' started.
+Test Case '-[TrolleyTests testTrolleyAmendedOrderIdIsString]' passed (0.011 seconds).
+Test Suite 'TrolleyTests' passed at 2016-02-01 10:25:30.204.
+Test Suite 'ViewSlotWithBookedSlot' started at 2016-02-01 10:25:30.204
+Test Case '-[ViewSlotWithBookedSlot testHasExpiredBookedSlot]' started.
+Test Case '-[ViewSlotWithBookedSlot testHasExpiredBookedSlot]' passed (0.003 seconds).
+Test Case '-[ViewSlotWithBookedSlot testHasNextDayBookedSlot]' started.
+Test Case '-[ViewSlotWithBookedSlot testHasNextDayBookedSlot]' passed (0.003 seconds).
+Test Case '-[ViewSlotWithBookedSlot testHasSameDayBookedSlot]' started.
+Test Case '-[ViewSlotWithBookedSlot testHasSameDayBookedSlot]' passed (0.003 seconds).
+Test Suite 'ViewSlotWithBookedSlot' passed at 2016-02-01 10:25:30.215.
+Test Suite 'ASDA-Tests.xctest' passed at 2016-02-01 10:25:30.215.
+Test Suite 'Selected tests' started at 2016-02-01 10:27:11.739
+Test Suite 'ASDA-iPhone-UI-Tests.xctest' started at 2016-02-01 10:27:11.740
+Test Suite 'browseTaxonomyNotSignedIn_iPhone' started at 2016-02-01 10:27:11.740
+Test Case '-[ASDA_iPhone_UI_Tests.browseTaxonomyNotSignedIn_iPhone testTopLevelCategories]' started.
+Test Case '-[ASDA_iPhone_UI_Tests.browseTaxonomyNotSignedIn_iPhone testTopLevelCategories]' passed (22.695 seconds).
+Test Suite 'browseTaxonomyNotSignedIn_iPhone' passed at 2016-02-01 10:27:34.435.
+Test Suite 'ASDA-iPhone-UI-Tests.xctest' passed at 2016-02-01 10:27:34.436.
+Test Suite 'Selected tests' started at 2016-02-01 10:28:58.103
+Test Suite 'ASDA-iPhone-UI-Tests.xctest' started at 2016-02-01 10:28:58.103
+Test Suite 'browseTaxonomyNotSignedIn_iPhone' started at 2016-02-01 10:28:58.104
+Test Case '-[ASDA_iPhone_UI_Tests.browseTaxonomyNotSignedIn_iPhone testNavigatingToShelf]' started.
+Test Case '-[ASDA_iPhone_UI_Tests.browseTaxonomyNotSignedIn_iPhone testNavigatingToShelf]' passed (22.613 seconds).
+Test Suite 'browseTaxonomyNotSignedIn_iPhone' passed at 2016-02-01 10:29:20.717.
+Test Suite 'ASDA-iPhone-UI-Tests.xctest' passed at 2016-02-01 10:29:20.718.
+Test Suite 'Selected tests' started at 2016-02-01 10:30:43.759
+Test Suite 'ASDA-iPhone-UI-Tests.xctest' started at 2016-02-01 10:30:43.760
+Test Suite 'browseTaxonomyNotSignedIn_iPhone' started at 2016-02-01 10:30:43.760
+Test Case '-[ASDA_iPhone_UI_Tests.browseTaxonomyNotSignedIn_iPhone testPagination]' started.
+Test Case '-[ASDA_iPhone_UI_Tests.browseTaxonomyNotSignedIn_iPhone testPagination]' passed (27.127 seconds).
+Test Suite 'browseTaxonomyNotSignedIn_iPhone' passed at 2016-02-01 10:31:10.888.
+Test Suite 'ASDA-iPhone-UI-Tests.xctest' passed at 2016-02-01 10:31:11.023.
+Test Suite 'Selected tests' started at 2016-02-02 16:45:56.488
+Test Suite 'FileReaderTests' started at 2016-02-02 16:45:56.489
+Test Case '-[XcodebuildUtilitiesTests.FileReaderTests testReadLineWithTrailingNL]' started.
+Test Case '-[XcodebuildUtilitiesTests.FileReaderTests testReadLineWithTrailingNL]' failed (44.679 seconds).
+Test Suite 'FileReaderTests' failed at 2016-02-02 16:46:41.170.

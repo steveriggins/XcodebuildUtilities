@@ -10,9 +10,8 @@ import Foundation
 
 func main()  {
     let runner = XCTestsToJUnitRunner()
-    if let (outputString, llvmCovArgs) = runner.getLLVMCovOutputWithCommandLineArgs(Process.arguments) {
-        let summaryCoverage = outputString.parseLLVMCovOutput(llvmCovArgs)
-        summaryCoverage.saveXML(llvmCovArgs)
+    if let args = runner.parseCommandLineArgs(Process.arguments) {
+        runner.processFile(args)
     }
 }
 

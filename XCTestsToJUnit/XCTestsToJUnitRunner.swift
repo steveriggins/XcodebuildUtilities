@@ -8,31 +8,39 @@
 
 import Foundation
 
-enum RunMode {
-    case Invalid
-    case InputFile
+struct XCTestsToJUnitArguments {
+    let inputFilePath:String
+    let outputDirectory:String
+    let verbose:Bool
+
+    var description: String {
+        return "XCTestsToJUnitArguments"
+            + "\n\tinputFilePath=\(inputFilePath)"
+            + "\n\toutputDirectory=\(outputDirectory)"
+            + "\n\tverbose=\(verbose)"
+    }
 }
 
 class XCTestsToJUnitRunner {
 
     typealias NextArgFunction = (value:String) -> Void
+    var currentSuiteResult:XCTestSuiteResult?
+
+    init() {
+    }
 
     func showSyntax() {
-        print("ProfdataToCobertura [-inputFile pathToLLVMCovOutput] [-llvm-cov <pathToAppBinary> <pathToProfdataFile>] [-verbose] [-source <sourceRootPath>] [-output outputFilepath]")
-        print("   either '-inputFile' or '-llvm-cov' option is required, but not both")
+        print("XCTestsToJUnit [-inputFile pathToXcodebuildOutput] [-verbose] [-output outputDirectory]")
         exit(1)
     }
 
-    func parseCommandLineArgs(originalArgs:[String]) -> LLVMCovArguments? {
+    func parseCommandLineArgs(originalArgs:[String]) -> XCTestsToJUnitArguments? {
         var args = originalArgs
         args.removeFirst()
 
         var errors:[String] = []
-        var binaryPath:String?
-        var profdataPath:String?
         var inputFilePath:String?
-        var sourcePath:String?
-        var outputPath:String?
+        var outputDirectory:String?
         var verbose = false
         var nextArgs:[NextArgFunction] = []
         var lastArg:String?
@@ -46,19 +54,12 @@ class XCTestsToJUnitRunner {
                     let nextArg = nextArgs.removeFirst()
                     nextArg(value:arg)
                 }
-            } else if arg == "-llvm-cov" {
-                nextArgs = []
-                nextArgs.append({ anArg in binaryPath = anArg })
-                nextArgs.append({ anArg in profdataPath = anArg })
             } else if arg == "-inputFile" {
                 nextArgs = []
                 nextArgs.append({ anArg in inputFilePath = anArg })
-            } else if arg == "-source" {
-                nextArgs = []
-                nextArgs.append({ anArg in sourcePath = anArg })
             } else if arg == "-output" {
                 nextArgs = []
-                nextArgs.append({ anArg in outputPath = anArg })
+                nextArgs.append({ anArg in outputDirectory = anArg })
             } else if arg == "-verbose" {
                 verbose = true
             } else {
@@ -69,13 +70,19 @@ class XCTestsToJUnitRunner {
         if nextArgs.count > 0 {
             errors.append("Missing value\(nextArgs.count > 1 ? "s" : "") after \(lastArg)")
         }
+        if inputFilePath == nil {
+            errors.append("-inputFile is required")
+        }
+        if outputDirectory == nil {
+            errors.append("-output is required")
+        }
         if errors.count > 0 {
             for error in errors {
                 print(error)
             }
             return nil
         }
-        let result = LLVMCovArguments(binaryPath:binaryPath, profdataPath:profdataPath, inputFilePath:inputFilePath, sourcePath:sourcePath, outputPath:outputPath, verbose:verbose)
+        let result = XCTestsToJUnitArguments(inputFilePath:inputFilePath!, outputDirectory:outputDirectory!, verbose:verbose)
         if verbose {
             print("Current directory=\(NSFileManager.defaultManager().currentDirectoryPath)")
             print(result.description)
@@ -83,74 +90,47 @@ class XCTestsToJUnitRunner {
         return result
     }
 
-    func runLLVMCovWithBinary(binaryPath:String, profdataPath:String, verbose:Bool) -> Result<String> {
-        let task = NSTask()
-        task.launchPath = "/usr/bin/xcrun"
-        task.arguments = [
-            "llvm-cov",
-            "show",
-            binaryPath,
-            "-instr-profile",
-            profdataPath
-        ]
+    func processFile(args:XCTestsToJUnitArguments) -> XCTestSummaryResult {
+        let fileURL = NSURL.fileURLWithPath(args.inputFilePath)
 
-        let outputPipe = NSPipe()
-        let errorPipe = NSPipe()
-        task.standardOutput = outputPipe
-        task.standardError = errorPipe
+        let reader = FileReader(fileURL: fileURL, delimiter: "\n")
 
-        if verbose {
-            print("Launch: xcrun \(task.arguments!.joinWithSeparator(" "))")
-        }
-        task.launch()
-
-        let errorData = errorPipe.fileHandleForReading.readDataToEndOfFile()
-        if errorData.length > 0 {
-            let errorString = NSString(data: errorData, encoding: NSUTF8StringEncoding)!
-            let errors = errorString.componentsSeparatedByString("\n") as [String]
-            let errorType = NSError(domain:XcodebuildUtilities.ErrorDomain, code:-1, userInfo: ["errors":errors])
-            return Result.Error(errorType)
+        while let line = reader.readLine() {
+            processLine(line)
         }
 
-        let outputData = outputPipe.fileHandleForReading.readDataToEndOfFile()
-        let outputString = NSString(data: outputData, encoding: NSUTF8StringEncoding) as! String
-        if verbose {
-            print("Success with \(outputString.characters.count) of output")
-        }
-        return Result.Success(outputString)
+        return XCTestSummaryResult()
     }
 
-    func getLLVMCovOutputWithCommandLineArgs(args:[String]) -> (String, LLVMCovArguments)? {
-        if let llvmCovArgs = parseCommandLineArgs(args) {
-
-            switch (llvmCovArgs.runMode) {
-            case .Invalid:
-                print("Invalid run mode")
-            case .LLVMCov:
-                let result = runLLVMCovWithBinary(llvmCovArgs.binaryPath!, profdataPath: llvmCovArgs.profdataPath!, verbose: llvmCovArgs.verbose)
-                switch result {
-                case .Success(let outputString):
-                    return (outputString,llvmCovArgs)
-                case .Error(let error):
-                    if let errors = (error as NSError).userInfo["errors"] as? [String] where errors.count > 0 {
-                        for error in errors {
-                            print(error)
-                        }
-                    } else {
-                        print("An error occured: \(error)")
-                    }
-                }
-            case .InputFile:
-                if let data = NSData(contentsOfFile: llvmCovArgs.inputFilePath!) {
-                    if let outputString = NSString(data:data, encoding: NSUTF8StringEncoding) as? String {
-                        return (outputString,llvmCovArgs)
-                    }
-                }
-                print("Could not read inputFile: \(llvmCovArgs.inputFilePath!)")
+    func processLine(line:String) {
+        if let lineType = LineType.parse(line) {
+            switch lineType {
+            case .SuiteStarted(let suiteName, let timestamp):
+                startSuite(suiteName, timestamp:timestamp)
+            case .SuiteFinished(let suiteName, let timestamp, let success):
+                finishSuite(suiteName, timestamp:timestamp, success:success)
+            case .CaseStarted(let suiteName, let caseName):
+                startCase(suiteName, caseName:caseName)
+            case .CaseFinished(let suiteName, let caseName, let duration, let success):
+                finishCase(suiteName, caseName:caseName, duration:duration, success:success)
             }
         }
-        showSyntax()
-        return nil
     }
-    
+
+    func startSuite(suiteName:String, timestamp:NSDate) {
+        print("startSuite: \(suiteName), timestamp=\(timestamp)")
+    }
+
+    func finishSuite(suiteName:String, timestamp:NSDate, success:Bool) {
+        print("finishSuite: \(suiteName), timestamp=\(timestamp), success=\(success)")
+    }
+
+    func startCase(suiteName:String, caseName:String) {
+        print("startCase: \(suiteName) \(caseName)")
+    }
+
+    func finishCase(suiteName:String, caseName:String, duration:NSTimeInterval, success:Bool) {
+        print("finishCase: \(suiteName) \(caseName), duration=\(duration), success=\(success)")
+    }
+
 }
