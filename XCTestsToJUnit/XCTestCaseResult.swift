@@ -16,8 +16,8 @@ class XCTestCaseResult: XMLible {
     let methodName:String
     let duration:NSTimeInterval
 
-    var log:[String] {
-        return _log
+    var logLines:[String] {
+        return _logLines
     }
 
     var failureMessages:[XCTestCaseFailureMessage] {
@@ -28,7 +28,7 @@ class XCTestCaseResult: XMLible {
         return failureMessages.count > 0 ? "Failure" : "Success"
     }
 
-    private var _log:[String] = []
+    private var _logLines:[String] = []
     private var _failureMessages:[XCTestCaseFailureMessage] = []
     
     init(testSuite:XCTestSuiteResult, methodName:String, duration:NSTimeInterval) {
@@ -38,7 +38,7 @@ class XCTestCaseResult: XMLible {
     }
 
     func processLog(line:String) {
-        _log.append(line)
+        _logLines.append(line)
         if let failureMessage = XCTestCaseFailureMessage(line:line) {
             _failureMessages.append(failureMessage)
         }
@@ -53,7 +53,6 @@ class XCTestCaseResult: XMLible {
 // </testcase>
 // <testcase classname='DummyObjCSomeFailuresTests' name='testSuccess1' time='0.0' />
 
-// <xs:element ref="error" minOccurs="0" maxOccurs="unbounded"/>
 // <xs:element ref="system-out" minOccurs="0" maxOccurs="unbounded"/>
 
 // <xs:attribute name="name" type="xs:string" use="required"/>
@@ -71,6 +70,10 @@ class XCTestCaseResult: XMLible {
 
         for failureMessage in failureMessages {
             result.addChild(failureMessage.xmlElement())
+        }
+
+        for logLine in logLines {
+            result.addChild(NSXMLElement(name:"system-out", stringValue:logLine))
         }
 
         return result

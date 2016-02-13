@@ -22,7 +22,7 @@ class XCTestCaseResultTests: XCTestCase {
         XCTAssertEqual(expectedSuiteName, testCase.suiteName)
         XCTAssertEqual(expectedMethodName, testCase.methodName)
         XCTAssertEqual(expectedDuration, testCase.duration)
-        XCTAssertTrue(testCase.log.isEmpty)
+        XCTAssertTrue(testCase.logLines.isEmpty)
         XCTAssertTrue(testCase.failureMessages.isEmpty)
     }
 
@@ -38,7 +38,7 @@ class XCTestCaseResultTests: XCTestCase {
         for logLine in expectedLogLines {
             testCase.processLog(logLine)
         }
-        XCTAssertEqual(expectedLogLines, testCase.log)
+        XCTAssertEqual(expectedLogLines, testCase.logLines)
         XCTAssertTrue(testCase.failureMessages.isEmpty)
     }
 
@@ -55,7 +55,7 @@ class XCTestCaseResultTests: XCTestCase {
         for logLine in expectedLogLines {
             testCase.processLog(logLine)
         }
-        XCTAssertEqual(expectedLogLines, testCase.log)
+        XCTAssertEqual(expectedLogLines, testCase.logLines)
         XCTAssertEqual(1, testCase.failureMessages.count)
 
     }
@@ -86,7 +86,30 @@ class XCTestCaseResultTests: XCTestCase {
         expectAttribute(xmlElement, name:"time", stringValue:"123.4")
         expectAttribute(xmlElement, name:"status", stringValue:"Failure")
 
-        XCTAssertEqual(1, xmlElement.children!.count)
+        var failureElements:[NSXMLNode] = []
+        var systemOutElements:[NSXMLNode] = []
+        var otherElements:[NSXMLNode] = []
+        if let children = xmlElement.children {
+            for childElement in children {
+                let childName = childElement.name ?? ""
+                switch childName {
+                case "failure":
+                    failureElements.append(childElement)
+                case "system-out":
+                    systemOutElements.append(childElement)
+                default:
+                    otherElements.append(childElement)
+                }
+            }
+        }
+        XCTAssertEqual(1, failureElements.count)
+        XCTAssertEqual(expectedLogLines.count, systemOutElements.count)
+        for index in 0..<expectedLogLines.count {
+            let logLine = expectedLogLines[index]
+            let childElement:NSXMLNode? = index < systemOutElements.count ? systemOutElements[index] : nil
+            XCTAssertEqual(logLine, childElement?.stringValue)
+        }
+        XCTAssertEqual(0, otherElements.count)
     }
 
 }
