@@ -63,6 +63,7 @@
 		F84D75961C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D75951C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift */; };
 		F84D75971C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D75951C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift */; };
 		F84D75981C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D75951C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift */; };
+		F84D759B1C6FC0C7009FAFF5 /* XCTestSuiteSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D759A1C6FC0C7009FAFF5 /* XCTestSuiteSummaryTests.swift */; };
 		F89030F71C60464B003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
 		F89030F81C604651003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
 		F8D5BAD51C6851790083F658 /* XCTestCaseResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5BAD31C684EB70083F658 /* XCTestCaseResultTests.swift */; };
@@ -131,6 +132,7 @@
 		F84D75871C6FA646009FAFF5 /* TEST-DummySwiftAllFailuresTests.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "TEST-DummySwiftAllFailuresTests.xml"; sourceTree = "<group>"; };
 		F84D75881C6FA646009FAFF5 /* TEST-DummySwiftSomeFailuresTests.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "TEST-DummySwiftSomeFailuresTests.xml"; sourceTree = "<group>"; };
 		F84D75951C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+XMLExtensions.swift"; sourceTree = "<group>"; };
+		F84D759A1C6FC0C7009FAFF5 /* XCTestSuiteSummaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestSuiteSummaryTests.swift; sourceTree = "<group>"; };
 		F89030F61C60464B003CE5EE /* XMLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMLExtensions.swift; path = XcodebuildUtilities/XMLExtensions.swift; sourceTree = SOURCE_ROOT; };
 		F8D5BAD31C684EB70083F658 /* XCTestCaseResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseResultTests.swift; sourceTree = "<group>"; };
 		F8D5BAD61C68521F0083F658 /* XCTestSuiteResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestSuiteResultTests.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				F8D5BADB1C68598D0083F658 /* XCTestCaseFailureMessageTests.swift */,
 				F8D5BAD31C684EB70083F658 /* XCTestCaseResultTests.swift */,
 				F8D5BAD61C68521F0083F658 /* XCTestSuiteResultTests.swift */,
+				F84D759A1C6FC0C7009FAFF5 /* XCTestSuiteSummaryTests.swift */,
 				F8F08F901C604884003349A2 /* Info.plist */,
 			);
 			path = XCTestsToJUnitTests;
@@ -556,6 +559,7 @@
 				F8D5BAD71C68521F0083F658 /* XCTestSuiteResultTests.swift in Sources */,
 				F8D5BADC1C68598D0083F658 /* XCTestCaseFailureMessageTests.swift in Sources */,
 				F834CE3E1C61720B00630736 /* XCTestsToJUnitTypes.swift in Sources */,
+				F84D759B1C6FC0C7009FAFF5 /* XCTestSuiteSummaryTests.swift in Sources */,
 				F84D75971C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

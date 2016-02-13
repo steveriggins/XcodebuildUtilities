@@ -1,5 +1,5 @@
 //
-//  XCTestSuiteResultTests.swift
+//  XCTestSummaryResultTests.swift
 //  XcodebuildUtilities
 //
 //  Created by Douglas Sjoquist on 2/7/16.
@@ -8,16 +8,11 @@
 
 import XCTest
 
-class XCTestSuiteResultTests: XCTestCase {
+class XCTestSummaryResultTests: XCTestCase {
     
     func testInit() {
-        let expectedSuiteName = "SuiteA"
-
-        let testSuite = XCTestSuiteResult(testSummary:XCTestSummaryResult(), suiteName:expectedSuiteName)
-
-        XCTAssertNotNil(testSuite.testSummary)
-        XCTAssertNotNil(expectedSuiteName, testSuite.suiteName)
-
+        let testSummaryResult = XCTestSummaryResult()
+        XCTAssertTrue(testSummaryResult.testSuiteResults.isEmpty)
     }
-
+    
 }

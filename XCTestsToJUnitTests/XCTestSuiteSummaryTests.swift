@@ -1,5 +1,5 @@
 //
-//  XCTestCaseResultTests.swift
+//  XCTestSuiteResultTests.swift
 //  XcodebuildUtilities
 //
 //  Created by Douglas Sjoquist on 2/7/16.
@@ -8,57 +8,20 @@
 
 import XCTest
 
-class XCTestCaseResultTests: XCTestCase {
+class XCTestSuiteResultTests: XCTestCase {
     
     func testInit() {
         let expectedSuiteName = "SuiteA"
-        let expectedMethodName = "Method123"
+        let expectedTimestamp = NSDate()
 
-        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:expectedSuiteName, timestamp:NSDate())
-        let testCaseResult = XCTestCaseResult(testSuiteResult:dummySuiteResult,methodName:expectedMethodName)
+        let testSuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:expectedSuiteName, timestamp:expectedTimestamp)
 
-        XCTAssertNotNil(testCaseResult.testSuiteResult)
-        XCTAssertNil(testCaseResult.startLine)
-        XCTAssertNil(testCaseResult.finishLine)
-        XCTAssertEqual(0, testCaseResult.duration)
-        XCTAssertEqual(expectedSuiteName, testCaseResult.suiteName)
-        XCTAssertEqual(expectedMethodName, testCaseResult.methodName)
-        XCTAssertTrue(testCaseResult.logLines.isEmpty)
-        XCTAssertTrue(testCaseResult.failureMessages.isEmpty)
-    }
-
-    func testProcessLogNoErrors() {
-        let expectedLogLines = [
-            "Line A",
-            "Line B"
-        ]
-
-        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"", timestamp:NSDate())
-        let testCaseResult = XCTestCaseResult(testSuiteResult:dummySuiteResult,methodName:"")
-
-        for logLine in expectedLogLines {
-            testCaseResult.processLog(logLine)
-        }
-        XCTAssertEqual(expectedLogLines, testCaseResult.logLines)
-        XCTAssertTrue(testCaseResult.failureMessages.isEmpty)
-    }
-
-    func testProcessLogWithErrors() {
-        let expectedLogLines = [
-            "Line A",
-            "/Users/Shared/Jenkins/Home/jobs/dwsjoquist testing/workspace/ASDA-Tests/Common/DummySwiftAllFailuresTests.swift:15: error: -[ASDA_Tests.DummySwiftAllFailuresTests testFailure1] : failed - Failure 1",
-            "Line B"
-        ]
-
-        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"", timestamp:NSDate())
-        let testCaseResult = XCTestCaseResult(testSuiteResult:dummySuiteResult,methodName:"")
-
-        for logLine in expectedLogLines {
-            testCaseResult.processLog(logLine)
-        }
-        XCTAssertEqual(expectedLogLines, testCaseResult.logLines)
-        XCTAssertEqual(1, testCaseResult.failureMessages.count)
-
+        XCTAssertNotNil(testSuiteResult.testSummaryResult)
+        XCTAssertNil(testSuiteResult.startLine)
+        XCTAssertNil(testSuiteResult.finishLine)
+        XCTAssertEqual(expectedSuiteName, testSuiteResult.suiteName)
+        XCTAssertEqual(expectedTimestamp, testSuiteResult.timestamp)
+        XCTAssertTrue(testSuiteResult.testCaseResults.isEmpty)
     }
 
     func testXMLElement() {
@@ -113,5 +76,5 @@ class XCTestCaseResultTests: XCTestCase {
         }
         XCTAssertEqual(0, otherElements.count)
     }
-
+    
 }

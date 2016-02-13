@@ -24,7 +24,6 @@ struct XCTestsToJUnitArguments {
 class XCTestsToJUnitRunner {
 
     typealias NextArgFunction = (value:String) -> Void
-    var currentSuiteResult:XCTestSuiteResult?
 
     init() {
     }
@@ -95,42 +94,11 @@ class XCTestsToJUnitRunner {
 
         let reader = FileReader(fileURL: fileURL, delimiter: "\n")
 
+        let result = XCTestSummaryResult()
         while let line = reader.readLine() {
-            processLine(line)
+            result.processLine(line, verbose:args.verbose)
         }
-
-        return XCTestSummaryResult()
-    }
-
-    func processLine(line:String) {
-        if let lineType = LineType.parse(line) {
-            switch lineType {
-            case .SuiteStarted(let suiteName, let timestamp):
-                startSuite(suiteName, timestamp:timestamp)
-            case .SuiteFinished(let suiteName, let timestamp, let success):
-                finishSuite(suiteName, timestamp:timestamp, success:success)
-            case .CaseStarted(let suiteName, let caseName):
-                startCase(suiteName, caseName:caseName)
-            case .CaseFinished(let suiteName, let caseName, let duration, let success):
-                finishCase(suiteName, caseName:caseName, duration:duration, success:success)
-            }
-        }
-    }
-
-    func startSuite(suiteName:String, timestamp:NSDate) {
-        print("startSuite: \(suiteName), timestamp=\(timestamp)")
-    }
-
-    func finishSuite(suiteName:String, timestamp:NSDate, success:Bool) {
-        print("finishSuite: \(suiteName), timestamp=\(timestamp), success=\(success)")
-    }
-
-    func startCase(suiteName:String, caseName:String) {
-        print("startCase: \(suiteName) \(caseName)")
-    }
-
-    func finishCase(suiteName:String, caseName:String, duration:NSTimeInterval, success:Bool) {
-        print("finishCase: \(suiteName) \(caseName), duration=\(duration), success=\(success)")
+        return result
     }
 
 }

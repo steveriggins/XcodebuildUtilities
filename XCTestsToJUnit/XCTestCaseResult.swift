@@ -9,13 +9,15 @@
 import Foundation
 
 class XCTestCaseResult: XMLible {
-    let testSuite:XCTestSuiteResult
+    let testSuiteResult:XCTestSuiteResult
     var suiteName:String {
-        return self.testSuite.suiteName
+        return self.testSuiteResult.suiteName
     }
     let methodName:String
-    let duration:NSTimeInterval
+    var duration:NSTimeInterval = 0
 
+    var startLine:String?
+    var finishLine:String?
     var logLines:[String] {
         return _logLines
     }
@@ -31,10 +33,9 @@ class XCTestCaseResult: XMLible {
     private var _logLines:[String] = []
     private var _failureMessages:[XCTestCaseFailureMessage] = []
     
-    init(testSuite:XCTestSuiteResult, methodName:String, duration:NSTimeInterval) {
-        self.testSuite = testSuite
+    init(testSuiteResult:XCTestSuiteResult, methodName:String) {
+        self.testSuiteResult = testSuiteResult
         self.methodName = methodName
-        self.duration = duration
     }
 
     func processLog(line:String) {
