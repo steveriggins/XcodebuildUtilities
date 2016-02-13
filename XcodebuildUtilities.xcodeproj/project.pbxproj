@@ -47,6 +47,10 @@
 		F89030F71C60464B003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
 		F89030F81C604651003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
 		F8D5BAD51C6851790083F658 /* XCTestCaseResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5BAD31C684EB70083F658 /* XCTestCaseResultTests.swift */; };
+		F8D5BAD71C68521F0083F658 /* XCTestSuiteResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5BAD61C68521F0083F658 /* XCTestSuiteResultTests.swift */; };
+		F8D5BAD91C68588A0083F658 /* XCTestCaseFailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5BAD81C68588A0083F658 /* XCTestCaseFailureMessage.swift */; };
+		F8D5BADA1C68588A0083F658 /* XCTestCaseFailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5BAD81C68588A0083F658 /* XCTestCaseFailureMessage.swift */; };
+		F8D5BADC1C68598D0083F658 /* XCTestCaseFailureMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5BADB1C68598D0083F658 /* XCTestCaseFailureMessageTests.swift */; };
 		F8F08F841C604875003349A2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F831C604875003349A2 /* main.swift */; };
 		F8F08F951C60490B003349A2 /* XCTestsToJUnitRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F941C60490B003349A2 /* XCTestsToJUnitRunner.swift */; };
 		F8F08F961C604910003349A2 /* XCTestsToJUnitRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F08F941C60490B003349A2 /* XCTestsToJUnitRunner.swift */; };
@@ -100,8 +104,12 @@
 		F834CE3F1C61723200630736 /* XCTestsToJUnitTypesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestsToJUnitTypesTests.swift; sourceTree = "<group>"; };
 		F834CE411C6247C200630736 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F834CE441C624BE100630736 /* String+ExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ExtensionTests.swift"; sourceTree = "<group>"; };
+		F84D756C1C6F785E009FAFF5 /* junitResult.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = junitResult.xml; sourceTree = "<group>"; };
 		F89030F61C60464B003CE5EE /* XMLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMLExtensions.swift; path = XcodebuildUtilities/XMLExtensions.swift; sourceTree = SOURCE_ROOT; };
 		F8D5BAD31C684EB70083F658 /* XCTestCaseResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseResultTests.swift; sourceTree = "<group>"; };
+		F8D5BAD61C68521F0083F658 /* XCTestSuiteResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestSuiteResultTests.swift; sourceTree = "<group>"; };
+		F8D5BAD81C68588A0083F658 /* XCTestCaseFailureMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseFailureMessage.swift; sourceTree = "<group>"; };
+		F8D5BADB1C68598D0083F658 /* XCTestCaseFailureMessageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseFailureMessageTests.swift; sourceTree = "<group>"; };
 		F8F08F811C604875003349A2 /* XCTestsToJUnit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XCTestsToJUnit; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F08F831C604875003349A2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F8F08F8C1C604884003349A2 /* XCTestsToJUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCTestsToJUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,12 +230,14 @@
 			isa = PBXGroup;
 			children = (
 				F81623911C61082C00FD7521 /* sample_xcodebuild_output.log */,
+				F84D756C1C6F785E009FAFF5 /* junitResult.xml */,
 				F8F08F831C604875003349A2 /* main.swift */,
 				F834CE3C1C61720B00630736 /* XCTestsToJUnitTypes.swift */,
 				F8F08F941C60490B003349A2 /* XCTestsToJUnitRunner.swift */,
 				F81623891C6050D600FD7521 /* XCTestSummaryResult.swift */,
 				F816238B1C60511400FD7521 /* XCTestSuiteResult.swift */,
 				F816238D1C60511A00FD7521 /* XCTestCaseResult.swift */,
+				F8D5BAD81C68588A0083F658 /* XCTestCaseFailureMessage.swift */,
 			);
 			path = XCTestsToJUnit;
 			sourceTree = "<group>";
@@ -236,7 +246,9 @@
 			isa = PBXGroup;
 			children = (
 				F834CE3F1C61723200630736 /* XCTestsToJUnitTypesTests.swift */,
+				F8D5BADB1C68598D0083F658 /* XCTestCaseFailureMessageTests.swift */,
 				F8D5BAD31C684EB70083F658 /* XCTestCaseResultTests.swift */,
+				F8D5BAD61C68521F0083F658 /* XCTestSuiteResultTests.swift */,
 				F8F08F901C604884003349A2 /* Info.plist */,
 			);
 			path = XCTestsToJUnitTests;
@@ -462,6 +474,7 @@
 				F834CE421C6247C200630736 /* String+Extensions.swift in Sources */,
 				F816238A1C6050D600FD7521 /* XCTestSummaryResult.swift in Sources */,
 				F834CE341C6144AE00630736 /* XMLExtensions.swift in Sources */,
+				F8D5BAD91C68588A0083F658 /* XCTestCaseFailureMessage.swift in Sources */,
 				F834CE3D1C61720B00630736 /* XCTestsToJUnitTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +485,7 @@
 			files = (
 				F834CE431C6247C200630736 /* String+Extensions.swift in Sources */,
 				F834CE3A1C61566600630736 /* XCTestSuiteResult.swift in Sources */,
+				F8D5BADA1C68588A0083F658 /* XCTestCaseFailureMessage.swift in Sources */,
 				F834CE321C6144AE00630736 /* SharedTypes.swift in Sources */,
 				F834CE401C61723200630736 /* XCTestsToJUnitTypesTests.swift in Sources */,
 				F834CE331C6144AE00630736 /* FileReader.swift in Sources */,
@@ -480,6 +494,8 @@
 				F8D5BAD51C6851790083F658 /* XCTestCaseResultTests.swift in Sources */,
 				F834CE391C61566600630736 /* XCTestSummaryResult.swift in Sources */,
 				F834CE3B1C61566600630736 /* XCTestCaseResult.swift in Sources */,
+				F8D5BAD71C68521F0083F658 /* XCTestSuiteResultTests.swift in Sources */,
+				F8D5BADC1C68598D0083F658 /* XCTestCaseFailureMessageTests.swift in Sources */,
 				F834CE3E1C61720B00630736 /* XCTestsToJUnitTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

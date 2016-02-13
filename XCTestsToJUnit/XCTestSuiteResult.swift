@@ -9,11 +9,12 @@
 import Foundation
 
 class XCTestSuiteResult {
-    let summary:XCTestSummaryResult
+    let testSummary:XCTestSummaryResult
     let suiteName:String
+    var testCases:[XCTestCaseResult] = []
 
-    init(summary:XCTestSummaryResult, suiteName:String) {
-        self.summary = summary
+    init(testSummary:XCTestSummaryResult, suiteName:String) {
+        self.testSummary = testSummary
         self.suiteName = suiteName
     }
 

@@ -14,24 +14,48 @@ class XCTestCaseResultTests: XCTestCase {
         let expectedSuiteName = "SuiteA"
         let expectedMethodName = "Method123"
 
-        let dummySuite = XCTestSuiteResult(summary:XCTestSummaryResult(), suiteName:expectedSuiteName)
+        let dummySuite = XCTestSuiteResult(testSummary:XCTestSummaryResult(), suiteName:expectedSuiteName)
         let testCase = XCTestCaseResult(testSuite:dummySuite,methodName:expectedMethodName)
 
+        XCTAssertNotNil(testCase.testSuite)
         XCTAssertEqual(expectedSuiteName, testCase.suiteName)
         XCTAssertEqual(expectedMethodName, testCase.methodName)
         XCTAssertTrue(testCase.log.isEmpty)
+        XCTAssertTrue(testCase.failureMessages.isEmpty)
     }
 
-    func testProcessLog() {
-        let expectedLogLines = ["Line A", "Line B"]
+    func testProcessLogNoErrors() {
+        let expectedLogLines = [
+            "Line A",
+            "Line B"
+        ]
 
-        let dummySuite = XCTestSuiteResult(summary:XCTestSummaryResult(), suiteName:"")
+        let dummySuite = XCTestSuiteResult(testSummary:XCTestSummaryResult(), suiteName:"")
         let testCase = XCTestCaseResult(testSuite:dummySuite,methodName:"")
 
         for logLine in expectedLogLines {
             testCase.processLog(logLine)
         }
         XCTAssertEqual(expectedLogLines, testCase.log)
+        XCTAssertTrue(testCase.failureMessages.isEmpty)
     }
 
+    func testProcessLogWithErrors() {
+        let expectedLogLines = [
+            "Line A",
+            "/Users/Shared/Jenkins/Home/jobs/dwsjoquist testing/workspace/ASDA-Tests/Common/DummySwiftAllFailuresTests.swift:15: error: -[ASDA_Tests.DummySwiftAllFailuresTests testFailure1] : failed - Failure 1",
+            "Line B"
+        ]
+
+        let dummySuite = XCTestSuiteResult(testSummary:XCTestSummaryResult(), suiteName:"")
+        let testCase = XCTestCaseResult(testSuite:dummySuite,methodName:"")
+
+        for logLine in expectedLogLines {
+            testCase.processLog(logLine)
+        }
+        XCTAssertEqual(expectedLogLines, testCase.log)
+        XCTAssertEqual(1, testCase.failureMessages.count)
+
+    }
+    
 }

@@ -22,6 +22,7 @@ Test Suite 'FileReaderTests' failed at 2016-02-02 16:46:41.170.
 
 struct XCTestRegexPatterns {
     static let TestCaseName = "\\-\\[.* .*\\]"
+    static let TestCaseFailureMessage = ".*:[0-9]*: error: \\-\\[.* .*\\] : failed \\- .*"
 }
 
 struct XCTTestToJUnitConstants {
@@ -118,4 +119,3 @@ enum LineType {
         return nil
     }
 }
-

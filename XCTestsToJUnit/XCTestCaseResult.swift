@@ -19,12 +19,12 @@ class XCTestCaseResult {
         return _log
     }
 
-    var errors:[String] {
-        return _errors
+    var failureMessages:[XCTestCaseFailureMessage] {
+        return _failureMessages
     }
 
     private var _log:[String] = []
-    private var _errors:[String] = []
+    private var _failureMessages:[XCTestCaseFailureMessage] = []
     
     init(testSuite:XCTestSuiteResult, methodName:String) {
         self.testSuite = testSuite
@@ -33,5 +33,8 @@ class XCTestCaseResult {
 
     func processLog(line:String) {
         _log.append(line)
+        if let failureMessage = XCTestCaseFailureMessage(line:line) {
+            _failureMessages.append(failureMessage)
+        }
     }
 }

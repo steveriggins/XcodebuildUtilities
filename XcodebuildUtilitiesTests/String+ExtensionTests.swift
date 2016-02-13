@@ -28,4 +28,10 @@ class String_ExtensionTests: XCTestCase {
         XCTAssertFalse("123.45".matches(pattern))
     }
 
+    func testTest() {
+        let pattern = ".*:[0-9]*: error: \\-\\[.* .*\\] : failed \\- .*"
+        XCTAssertTrue("/dir/file.xyz:15: error: -[file method] : failed - Failure 1".matches(pattern))
+        XCTAssertFalse("/dir/file.xyz:15: error shows up in log in other format".matches(pattern))
+    }
+
 }
