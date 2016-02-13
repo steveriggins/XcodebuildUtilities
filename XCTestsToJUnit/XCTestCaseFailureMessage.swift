@@ -8,12 +8,13 @@
 
 import Foundation
 
-class XCTestCaseFailureMessage {
+class XCTestCaseFailureMessage: XMLible {
 
     // /Users/Shared/Jenkins/Home/jobs/dwsjoquist testing/workspace/ASDA-Tests/Common/DummySwiftAllFailuresTests.swift:15: error: -[ASDA_Tests.DummySwiftAllFailuresTests testFailure1] : failed - Failure 1
 
     let sourceFilepath:String
     let sourceLineNumber:Int
+    let line:String
     let message:String
 
     init?(line:String) {
@@ -33,6 +34,7 @@ class XCTestCaseFailureMessage {
             }
         }
 
+        self.line = line
         if let sourceFilepath = sourceFilepath, sourceLineNumber = sourceLineNumber, message = message {
             self.sourceFilepath = sourceFilepath
             self.sourceLineNumber = sourceLineNumber
@@ -43,6 +45,26 @@ class XCTestCaseFailureMessage {
             self.message = ""
             return nil
         }
+    }
+
+    // MARK: - XMLible
+
+    func xmlElement() -> NSXMLElement {
+        // <failure message='failed - Failure 1' type='Failure'>/Users/Shared/Jenkins/Home/jobs/dwsjoquist testing/workspace/ASDA-Tests/Common/DummyObjCSomeFailuresTests.m:19</failure>
+
+        // <xs:element name="failure">
+        // <xs:complexType mixed="true">
+        // <xs:attribute name="type" type="xs:string" use="optional"/>
+        // <xs:attribute name="message" type="xs:string" use="optional"/>
+        // </xs:complexType>
+        // </xs:element>
+
+        let result = NSXMLElement(name:"failure", stringValue:line)
+
+        result.addAttributeWithName("message", value: "\(message)")
+        result.addAttributeWithName("type", value: "Failure")
+        
+        return result
     }
     
 }

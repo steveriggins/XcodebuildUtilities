@@ -13,13 +13,15 @@ class XCTestCaseResultTests: XCTestCase {
     func testInit() {
         let expectedSuiteName = "SuiteA"
         let expectedMethodName = "Method123"
+        let expectedDuration:NSTimeInterval = 123.4
 
         let dummySuite = XCTestSuiteResult(testSummary:XCTestSummaryResult(), suiteName:expectedSuiteName)
-        let testCase = XCTestCaseResult(testSuite:dummySuite,methodName:expectedMethodName)
+        let testCase = XCTestCaseResult(testSuite:dummySuite,methodName:expectedMethodName, duration:expectedDuration)
 
         XCTAssertNotNil(testCase.testSuite)
         XCTAssertEqual(expectedSuiteName, testCase.suiteName)
         XCTAssertEqual(expectedMethodName, testCase.methodName)
+        XCTAssertEqual(expectedDuration, testCase.duration)
         XCTAssertTrue(testCase.log.isEmpty)
         XCTAssertTrue(testCase.failureMessages.isEmpty)
     }
@@ -31,7 +33,7 @@ class XCTestCaseResultTests: XCTestCase {
         ]
 
         let dummySuite = XCTestSuiteResult(testSummary:XCTestSummaryResult(), suiteName:"")
-        let testCase = XCTestCaseResult(testSuite:dummySuite,methodName:"")
+        let testCase = XCTestCaseResult(testSuite:dummySuite,methodName:"",duration:0)
 
         for logLine in expectedLogLines {
             testCase.processLog(logLine)
@@ -48,7 +50,7 @@ class XCTestCaseResultTests: XCTestCase {
         ]
 
         let dummySuite = XCTestSuiteResult(testSummary:XCTestSummaryResult(), suiteName:"")
-        let testCase = XCTestCaseResult(testSuite:dummySuite,methodName:"")
+        let testCase = XCTestCaseResult(testSuite:dummySuite,methodName:"",duration:0)
 
         for logLine in expectedLogLines {
             testCase.processLog(logLine)

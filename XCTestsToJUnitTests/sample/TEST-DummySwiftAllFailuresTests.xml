@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite errors="0" failures="2" hostname="ASDAs-Mac-Pro.local" name="DummySwiftAllFailuresTests" tests="2" time="0.004" timestamp="2016-02-04 09:12:27 -0800"><testcase classname='DummySwiftAllFailuresTests' name='testFailure1' time='0.002'>
+<failure message='failed - Failure 1' type='Failure'>/Users/Shared/Jenkins/Home/jobs/dwsjoquist testing/workspace/ASDA-Tests/Common/DummySwiftAllFailuresTests.swift:15</failure>
+</testcase>
+<testcase classname='DummySwiftAllFailuresTests' name='testFailure2' time='0.001'>
+<failure message='XCTAssertEqual failed: ("Optional("wrong answer")") is not equal to ("Optional("testFailure2")") - ' type='Failure'>/Users/Shared/Jenkins/Home/jobs/dwsjoquist testing/workspace/ASDA-Tests/Common/DummySwiftAllFailuresTests.swift:21</failure>
+</testcase>
+</testsuite>

@@ -8,12 +8,13 @@
 
 import Foundation
 
-class XCTestCaseResult {
+class XCTestCaseResult: XMLible {
     let testSuite:XCTestSuiteResult
     var suiteName:String {
         return self.testSuite.suiteName
     }
     let methodName:String
+    let duration:NSTimeInterval
 
     var log:[String] {
         return _log
@@ -23,12 +24,17 @@ class XCTestCaseResult {
         return _failureMessages
     }
 
+    var status:String {
+        return failureMessages.count > 0 ? "Failure" : "Success"
+    }
+
     private var _log:[String] = []
     private var _failureMessages:[XCTestCaseFailureMessage] = []
     
-    init(testSuite:XCTestSuiteResult, methodName:String) {
+    init(testSuite:XCTestSuiteResult, methodName:String, duration:NSTimeInterval) {
         self.testSuite = testSuite
         self.methodName = methodName
+        self.duration = duration
     }
 
     func processLog(line:String) {
@@ -36,5 +42,37 @@ class XCTestCaseResult {
         if let failureMessage = XCTestCaseFailureMessage(line:line) {
             _failureMessages.append(failureMessage)
         }
+    }
+
+    // MARK: - XMLible
+
+    func xmlElement() -> NSXMLElement {
+
+// <testcase classname='DummyObjCSomeFailuresTests' name='testFailure1' time='0.001'>
+// <failure message='failed - Failure 1' type='Failure'>/Users/Shared/Jenkins/Home/jobs/dwsjoquist testing/workspace/ASDA-Tests/Common/DummyObjCSomeFailuresTests.m:19</failure>
+// </testcase>
+// <testcase classname='DummyObjCSomeFailuresTests' name='testSuccess1' time='0.0' />
+
+// <xs:element ref="error" minOccurs="0" maxOccurs="unbounded"/>
+// <xs:element ref="system-out" minOccurs="0" maxOccurs="unbounded"/>
+
+// <xs:attribute name="name" type="xs:string" use="required"/>
+// <xs:attribute name="assertions" type="xs:string" use="optional"/>
+// <xs:attribute name="time" type="xs:string" use="optional"/>
+// <xs:attribute name="classname" type="xs:string" use="optional"/>
+// <xs:attribute name="status" type="xs:string" use="optional"/>
+
+        let result = NSXMLElement(name:"testcase")
+
+        result.addAttributeWithName("name", value: "\(methodName)")
+        result.addAttributeWithName("time", value: "\(duration)")
+        result.addAttributeWithName("classname", value: "\(suiteName)")
+        result.addAttributeWithName("status", value: "\(status)")
+
+        for failureMessage in failureMessages {
+            result.addChild(failureMessage.xmlElement())
+        }
+
+        return result
     }
 }

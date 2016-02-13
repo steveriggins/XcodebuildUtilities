@@ -44,6 +44,25 @@
 		F834CE431C6247C200630736 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F834CE411C6247C200630736 /* String+Extensions.swift */; };
 		F834CE451C624BE100630736 /* String+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F834CE441C624BE100630736 /* String+ExtensionTests.swift */; };
 		F834CE461C624C2F00630736 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F834CE411C6247C200630736 /* String+Extensions.swift */; };
+		F84D75771C6F949A009FAFF5 /* junit-4.xsd in Resources */ = {isa = PBXBuildFile; fileRef = F84D75731C6F949A009FAFF5 /* junit-4.xsd */; };
+		F84D75781C6F949A009FAFF5 /* JUnit.xsd in Resources */ = {isa = PBXBuildFile; fileRef = F84D75741C6F949A009FAFF5 /* JUnit.xsd */; };
+		F84D75791C6F949A009FAFF5 /* junitResult.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84D75751C6F949A009FAFF5 /* junitResult.xml */; };
+		F84D757A1C6F949A009FAFF5 /* sample_xcodebuild_output.log in Resources */ = {isa = PBXBuildFile; fileRef = F84D75761C6F949A009FAFF5 /* sample_xcodebuild_output.log */; };
+		F84D75891C6FA646009FAFF5 /* TEST-DummyObjCAllFailuresTests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84D75851C6FA646009FAFF5 /* TEST-DummyObjCAllFailuresTests.xml */; };
+		F84D758A1C6FA646009FAFF5 /* TEST-DummyObjCAllFailuresTests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84D75851C6FA646009FAFF5 /* TEST-DummyObjCAllFailuresTests.xml */; };
+		F84D758B1C6FA646009FAFF5 /* TEST-DummyObjCAllFailuresTests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84D75851C6FA646009FAFF5 /* TEST-DummyObjCAllFailuresTests.xml */; };
+		F84D758C1C6FA646009FAFF5 /* TEST-DummyObjCSomeFailuresTests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84D75861C6FA646009FAFF5 /* TEST-DummyObjCSomeFailuresTests.xml */; };
+		F84D758D1C6FA646009FAFF5 /* TEST-DummyObjCSomeFailuresTests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84D75861C6FA646009FAFF5 /* TEST-DummyObjCSomeFailuresTests.xml */; };
+		F84D758E1C6FA646009FAFF5 /* TEST-DummyObjCSomeFailuresTests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84D75861C6FA646009FAFF5 /* TEST-DummyObjCSomeFailuresTests.xml */; };
+		F84D758F1C6FA646009FAFF5 /* TEST-DummySwiftAllFailuresTests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84D75871C6FA646009FAFF5 /* TEST-DummySwiftAllFailuresTests.xml */; };
+		F84D75901C6FA646009FAFF5 /* TEST-DummySwiftAllFailuresTests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84D75871C6FA646009FAFF5 /* TEST-DummySwiftAllFailuresTests.xml */; };
+		F84D75911C6FA646009FAFF5 /* TEST-DummySwiftAllFailuresTests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84D75871C6FA646009FAFF5 /* TEST-DummySwiftAllFailuresTests.xml */; };
+		F84D75921C6FA646009FAFF5 /* TEST-DummySwiftSomeFailuresTests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84D75881C6FA646009FAFF5 /* TEST-DummySwiftSomeFailuresTests.xml */; };
+		F84D75931C6FA646009FAFF5 /* TEST-DummySwiftSomeFailuresTests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84D75881C6FA646009FAFF5 /* TEST-DummySwiftSomeFailuresTests.xml */; };
+		F84D75941C6FA646009FAFF5 /* TEST-DummySwiftSomeFailuresTests.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84D75881C6FA646009FAFF5 /* TEST-DummySwiftSomeFailuresTests.xml */; };
+		F84D75961C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D75951C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift */; };
+		F84D75971C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D75951C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift */; };
+		F84D75981C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D75951C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift */; };
 		F89030F71C60464B003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
 		F89030F81C604651003CE5EE /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89030F61C60464B003CE5EE /* XMLExtensions.swift */; };
 		F8D5BAD51C6851790083F658 /* XCTestCaseResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5BAD31C684EB70083F658 /* XCTestCaseResultTests.swift */; };
@@ -84,7 +103,6 @@
 		F81623891C6050D600FD7521 /* XCTestSummaryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestSummaryResult.swift; sourceTree = "<group>"; };
 		F816238B1C60511400FD7521 /* XCTestSuiteResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestSuiteResult.swift; sourceTree = "<group>"; };
 		F816238D1C60511A00FD7521 /* XCTestCaseResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseResult.swift; sourceTree = "<group>"; };
-		F81623911C61082C00FD7521 /* sample_xcodebuild_output.log */ = {isa = PBXFileReference; lastKnownFileType = text; name = sample_xcodebuild_output.log; path = XCTestsToJUnitTests/sample_xcodebuild_output.log; sourceTree = SOURCE_ROOT; };
 		F81623921C61176100FD7521 /* FileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
 		F81E34001C60454300D6C5ED /* ProfdataToCobertura */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProfdataToCobertura; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81E34021C60454300D6C5ED /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -104,7 +122,15 @@
 		F834CE3F1C61723200630736 /* XCTestsToJUnitTypesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestsToJUnitTypesTests.swift; sourceTree = "<group>"; };
 		F834CE411C6247C200630736 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F834CE441C624BE100630736 /* String+ExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ExtensionTests.swift"; sourceTree = "<group>"; };
-		F84D756C1C6F785E009FAFF5 /* junitResult.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = junitResult.xml; sourceTree = "<group>"; };
+		F84D75731C6F949A009FAFF5 /* junit-4.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "junit-4.xsd"; sourceTree = "<group>"; };
+		F84D75741C6F949A009FAFF5 /* JUnit.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = JUnit.xsd; sourceTree = "<group>"; };
+		F84D75751C6F949A009FAFF5 /* junitResult.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = junitResult.xml; sourceTree = "<group>"; };
+		F84D75761C6F949A009FAFF5 /* sample_xcodebuild_output.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_xcodebuild_output.log; sourceTree = "<group>"; };
+		F84D75851C6FA646009FAFF5 /* TEST-DummyObjCAllFailuresTests.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "TEST-DummyObjCAllFailuresTests.xml"; sourceTree = "<group>"; };
+		F84D75861C6FA646009FAFF5 /* TEST-DummyObjCSomeFailuresTests.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "TEST-DummyObjCSomeFailuresTests.xml"; sourceTree = "<group>"; };
+		F84D75871C6FA646009FAFF5 /* TEST-DummySwiftAllFailuresTests.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "TEST-DummySwiftAllFailuresTests.xml"; sourceTree = "<group>"; };
+		F84D75881C6FA646009FAFF5 /* TEST-DummySwiftSomeFailuresTests.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "TEST-DummySwiftSomeFailuresTests.xml"; sourceTree = "<group>"; };
+		F84D75951C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+XMLExtensions.swift"; sourceTree = "<group>"; };
 		F89030F61C60464B003CE5EE /* XMLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMLExtensions.swift; path = XcodebuildUtilities/XMLExtensions.swift; sourceTree = SOURCE_ROOT; };
 		F8D5BAD31C684EB70083F658 /* XCTestCaseResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseResultTests.swift; sourceTree = "<group>"; };
 		F8D5BAD61C68521F0083F658 /* XCTestSuiteResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestSuiteResultTests.swift; sourceTree = "<group>"; };
@@ -220,17 +246,31 @@
 			isa = PBXGroup;
 			children = (
 				F834CE351C6144C200630736 /* FileReaderTests.swift */,
+				F84D75951C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift */,
 				F834CE441C624BE100630736 /* String+ExtensionTests.swift */,
 				F834CE291C61449C00630736 /* Info.plist */,
 			);
 			path = XcodebuildUtilitiesTests;
 			sourceTree = "<group>";
 		};
+		F84D75721C6F949A009FAFF5 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				F84D75731C6F949A009FAFF5 /* junit-4.xsd */,
+				F84D75741C6F949A009FAFF5 /* JUnit.xsd */,
+				F84D75751C6F949A009FAFF5 /* junitResult.xml */,
+				F84D75761C6F949A009FAFF5 /* sample_xcodebuild_output.log */,
+				F84D75851C6FA646009FAFF5 /* TEST-DummyObjCAllFailuresTests.xml */,
+				F84D75861C6FA646009FAFF5 /* TEST-DummyObjCSomeFailuresTests.xml */,
+				F84D75871C6FA646009FAFF5 /* TEST-DummySwiftAllFailuresTests.xml */,
+				F84D75881C6FA646009FAFF5 /* TEST-DummySwiftSomeFailuresTests.xml */,
+			);
+			path = sample;
+			sourceTree = "<group>";
+		};
 		F8F08F821C604875003349A2 /* XCTestsToJUnit */ = {
 			isa = PBXGroup;
 			children = (
-				F81623911C61082C00FD7521 /* sample_xcodebuild_output.log */,
-				F84D756C1C6F785E009FAFF5 /* junitResult.xml */,
 				F8F08F831C604875003349A2 /* main.swift */,
 				F834CE3C1C61720B00630736 /* XCTestsToJUnitTypes.swift */,
 				F8F08F941C60490B003349A2 /* XCTestsToJUnitRunner.swift */,
@@ -245,6 +285,7 @@
 		F8F08F8D1C604884003349A2 /* XCTestsToJUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				F84D75721C6F949A009FAFF5 /* sample */,
 				F834CE3F1C61723200630736 /* XCTestsToJUnitTypesTests.swift */,
 				F8D5BADB1C68598D0083F658 /* XCTestCaseFailureMessageTests.swift */,
 				F8D5BAD31C684EB70083F658 /* XCTestCaseResultTests.swift */,
@@ -395,6 +436,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84D75891C6FA646009FAFF5 /* TEST-DummyObjCAllFailuresTests.xml in Resources */,
+				F84D758F1C6FA646009FAFF5 /* TEST-DummySwiftAllFailuresTests.xml in Resources */,
+				F84D758C1C6FA646009FAFF5 /* TEST-DummyObjCSomeFailuresTests.xml in Resources */,
+				F84D75921C6FA646009FAFF5 /* TEST-DummySwiftSomeFailuresTests.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +447,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84D758B1C6FA646009FAFF5 /* TEST-DummyObjCAllFailuresTests.xml in Resources */,
+				F84D75911C6FA646009FAFF5 /* TEST-DummySwiftAllFailuresTests.xml in Resources */,
+				F84D758E1C6FA646009FAFF5 /* TEST-DummyObjCSomeFailuresTests.xml in Resources */,
+				F84D75941C6FA646009FAFF5 /* TEST-DummySwiftSomeFailuresTests.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +458,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84D757A1C6F949A009FAFF5 /* sample_xcodebuild_output.log in Resources */,
+				F84D75791C6F949A009FAFF5 /* junitResult.xml in Resources */,
+				F84D75781C6F949A009FAFF5 /* JUnit.xsd in Resources */,
+				F84D75931C6FA646009FAFF5 /* TEST-DummySwiftSomeFailuresTests.xml in Resources */,
+				F84D75901C6FA646009FAFF5 /* TEST-DummySwiftAllFailuresTests.xml in Resources */,
+				F84D758D1C6FA646009FAFF5 /* TEST-DummyObjCSomeFailuresTests.xml in Resources */,
+				F84D75771C6F949A009FAFF5 /* junit-4.xsd in Resources */,
+				F84D758A1C6FA646009FAFF5 /* TEST-DummyObjCAllFailuresTests.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +499,7 @@
 				F81623941C61176100FD7521 /* FileReader.swift in Sources */,
 				F81E34251C60458900D6C5ED /* FileCoverageTests.swift in Sources */,
 				F81E34261C60458900D6C5ED /* PackageCoverageTests.swift in Sources */,
+				F84D75961C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift in Sources */,
 				F81E340E1C60455800D6C5ED /* ProfdataToCoberturaTests.swift in Sources */,
 				F8F08F991C604946003349A2 /* SharedTypes.swift in Sources */,
 				F81E342C1C6045F300D6C5ED /* ProfdataToCoberturaRunner.swift in Sources */,
@@ -457,6 +515,7 @@
 				F834CE451C624BE100630736 /* String+ExtensionTests.swift in Sources */,
 				F834CE2F1C6144A800630736 /* FileReader.swift in Sources */,
 				F834CE461C624C2F00630736 /* String+Extensions.swift in Sources */,
+				F84D75981C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift in Sources */,
 				F834CE2D1C6144A800630736 /* XMLExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +556,7 @@
 				F8D5BAD71C68521F0083F658 /* XCTestSuiteResultTests.swift in Sources */,
 				F8D5BADC1C68598D0083F658 /* XCTestCaseFailureMessageTests.swift in Sources */,
 				F834CE3E1C61720B00630736 /* XCTestsToJUnitTypes.swift in Sources */,
+				F84D75971C6FABBF009FAFF5 /* XCTestCase+XMLExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

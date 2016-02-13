@@ -9,6 +9,7 @@
 import Foundation
 
 extension NSXMLElement {
+
     func addAttributeWithName(name:String, value:String) -> NSXMLNode {
         let attribute = NSXMLNode.attributeWithName(name, stringValue: value) as! NSXMLNode
         self.addAttribute(attribute)
@@ -25,4 +26,8 @@ extension NSXMLElement {
         self.addChild(child)
         return child
     }
+}
+
+protocol XMLible {
+    func xmlElement() -> NSXMLElement
 }

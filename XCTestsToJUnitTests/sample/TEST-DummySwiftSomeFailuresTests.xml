@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite errors="0" failures="1" hostname="ASDAs-Mac-Pro.local" name="DummySwiftSomeFailuresTests" tests="2" time="0.005" timestamp="2016-02-04 09:12:27 -0800"><testcase classname='DummySwiftSomeFailuresTests' name='testFailure1' time='0.001'>
+<failure message='failed - Failure 1' type='Failure'>/Users/Shared/Jenkins/Home/jobs/dwsjoquist testing/workspace/ASDA-Tests/Common/DummySwiftSomeFailuresTests.swift:15</failure>
+</testcase>
+<testcase classname='DummySwiftSomeFailuresTests' name='testSuccess1' time='0.004' />
+</testsuite>
