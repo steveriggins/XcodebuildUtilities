@@ -8,9 +8,13 @@
 
 import Foundation
 
-class XCTestSummaryResult {
+class XCTestSummaryResult: XMLible {
 
     var testSuiteResults:[XCTestSuiteResult] = []
+
+    var failureCount:Int {
+        return testSuiteResults.reduce(0, combine: { $0 + $1.failureCount })
+    }
 
     private var currentTestSuiteResult:XCTestSuiteResult?
     private var currentTestCaseResult:XCTestCaseResult?
@@ -97,5 +101,34 @@ class XCTestSummaryResult {
             print("WARNING: ignoring line inside suite results: \(line)")
         }
     }
-    
+
+    // MARK: - XMLible
+
+    func xmlElement() -> NSXMLElement {
+
+// <xs:element name="testsuites">
+// <xs:complexType>
+// <xs:sequence>
+// <xs:element ref="testsuite" minOccurs="0" maxOccurs="unbounded"/>
+// </xs:sequence>
+// <xs:attribute name="name" type="xs:string" use="optional"/>
+// <xs:attribute name="time" type="xs:string" use="optional"/>
+// <xs:attribute name="tests" type="xs:string" use="optional"/>
+// <xs:attribute name="failures" type="xs:string" use="optional"/>
+// <xs:attribute name="disabled" type="xs:string" use="optional"/>
+// <xs:attribute name="errors" type="xs:string" use="optional"/>
+// </xs:complexType>
+// </xs:element>
+
+        let result = NSXMLElement(name:"testsuites")
+
+        result.addAttributeWithName("name", value: "Summary")
+        result.addAttributeWithName("failures", value: "\(failureCount)")
+
+        for testSuiteResult in testSuiteResults {
+            result.addChild(testSuiteResult.xmlElement())
+        }
+
+        return result
+    }
 }

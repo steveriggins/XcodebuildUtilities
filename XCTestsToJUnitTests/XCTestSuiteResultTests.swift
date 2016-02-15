@@ -86,6 +86,7 @@ class XCTestSuiteResultTests: XCTestCase {
         // <testcase classname='DummyObjCSomeFailuresTests' name='testSuccess1' time='0.0' />
         let xmlElement = testSuiteResult.xmlElement()
 
+        XCTAssertEqual("testsuite", xmlElement.name)
         expectAttribute(xmlElement, name:"name", stringValue:expectedSuiteName)
         expectAttribute(xmlElement, name:"failures", stringValue:"\(expectedFailureCount)")
         expectAttribute(xmlElement, name:"timestamp", stringValue:"\(expectedTimestamp)")
