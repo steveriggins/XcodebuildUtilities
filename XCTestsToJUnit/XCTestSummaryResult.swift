@@ -35,7 +35,7 @@ class XCTestSummaryResult {
         }
     }
 
-    func processStartSuite(line:String, verbose:Bool, suiteName:String, timestamp:NSDate) {
+    private func processStartSuite(line:String, verbose:Bool, suiteName:String, timestamp:NSDate) {
         if currentTestSuiteResult != nil {
             print("ERROR: New suite started before previous suite finished, continuing with new suite: \(line)")
         }
@@ -48,7 +48,7 @@ class XCTestSummaryResult {
         currentTestSuiteResult = suiteResult
     }
 
-    func processFinishSuite(line:String, verbose:Bool, suiteName:String, timestamp:NSDate, success:Bool) {
+    private func processFinishSuite(line:String, verbose:Bool, suiteName:String, timestamp:NSDate, success:Bool) {
         if let currentTestSuiteResult = currentTestSuiteResult {
             currentTestSuiteResult.finishLine = line
             if (verbose) {
@@ -60,7 +60,7 @@ class XCTestSummaryResult {
         currentTestSuiteResult = nil
     }
 
-    func processStartCase(line:String, verbose:Bool, suiteName:String, caseName:String) {
+    private func processStartCase(line:String, verbose:Bool, suiteName:String, caseName:String) {
         guard let currentTestSuiteResult = currentTestSuiteResult else {
             print("ERROR: TestCase started without a current suite, ignoring case: \(line)")
             return
@@ -78,7 +78,7 @@ class XCTestSummaryResult {
         currentTestCaseResult = testCaseResult
     }
 
-    func processFinishCase(line:String, verbose:Bool, suiteName:String, caseName:String, duration:NSTimeInterval, success:Bool) {
+    private func processFinishCase(line:String, verbose:Bool, suiteName:String, caseName:String, duration:NSTimeInterval, success:Bool) {
         if let currentTestCaseResult = currentTestCaseResult {
             currentTestCaseResult.finishLine = line
             if (verbose) {
@@ -90,7 +90,7 @@ class XCTestSummaryResult {
         currentTestCaseResult = nil
     }
     
-    func processOtherLine(line:String, verbose:Bool) {
+    private func processOtherLine(line:String, verbose:Bool) {
         if let currentTestCaseResult = currentTestCaseResult {
             currentTestCaseResult.processLog(line)
         } else if let _ = currentTestSuiteResult {

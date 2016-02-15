@@ -19,7 +19,16 @@ class XCTestCaseResult: XMLible {
     var startLine:String?
     var finishLine:String?
     var logLines:[String] {
-        return _logLines
+        get {
+            var result = _logLines
+            if let startLine = startLine {
+                result.insert(startLine, atIndex: 0)
+            }
+            if let finishLine = finishLine {
+                result.append(finishLine)
+            }
+            return result
+        }
     }
 
     var failureMessages:[XCTestCaseFailureMessage] {

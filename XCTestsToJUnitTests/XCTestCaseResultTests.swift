@@ -58,23 +58,78 @@ class XCTestCaseResultTests: XCTestCase {
         }
         XCTAssertEqual(expectedLogLines, testCaseResult.logLines)
         XCTAssertEqual(1, testCaseResult.failureMessages.count)
+        
+    }
 
+    func testProcessLogWithStartLine() {
+        let logLines = [
+            "Line A",
+            "Line B"
+        ]
+        var expectedLogLines = logLines
+        let expectedStartLine = "Start line"
+        expectedLogLines.insert(expectedStartLine, atIndex: 0)
+
+        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"", timestamp:NSDate())
+        let testCaseResult = XCTestCaseResult(testSuiteResult:dummySuiteResult,methodName:"")
+
+        testCaseResult.startLine = expectedStartLine
+        for logLine in logLines {
+            testCaseResult.processLog(logLine)
+        }
+
+        XCTAssertEqual(expectedStartLine, testCaseResult.startLine)
+        XCTAssertNil(testCaseResult.finishLine)
+        XCTAssertEqual(expectedLogLines, testCaseResult.logLines)
+        XCTAssertTrue(testCaseResult.failureMessages.isEmpty)
+        
+    }
+
+    func testProcessLogWithFinishLine() {
+        let logLines = [
+            "Line A",
+            "Line B"
+        ]
+        var expectedLogLines = logLines
+        let expectedFinishLine = "Finish line"
+        expectedLogLines.append(expectedFinishLine)
+
+        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"", timestamp:NSDate())
+        let testCaseResult = XCTestCaseResult(testSuiteResult:dummySuiteResult,methodName:"")
+
+        testCaseResult.finishLine = expectedFinishLine
+        for logLine in logLines {
+            testCaseResult.processLog(logLine)
+        }
+
+        XCTAssertNil(testCaseResult.startLine)
+        XCTAssertEqual(expectedFinishLine, testCaseResult.finishLine)
+        XCTAssertEqual(expectedLogLines, testCaseResult.logLines)
+        XCTAssertTrue(testCaseResult.failureMessages.isEmpty)
+        
     }
 
     func testXMLElement() {
-        let expectedLogLines = [
+        let logLines = [
             "Line A",
             "/Users/Shared/Jenkins/Home/jobs/dwsjoquist testing/workspace/ASDA-Tests/Common/DummySwiftAllFailuresTests.swift:15: error: -[ASDA_Tests.DummySwiftAllFailuresTests testFailure1] : failed - Failure 1",
             "Line B"
         ]
+        let expectedStartLine = "Start Line"
+        let expectedFinishLine = "Finish Line"
+        var expectedLogLines = logLines
+        expectedLogLines.insert(expectedStartLine, atIndex: 0)
+        expectedLogLines.append(expectedFinishLine)
 
         let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"suiteName", timestamp:NSDate())
         let testCaseResult = XCTestCaseResult(testSuiteResult:dummySuiteResult,methodName:"methodName")
         testCaseResult.duration = 123.4
 
-        for logLine in expectedLogLines {
+        testCaseResult.startLine = expectedStartLine
+        for logLine in logLines {
             testCaseResult.processLog(logLine)
         }
+        testCaseResult.finishLine = expectedFinishLine
 
         // <testcase classname='DummyObjCSomeFailuresTests' name='testFailure1' time='0.001'>
         // <failure message='failed - Failure 1' type='Failure'>/Users/Shared/Jenkins/Home/jobs/dwsjoquist testing/workspace/ASDA-Tests/Common/DummyObjCSomeFailuresTests.m:19</failure>
