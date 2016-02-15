@@ -28,9 +28,12 @@ struct XCTestRegexPatterns {
 struct XCTTestToJUnitConstants {
     // 2016-02-01 10:25:05.405
     static let TimestampFormat = "yyyy-MM-dd HH:mm:ss.SSS"
+    static let XCTestPackageSuffix = ".xctest"
 }
 
 enum LineType {
+    case SuitePackageStarted(String,NSDate)
+    case SuitePackageFinished(String,NSDate,Bool)
     case SuiteStarted(String,NSDate)
     case SuiteFinished(String,NSDate,Bool)
     case CaseStarted(String,String)
@@ -64,17 +67,32 @@ enum LineType {
             return nil
         case ("Test Suite ", _, "started"):
             if let timestamp = parseTimestamp(resultPiece3 + " " + resultPiece4) {
-                return LineType.SuiteStarted(namePiece, timestamp)
+                if let range = namePiece.rangeOfString(XCTTestToJUnitConstants.XCTestPackageSuffix) where namePiece.hasSuffix(XCTTestToJUnitConstants.XCTestPackageSuffix) {
+                    let packageName = namePiece.substringToIndex(range.startIndex)
+                    return LineType.SuitePackageStarted(packageName, timestamp)
+                } else {
+                    return LineType.SuiteStarted(namePiece, timestamp)
+                }
             }
             return nil
         case ("Test Suite ", _, "failed"):
             if let timestamp = parseTimestamp(resultPiece3 + " " + resultPiece4) {
-                return LineType.SuiteFinished(namePiece, timestamp, false)
+                if let range = namePiece.rangeOfString(XCTTestToJUnitConstants.XCTestPackageSuffix) where namePiece.hasSuffix(XCTTestToJUnitConstants.XCTestPackageSuffix) {
+                    let packageName = namePiece.substringToIndex(range.startIndex)
+                    return LineType.SuitePackageFinished(packageName, timestamp, false)
+                } else {
+                    return LineType.SuiteFinished(namePiece, timestamp, false)
+                }
             }
             return nil
         case ("Test Suite ", _, "passed"):
             if let timestamp = parseTimestamp(resultPiece3 + " " + resultPiece4) {
-                return LineType.SuiteFinished(namePiece, timestamp, true)
+                if let range = namePiece.rangeOfString(XCTTestToJUnitConstants.XCTestPackageSuffix) where namePiece.hasSuffix(XCTTestToJUnitConstants.XCTestPackageSuffix) {
+                    let packageName = namePiece.substringToIndex(range.startIndex)
+                    return LineType.SuitePackageFinished(packageName, timestamp, true)
+                } else {
+                    return LineType.SuiteFinished(namePiece, timestamp, true)
+                }
             }
             return nil
         case ("Test Case ", _, "started."):
@@ -107,7 +125,7 @@ enum LineType {
     }
 
     static func parseTimestamp(value:String) -> NSDate? {
-        let trimmedValue = value.substringToIndex(value.endIndex) // strip trailing "."
+        let trimmedValue = value.hasSuffix(".") ? value.substringToIndex(value.endIndex.predecessor()) : value // strip trailing "."
         return dateFormatter.dateFromString(trimmedValue)
     }
 

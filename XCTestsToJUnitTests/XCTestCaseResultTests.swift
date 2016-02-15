@@ -14,7 +14,7 @@ class XCTestCaseResultTests: XCTestCase {
         let expectedSuiteName = "SuiteA"
         let expectedMethodName = "Method123"
 
-        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:expectedSuiteName, timestamp:NSDate())
+        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:expectedSuiteName, packageName:nil, timestamp:NSDate())
         let testCaseResult = XCTestCaseResult(testSuiteResult:dummySuiteResult,methodName:expectedMethodName)
 
         XCTAssertNotNil(testCaseResult.testSuiteResult)
@@ -33,7 +33,7 @@ class XCTestCaseResultTests: XCTestCase {
             "Line B"
         ]
 
-        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"", timestamp:NSDate())
+        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"", packageName:nil, timestamp:NSDate())
         let testCaseResult = XCTestCaseResult(testSuiteResult:dummySuiteResult,methodName:"")
 
         for logLine in expectedLogLines {
@@ -50,7 +50,7 @@ class XCTestCaseResultTests: XCTestCase {
             "Line B"
         ]
 
-        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"", timestamp:NSDate())
+        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"", packageName:nil, timestamp:NSDate())
         let testCaseResult = XCTestCaseResult(testSuiteResult:dummySuiteResult,methodName:"")
 
         for logLine in expectedLogLines {
@@ -70,7 +70,7 @@ class XCTestCaseResultTests: XCTestCase {
         let expectedStartLine = "Start line"
         expectedLogLines.insert(expectedStartLine, atIndex: 0)
 
-        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"", timestamp:NSDate())
+        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"", packageName:nil, timestamp:NSDate())
         let testCaseResult = XCTestCaseResult(testSuiteResult:dummySuiteResult,methodName:"")
 
         testCaseResult.startLine = expectedStartLine
@@ -94,7 +94,7 @@ class XCTestCaseResultTests: XCTestCase {
         let expectedFinishLine = "Finish line"
         expectedLogLines.append(expectedFinishLine)
 
-        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"", timestamp:NSDate())
+        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"", packageName:nil, timestamp:NSDate())
         let testCaseResult = XCTestCaseResult(testSuiteResult:dummySuiteResult,methodName:"")
 
         testCaseResult.finishLine = expectedFinishLine
@@ -121,7 +121,7 @@ class XCTestCaseResultTests: XCTestCase {
         expectedLogLines.insert(expectedStartLine, atIndex: 0)
         expectedLogLines.append(expectedFinishLine)
 
-        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"suiteName", timestamp:NSDate())
+        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:"suiteName", packageName:nil, timestamp:NSDate())
         let testCaseResult = XCTestCaseResult(testSuiteResult:dummySuiteResult,methodName:"methodName")
         testCaseResult.duration = 123.4
 

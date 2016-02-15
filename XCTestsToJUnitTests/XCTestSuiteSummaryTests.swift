@@ -17,13 +17,15 @@ class XCTestSummaryResultTests: XCTestCase {
 
     let simpleLines = [
         "Test Suite 'All tests' started at 2016-02-01 10:25:04.387",
+        "Test Suite 'SuitePackage.xctest' started at 2016-02-01 10:25:04.387",
         "Test Suite 'Suite1' started at 2016-02-01 10:25:04.388",
         "Test Case '-[Suite1 methodA]' started.",
         "Line A",
         "Tests.swift:15: error: -[ASDA_Tests.Suite1 methodA] : failed - Failure 1",
         "Line B",
         "Test Case '-[ASDA_Tests.Suite1 methodA]' failed (1.234 seconds).",
-        "Test Suite 'Suite1' failed at 2016-02-01 10:25:04.388"
+        "Test Suite 'Suite1' failed at 2016-02-01 10:25:04.388",
+        "Test Suite 'SuitePackage.xctest' failed at 2016-02-01 10:25:04.388"
     ]
 
     func testSimpleLinesSuites() {

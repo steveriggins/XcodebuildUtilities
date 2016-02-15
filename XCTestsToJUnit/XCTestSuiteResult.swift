@@ -10,6 +10,7 @@ import Foundation
 
 class XCTestSuiteResult: XMLible {
     let testSummaryResult:XCTestSummaryResult
+    let packageName:String?
     let suiteName:String
     let timestamp:NSDate
     var startLine:String?
@@ -35,8 +36,9 @@ class XCTestSuiteResult: XMLible {
         }
     }
 
-    init(testSummaryResult:XCTestSummaryResult, suiteName:String, timestamp:NSDate) {
+    init(testSummaryResult:XCTestSummaryResult, suiteName:String, packageName:String?, timestamp:NSDate) {
         self.testSummaryResult = testSummaryResult
+        self.packageName = packageName
         self.suiteName = suiteName
         self.timestamp = timestamp
     }
@@ -79,6 +81,9 @@ class XCTestSuiteResult: XMLible {
         let result = NSXMLElement(name:"testsuite")
 
         result.addAttributeWithName("name", value: "\(suiteName)")
+        if let packageName = packageName {
+            result.addAttributeWithName("package", value: "\(packageName)")
+        }
         result.addAttributeWithName("failures", value: "\(failureCount)")
         result.addAttributeWithName("timestamp", value: "\(timestamp)")
 

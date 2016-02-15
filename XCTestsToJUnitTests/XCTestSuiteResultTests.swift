@@ -12,14 +12,16 @@ class XCTestSuiteResultTests: XCTestCase {
 
     func testInit() {
         let expectedSuiteName = "SuiteA"
+        let expectedPackageName = "Package"
         let expectedTimestamp = NSDate()
 
-        let testSuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:expectedSuiteName, timestamp:expectedTimestamp)
+        let testSuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:expectedSuiteName, packageName:expectedPackageName, timestamp:expectedTimestamp)
 
         XCTAssertNotNil(testSuiteResult.testSummaryResult)
         XCTAssertNil(testSuiteResult.startLine)
         XCTAssertNil(testSuiteResult.finishLine)
         XCTAssertEqual(expectedSuiteName, testSuiteResult.suiteName)
+        XCTAssertEqual(expectedPackageName, testSuiteResult.packageName)
         XCTAssertEqual(expectedTimestamp, testSuiteResult.timestamp)
         XCTAssertTrue(testSuiteResult.testCaseResults.isEmpty)
     }
@@ -45,8 +47,8 @@ class XCTestSuiteResultTests: XCTestCase {
         expectedTestSuiteFinishLine
     ]
 
-    func buildTestSuiteResult(suiteName:String,timestamp:NSDate) -> XCTestSuiteResult {
-        let testSuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:suiteName, timestamp:timestamp)
+    func buildTestSuiteResult(suiteName:String,packageName:String?,timestamp:NSDate) -> XCTestSuiteResult {
+        let testSuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:suiteName, packageName:packageName, timestamp:timestamp)
         testSuiteResult.startLine = XCTestSuiteResultTests.expectedTestSuiteStartLine
         testSuiteResult.finishLine = XCTestSuiteResultTests.expectedTestSuiteFinishLine
 
@@ -66,7 +68,7 @@ class XCTestSuiteResultTests: XCTestCase {
     }
 
     func testTestSuiteLogLines() {
-        let testSuiteResult = buildTestSuiteResult("suite",timestamp:NSDate())
+        let testSuiteResult = buildTestSuiteResult("suite", packageName:nil, timestamp:NSDate())
         let expectedFailureCount = 1
         XCTAssertEqual(XCTestSuiteResultTests.expectedTestSuiteStartLine, testSuiteResult.startLine)
         XCTAssertEqual(XCTestSuiteResultTests.expectedTestSuiteFinishLine, testSuiteResult.finishLine)
@@ -76,9 +78,10 @@ class XCTestSuiteResultTests: XCTestCase {
 
     func testXMLElement() {
         let expectedSuiteName = "testSuite"
+        let expectedPackageName = "Package"
         let expectedTimestamp = NSDate()
         let expectedFailureCount = 1
-        let testSuiteResult = buildTestSuiteResult(expectedSuiteName, timestamp:expectedTimestamp)
+        let testSuiteResult = buildTestSuiteResult(expectedSuiteName, packageName:expectedPackageName, timestamp:expectedTimestamp)
 
         // <testcase classname='DummyObjCSomeFailuresTests' name='testFailure1' time='0.001'>
         // <failure message='failed - Failure 1' type='Failure'>/Users/Shared/Jenkins/Home/jobs/dwsjoquist testing/workspace/ASDA-Tests/Common/DummyObjCSomeFailuresTests.m:19</failure>
@@ -88,6 +91,7 @@ class XCTestSuiteResultTests: XCTestCase {
 
         XCTAssertEqual("testsuite", xmlElement.name)
         expectAttribute(xmlElement, name:"name", stringValue:expectedSuiteName)
+        expectAttribute(xmlElement, name:"package", stringValue:expectedPackageName)
         expectAttribute(xmlElement, name:"failures", stringValue:"\(expectedFailureCount)")
         expectAttribute(xmlElement, name:"timestamp", stringValue:"\(expectedTimestamp)")
 

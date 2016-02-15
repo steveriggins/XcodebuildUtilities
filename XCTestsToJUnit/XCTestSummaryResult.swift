@@ -16,6 +16,7 @@ class XCTestSummaryResult: XMLible {
         return testSuiteResults.reduce(0, combine: { $0 + $1.failureCount })
     }
 
+    private var currentTestSuitePackageName:String?
     private var currentTestSuiteResult:XCTestSuiteResult?
     private var currentTestCaseResult:XCTestCaseResult?
 
@@ -25,6 +26,10 @@ class XCTestSummaryResult: XMLible {
     func processLine(line:String, verbose:Bool) {
         if let lineType = LineType.parse(line) {
             switch lineType {
+            case .SuitePackageStarted(let packageName, _):
+                currentTestSuitePackageName = packageName
+            case .SuitePackageFinished(_,_,_):
+                currentTestSuitePackageName = nil
             case .SuiteStarted(let suiteName, let timestamp):
                 processStartSuite(line, verbose:verbose, suiteName:suiteName, timestamp:timestamp)
             case .SuiteFinished(let suiteName, let timestamp, let success):
@@ -43,7 +48,7 @@ class XCTestSummaryResult: XMLible {
         if currentTestSuiteResult != nil {
             print("ERROR: New suite started before previous suite finished, continuing with new suite: \(line)")
         }
-        let suiteResult = XCTestSuiteResult(testSummaryResult:self, suiteName:suiteName, timestamp:timestamp)
+        let suiteResult = XCTestSuiteResult(testSummaryResult:self, suiteName:suiteName, packageName:currentTestSuitePackageName, timestamp:timestamp)
         suiteResult.startLine = line
         if (verbose) {
             print("Suite started: \(suiteResult)")
