@@ -131,4 +131,21 @@ class XCTestSummaryResult: XMLible {
 
         return result
     }
+
+    func saveXML(args:XCTestsToJUnitArguments) {
+
+        let xml = NSXMLDocument(rootElement: xmlElement())
+        xml.version = "1.0"
+
+        let outputDirectoryURL = NSURL(fileURLWithPath: args.outputDirectory, isDirectory:true)
+        let outputFileURL = outputDirectoryURL.URLByAppendingPathComponent("XCTestSummary.xml")
+
+        if let xmlData = xml.XMLStringWithOptions(NSXMLNodePrettyPrint).dataUsingEncoding(NSUTF8StringEncoding) {
+            xmlData.writeToURL(outputFileURL, atomically: true)
+            print("written to \(outputFileURL)")
+        } else {
+            print("could not write to \(outputFileURL)")
+        }
+    }
+
 }

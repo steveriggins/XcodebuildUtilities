@@ -92,12 +92,18 @@ class XCTestsToJUnitRunner {
     func processFile(args:XCTestsToJUnitArguments) -> XCTestSummaryResult {
         let fileURL = NSURL.fileURLWithPath(args.inputFilePath)
 
-        let reader = FileReader(fileURL: fileURL, delimiter: "\n")
+//        let reader = FileReader(fileURL: fileURL, delimiter: "\n")
 
         let result = XCTestSummaryResult()
-        while let line = reader.readLine() {
-            result.processLine(line, verbose:args.verbose)
+        if let reader = StreamReader(fileURL: fileURL) {
+            defer {
+                reader.close()
+            }
+            while let line = reader.nextLine() {
+                result.processLine(line, verbose:args.verbose)
+            }
         }
+
         return result
     }
 

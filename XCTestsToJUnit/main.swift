@@ -11,7 +11,8 @@ import Foundation
 func main()  {
     let runner = XCTestsToJUnitRunner()
     if let args = runner.parseCommandLineArgs(Process.arguments) {
-        runner.processFile(args)
+        let summaryResult = runner.processFile(args)
+        summaryResult.saveXML(args)
     }
 }
 

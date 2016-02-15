@@ -1,5 +1,5 @@
 //
-//  FileReaderTests.swift
+//  StreamReaderTests.swift
 //  XcodebuildUtilities
 //
 //  Created by Douglas Sjoquist on 2/2/16.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class FileReaderTests: XCTestCase {
+class StreamReaderTests: XCTestCase {
 
     func temporaryFileURL() -> NSURL {
         let directory = NSTemporaryDirectory()
@@ -25,14 +25,17 @@ class FileReaderTests: XCTestCase {
         data?.writeToURL(fileURL, atomically: true)
         print("fileURL=\(fileURL)")
 
-        let reader = FileReader(fileURL: fileURL, delimiter: delimiter)
-        XCTAssertEqual(lines[0], reader.readLine())
-        XCTAssertEqual(lines[1], reader.readLine())
-        XCTAssertEqual(lines[2], reader.readLine())
-        XCTAssertNil(reader.readLine())
-        XCTAssertTrue(reader.EOF)
+        if let reader = StreamReader(fileURL: fileURL, delimiter: delimiter) {
+            XCTAssertEqual(lines[0], reader.nextLine())
+            XCTAssertEqual(lines[1], reader.nextLine())
+            XCTAssertEqual(lines[2], reader.nextLine())
+            XCTAssertNil(reader.nextLine())
+            XCTAssertTrue(reader.atEof)
+        } else {
+            XCTFail("Could not create StreamReader for: \(fileURL)")
+        }
     }
-    
+
     func testReadLineWithTrailingNL() {
         let delimiter = "\n"
         let lines = ["line 1", "line 2"]
@@ -43,11 +46,14 @@ class FileReaderTests: XCTestCase {
         data?.writeToURL(fileURL, atomically: true)
         print("fileURL=\(fileURL)")
 
-        let reader = FileReader(fileURL: fileURL, delimiter: delimiter)
-        XCTAssertEqual(lines[0], reader.readLine())
-        XCTAssertEqual(lines[1], reader.readLine())
-        XCTAssertNil(reader.readLine())
-        XCTAssertTrue(reader.EOF)
+        if let reader = StreamReader(fileURL: fileURL, delimiter: delimiter) {
+            XCTAssertEqual(lines[0], reader.nextLine())
+            XCTAssertEqual(lines[1], reader.nextLine())
+            XCTAssertNil(reader.nextLine())
+            XCTAssertTrue(reader.atEof)
+        } else {
+            XCTFail("Could not create StreamReader for: \(fileURL)")
+        }
     }
-    
+
 }
