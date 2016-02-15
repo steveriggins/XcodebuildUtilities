@@ -16,6 +16,25 @@ class XCTestSuiteResult: XMLible {
     var finishLine:String?
     var testCaseResults:[XCTestCaseResult] = []
 
+    var failureCount:Int {
+        return testCaseResults.reduce(0, combine: { $0 + $1.failureMessages.count })
+    }
+    var logLines:[String] {
+        get {
+            var result:[String] = []
+            if let startLine = startLine {
+                result.append(startLine)
+            }
+            for testCaseResult in testCaseResults {
+                result.appendContentsOf(testCaseResult.logLines)
+            }
+            if let finishLine = finishLine {
+                result.append(finishLine)
+            }
+            return result
+        }
+    }
+
     init(testSummaryResult:XCTestSummaryResult, suiteName:String, timestamp:NSDate) {
         self.testSummaryResult = testSummaryResult
         self.suiteName = suiteName
@@ -26,7 +45,8 @@ class XCTestSuiteResult: XMLible {
 
     func xmlElement() -> NSXMLElement {
 
-// <testsuite errors="0" failures="2" hostname="ASDAs-Mac-Pro.local" name="DummyObjCAllFailuresTests" tests="2" time="0.002" timestamp="2016-02-04 09:12:33 -0800"><testcase classname='DummyObjCAllFailuresTests' name='testFailure1' time='0.001'>
+// <testsuite errors="0" failures="2" hostname="ASDAs-Mac-Pro.local" name="DummyObjCAllFailuresTests" tests="2" time="0.002" timestamp="2016-02-04 09:12:33 -0800">
+// <testcase classname='DummyObjCAllFailuresTests' name='testFailure1' time='0.001'>
 // <failure message='failed - Failure 1' type='Failure'>/Users/Shared/Jenkins/Home/jobs/dwsjoquist testing/workspace/ASDA-Tests/Common/DummyObjCAllFailuresTests.m:19</failure>
 // </testcase>
 // <testcase classname='DummyObjCAllFailuresTests' name='testFailure2' time='0.001'>
@@ -57,6 +77,19 @@ class XCTestSuiteResult: XMLible {
 // </xs:element>
 
         let result = NSXMLElement(name:"testsuite")
+
+        result.addAttributeWithName("name", value: "\(suiteName)")
+        result.addAttributeWithName("failures", value: "\(failureCount)")
+        result.addAttributeWithName("timestamp", value: "\(timestamp)")
+
+        for testCaseResult in testCaseResults {
+            result.addChild(testCaseResult.xmlElement())
+        }
+
+        for logLine in logLines {
+            result.addChild(NSXMLElement(name:"system-out", stringValue:logLine))
+        }
+
         return result
     }
 }
