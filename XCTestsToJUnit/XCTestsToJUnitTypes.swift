@@ -22,13 +22,16 @@ Test Suite 'FileReaderTests' failed at 2016-02-02 16:46:41.170.
 
 struct XCTestRegexPatterns {
     static let TestCaseName = "\\-\\[.* .*\\]"
-    static let TestCaseFailureMessage = ".*:[0-9]*: error: \\-\\[.* .*\\] : failed \\- .*"
+    static let TestCaseFailureMessageObjC = ".*:[0-9]*: error: \\-\\[.* .*\\] : failed \\- .*"
+    static let TestCaseFailureMessageSwift = ".*:[0-9]*: error: \\-\\[.* .*\\] : UI Testing Failure \\- .*"
 }
 
 struct XCTTestToJUnitConstants {
     // 2016-02-01 10:25:05.405
     static let TimestampFormat = "yyyy-MM-dd HH:mm:ss.SSS"
     static let XCTestPackageSuffix = ".xctest"
+    static let TestCaseFailureTagObjC = ": failed - "
+    static let TestCaseFailureTagSwift = ": UI Testing Failure - "
 }
 
 enum LineType {

@@ -10,14 +10,15 @@ import Foundation
 
 class XCTestCaseResult: XMLible {
     let testSuiteResult:XCTestSuiteResult
-    var suiteName:String {
-        return self.testSuiteResult.suiteName
+    var className:String {
+        return testSuiteResult.className
     }
     let methodName:String
     var duration:NSTimeInterval = 0
 
     var startLine:String?
     var finishLine:String?
+    var success:Bool = false
     var logLines:[String] {
         get {
             var result = _logLines
@@ -36,7 +37,7 @@ class XCTestCaseResult: XMLible {
     }
 
     var status:String {
-        return failureMessages.count > 0 ? "Failure" : "Success"
+        return success ? "Success" : "Failure"
     }
 
     private var _logLines:[String] = []
@@ -75,16 +76,14 @@ class XCTestCaseResult: XMLible {
 
         result.addAttributeWithName("name", value: "\(methodName)")
         result.addAttributeWithName("time", value: "\(duration)")
-        result.addAttributeWithName("classname", value: "\(suiteName)")
+        result.addAttributeWithName("classname", value: "\(className)")
         result.addAttributeWithName("status", value: "\(status)")
 
         for failureMessage in failureMessages {
             result.addChild(failureMessage.xmlElement())
         }
 
-        for logLine in logLines {
-            result.addChild(NSXMLElement(name:"system-out", stringValue:logLine))
-        }
+        result.addChild(NSXMLElement(name:"system-out", stringValue:logLines.joinWithSeparator("\n")))
 
         return result
     }

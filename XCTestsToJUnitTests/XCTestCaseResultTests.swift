@@ -11,17 +11,19 @@ import XCTest
 class XCTestCaseResultTests: XCTestCase {
     
     func testInit() {
+        let expectedPackageName = "PackageName"
         let expectedSuiteName = "SuiteA"
+        let expectedClassname = expectedPackageName + "." + expectedSuiteName
         let expectedMethodName = "Method123"
 
-        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:expectedSuiteName, packageName:nil, timestamp:NSDate())
+        let dummySuiteResult = XCTestSuiteResult(testSummaryResult:XCTestSummaryResult(), suiteName:expectedSuiteName, packageName:expectedPackageName, timestamp:NSDate())
         let testCaseResult = XCTestCaseResult(testSuiteResult:dummySuiteResult,methodName:expectedMethodName)
 
         XCTAssertNotNil(testCaseResult.testSuiteResult)
         XCTAssertNil(testCaseResult.startLine)
         XCTAssertNil(testCaseResult.finishLine)
         XCTAssertEqual(0, testCaseResult.duration)
-        XCTAssertEqual(expectedSuiteName, testCaseResult.suiteName)
+        XCTAssertEqual(expectedClassname, testCaseResult.className)
         XCTAssertEqual(expectedMethodName, testCaseResult.methodName)
         XCTAssertTrue(testCaseResult.logLines.isEmpty)
         XCTAssertTrue(testCaseResult.failureMessages.isEmpty)
@@ -159,13 +161,12 @@ class XCTestCaseResultTests: XCTestCase {
                 }
             }
         }
+
+
         XCTAssertEqual(1, failureElements.count)
-        XCTAssertEqual(expectedLogLines.count, systemOutElements.count)
-        for index in 0..<expectedLogLines.count {
-            let logLine = expectedLogLines[index]
-            let childElement:NSXMLNode? = index < systemOutElements.count ? systemOutElements[index] : nil
-            XCTAssertEqual(logLine, childElement?.stringValue)
-        }
+        XCTAssertEqual(1, systemOutElements.count)
+        let expectedSystemOut = expectedLogLines.joinWithSeparator("\n")
+        XCTAssertEqual(expectedSystemOut, systemOutElements[0].stringValue)
         XCTAssertEqual(0, otherElements.count)
     }
 

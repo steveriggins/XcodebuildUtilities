@@ -10,8 +10,19 @@ import XCTest
 
 class XCTestCaseFailureMessageTests: XCTestCase {
 
-    func testFailureLogLine() {
+    func testFailureLogLineObjC() {
         let line = "/dir/file.xyz:15: error: -[file method] : failed - Failure 1"
+        if let actualValue = XCTestCaseFailureMessage(line:line) {
+            XCTAssertEqual("/dir/file.xyz", actualValue.sourceFilepath)
+            XCTAssertEqual(15, actualValue.sourceLineNumber)
+            XCTAssertEqual("Failure 1", actualValue.message)
+        } else {
+            XCTFail("Line should be a failure log line: \(line)")
+        }
+    }
+
+    func testFailureLogLineSwift() {
+        let line = "/dir/file.xyz:15: error: -[file method] : UI Testing Failure - Failure 1"
         if let actualValue = XCTestCaseFailureMessage(line:line) {
             XCTAssertEqual("/dir/file.xyz", actualValue.sourceFilepath)
             XCTAssertEqual(15, actualValue.sourceLineNumber)

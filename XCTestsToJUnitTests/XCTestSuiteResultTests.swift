@@ -112,12 +112,9 @@ class XCTestSuiteResultTests: XCTestCase {
             }
         }
         XCTAssertEqual(2, testcaseElements.count)
-        XCTAssertEqual(expectedLogLines.count, systemOutElements.count)
-        for index in 0..<expectedLogLines.count {
-            let logLine = expectedLogLines[index]
-            let childElement:NSXMLNode? = index < systemOutElements.count ? systemOutElements[index] : nil
-            XCTAssertEqual(logLine, childElement?.stringValue)
-        }
+        XCTAssertEqual(1, systemOutElements.count)
+        let expectedSystemOut = expectedLogLines.joinWithSeparator("\n")
+        XCTAssertEqual(expectedSystemOut, systemOutElements[0].stringValue)
         XCTAssertEqual(0, otherElements.count)
     }
     

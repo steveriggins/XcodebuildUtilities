@@ -12,6 +12,15 @@ class XCTestSuiteResult: XMLible {
     let testSummaryResult:XCTestSummaryResult
     let packageName:String?
     let suiteName:String
+    var className:String {
+        get {
+            if let packageName = packageName {
+                return packageName + "." + suiteName
+            } else {
+                return suiteName
+            }
+        }
+    }
     let timestamp:NSDate
     var startLine:String?
     var finishLine:String?
@@ -91,9 +100,7 @@ class XCTestSuiteResult: XMLible {
             result.addChild(testCaseResult.xmlElement())
         }
 
-        for logLine in logLines {
-            result.addChild(NSXMLElement(name:"system-out", stringValue:logLine))
-        }
+        result.addChild(NSXMLElement(name:"system-out", stringValue:logLines.joinWithSeparator("\n")))
 
         return result
     }

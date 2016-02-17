@@ -90,6 +90,7 @@ class XCTestSummaryResult: XMLible {
     private func processFinishCase(line:String, verbose:Bool, suiteName:String, caseName:String, duration:NSTimeInterval, success:Bool) {
         if let currentTestCaseResult = currentTestCaseResult {
             currentTestCaseResult.finishLine = line
+            currentTestCaseResult.success = success
             if (verbose) {
                 print("Case finished: \(currentTestCaseResult)")
             }

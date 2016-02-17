@@ -22,10 +22,12 @@ class XCTestCaseFailureMessage: XMLible {
         var sourceLineNumber:Int?
         var message:String?
 
-        if line.matches(XCTestRegexPatterns.TestCaseFailureMessage) {
+        let isObjCFailureLine = line.matches(XCTestRegexPatterns.TestCaseFailureMessageObjC)
+        let isSwiftFailureLine = line.matches(XCTestRegexPatterns.TestCaseFailureMessageSwift)
+        if  isObjCFailureLine || isSwiftFailureLine {
             let pieces = line.componentsSeparatedByString(":")
             if pieces.count > 4 {
-                let failureTag = ": failed - "
+                let failureTag = isObjCFailureLine ? XCTTestToJUnitConstants.TestCaseFailureTagObjC : XCTTestToJUnitConstants.TestCaseFailureTagSwift
                 if let failureTagRange = line.rangeOfString(failureTag) {
                     sourceFilepath = pieces[0]
                     sourceLineNumber = Int(pieces[1])
