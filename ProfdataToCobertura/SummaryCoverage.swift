@@ -35,12 +35,24 @@ extension String {
                     if llvmCovArguments.verbose {
                         print("Processing \(pathURLString)")
                     }
+                    let originalPath=path
                     var startIndex = pathURLString.startIndex
-                    startIndex = startIndex.advancedBy(sourcePathURLString.startIndex.distanceTo(sourcePathURLString.endIndex)+1)
-                    path = path.substringWithRange(Range(start:startIndex, end:path.endIndex.predecessor()))
-
+                    startIndex = startIndex.advancedBy(sourcePathURLString.startIndex.distanceTo(sourcePathURLString.endIndex))
+                    let relativePath = pathURLString.substringWithRange(Range(start:startIndex, end:pathURLString.endIndex.predecessor()))
+                    if llvmCovArguments.verbose {
+                        print("original  ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9")
+                        print("   source=\(sourcePath)")
+                        print("     path=\(originalPath)")
+                        print("urlString ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9")
+                        print("   source=\(sourcePathURLString)")
+                        print("     path=\(pathURLString)")
+                        print("index values")
+                        print("   source.endIndex=\(sourcePathURLString.endIndex)")
+                        print("   startIndex=\(startIndex)")
+                        print("relativePath=\(relativePath)")
+                    }
                     groupLines.removeAtIndex(0) // remove path
-                    classes.append(ClassCoverage(path:path, lines:groupLines as! [String], verbose:llvmCovArguments.verbose))
+                    classes.append(ClassCoverage(path:relativePath, lines:groupLines as! [String], verbose:llvmCovArguments.verbose))
                 }
             }
         }

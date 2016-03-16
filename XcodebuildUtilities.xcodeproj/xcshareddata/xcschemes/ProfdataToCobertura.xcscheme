@@ -81,7 +81,15 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/d/asda"
+            argument = "/Users/dwsjoquist/ivygulch/projects/shared/TestCov"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-inputFile"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/dwsjoquist/tmp/llvm-cov.out"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
