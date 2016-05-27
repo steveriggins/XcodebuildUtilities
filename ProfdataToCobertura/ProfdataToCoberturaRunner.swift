@@ -180,7 +180,7 @@ class ProfdataToCoberturaRunner {
                 }
             case .InputFile:
                 if let data = NSData(contentsOfFile: llvmCovArgs.inputFilePath!) {
-                    if let outputString = NSString(data:data, encoding: NSUTF8StringEncoding) as? String {
+                    if let outputString = NSString(data:data, encoding: NSASCIIStringEncoding) as? String {
                         return (outputString,llvmCovArgs)
                     }
                 }
